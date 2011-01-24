@@ -1,0 +1,11 @@
+
+Les principaux axes d'amélioration du nouveau système sont :
+
+- Automatisation du système de surveillance des sites
+- Suivi temps réel des sites avec possibilité de configurations/commandes à distance
+- Amélioration de la communication (systèmes embarquées, capteurs..)
+- Diminution des coûts de transports
+- Diminution des coûts de main d'œuvre
+- Fiabilité du système de surveillance au vue de risques écologiques
+- Traçabilité des informations et opérations
+- Généricité/Facilité d'évolution du système
