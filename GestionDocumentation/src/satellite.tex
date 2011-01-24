@@ -1,22 +1,64 @@
 \section{Introduction}     
-  \subsection{Présentation du projet}  
-    \subsubsection{Le contexte}      
-    \subsubsection{Les objectifs}     
+  \subsection{Présentation du projet}
+    
+    \subsubsection{Le contexte}     
+     
+    \subsubsection{Les objectifs}    
+     
   \subsection{Présentation du document}
-  \paragraph*{\textit{documentation} :}ensemble de documents relatifs à un projet - notice - mode d’emploi - action de sélectionner, classer, utiliser ou diffuser des documents. (Source : Le Petit Larousse - 1994)
-La documentation d’un projet a une importance primordiale : c’est l’outil de communication et de dialogue entre les membres de l’équipe projet et les intervenants extérieurs (membre des instances de pilotage, chef de projet, utilisateurs, etc...). Elle assure aussi la pérennité des informations au sein du projet.
-Afin d’organiser la gestion de la documentation produite par projet, il convient au préalable d’identifier tous les types de documents relatifs aux diverses étapes d’un projet, de les référencer de manière homogène pour ensuite définir un mode de gestion commun à tous les projets.
-\par Le but de ce document est de décrire le fonctionnement de la documentation tout au long du projet.
-  \subsection{Documents applicables Documents de référence}
+  
+    \paragraph*{\textit{documentation} :}ensemble de documents relatifs à un projet - notice - mode d’emploi - action de sélectionner, classer, utiliser ou diffuser des documents. (Source : Le Petit Larousse - 1994)
+    La documentation d’un projet a une importance primordiale : c’est l’outil de communication et de dialogue entre les membres de l’équipe projet et les intervenants extérieurs (membre des instances de pilotage, chef de projet, utilisateurs, etc...). Elle assure aussi la pérennité des informations au sein du projet.
+    Afin d’organiser la gestion de la documentation produite par projet, il convient au préalable d’identifier tous les types de documents relatifs aux diverses étapes d’un projet, de les référencer de manière homogène pour ensuite définir un mode de gestion commun à tous les projets.
+    \par Le but de ce document est de décrire le fonctionnement de la documentation tout au long du projet.
+  
+  \subsection{Documents applicables <> Documents de référence}
     \subsubsection{Documents applicables}
-      DGA - RG Aéro 00040 : Document cité directement ou indirectement dans un contrat ou dans un autre document et requis contractuellement comme devant être impérativement appliqué au titre de ce contrat ou de cet autre document.
+      Document cité directement ou indirectement dans un contrat ou dans un autre document et requis contractuellement comme devant être impérativement appliqué au titre de ce contrat ou de cet autre document.
+      \par Un document applicable est un document devrant être suivi à lettre. Le Cahier des Charges est par exemple un document applicable
     \subsubsection{Documents de référence}
       DGA - RG Aéro 00040 : Document cité dans un contrat ou dans un autre document et pouvant être utilement consulté pour l'exercice des activités liées au contrat.
+      \par Au contraire du document applicable, le document de référence est qu'un support à la réflexion. 
   \subsection{Terminologie et Abréviations}
 \section{Règles générales}
+Ce chapitre précise les règles de gestion de la documentation à mettre en oeuvre dans tout projet.
   \subsection{Identification des documents}
+  Afin d’assurer l’efficacité de la gestion de la documentation, il faut prévoir une homogénéité d’identification des documents.
+Ainsi, chaque document reçoit une référence unique au sein du projet, constituée de plusieurs champs (cette référence apparaît en page de garde et sur chacune des pages du document) :
+\textit{nom\_du\_projet/nature\_du\_document/identification\_du\_document}
+
+\par Exemple : "ing-nierie/DossierFaisabilite/Existant" représente la partie "Analyse de l'existant" du dossier de Faisabilité.
+
   \subsection{Norme de présentation}
+    \subsubsection{Structure} 
+      \par Il est convenu que tout document doit comporter les éléments suivants sur la page de garde : \\
+      \begin{itemize}
+        \item le titre du document,
+        \item la référence du document,
+        \item la date de dernière mise à jour,
+        \item le numéro de version de l'application concernée par le document (VX.x),
+        \item le nom de l’auteur (ou des auteurs),
+        \item pour les documents faisant l'objet d'une vérification et/ou d'une validation, le cartouche de visa (noms des destinataires, objet de la diffusion, dates de visa).\\
+      \end{itemize}                                                                                                        
+      D’autre part, sur chaque page du document préciser : \\
+      \begin{itemize}
+        \item le titre du document,
+        \item la référence,
+        \item le logo de l'entreprise,
+        \item le numéro de page / nombre de pages total.
+      \end{itemize}         
+      
+      Chaque document comprend un sommaire, qui reprend les titres des chapitres et des différents paragraphes et précise les numéros de pages correspondants.
+    
+    \subsubsection{Automatisation}
+    Pour automatiser la mise en page des documents, une série de documents applicables à été créer dans le dossier ing-nierie/model/. 
+    La création d'un nouveau document se passe de la façon suivante : 
+    \begin{itemize}
+      \item création d'un dossier dans ing-nierie/ pour le document en question
+      \item copie des dossiers présents dans ing-nierie 
+    \end{itemize}  
   \subsection{Etats d'un documents}
+  
   \subsection{Cycle de vie d'un document}
     \subsubsection{Production du document}
     \subsubsection{Vérification/Validation du document}
