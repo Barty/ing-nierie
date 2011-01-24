@@ -33,3 +33,11 @@ Un capteur peut être initialement configuré pour ne communiquer qu'avec une ad
 La localisation, comme le nom peut être intérrogé comme tout autres paramètre.
 
 Un paramètre peut avoir une valeur sous forme de chaine de caractere, de valeur numérique, ou de suite de valeur numérique.
+
+
+Toutes actions sur la station peut se faire à l'aide de paramètre spécifique (par exemple : vitesse moteur = 10 )
+ou bien par l'intermédiaire d'un parametre de commande (par exemple : commande = exec vitesse_moteur 10)
+
+Le protocole doit pouvoir spécifié la fréquence d'acquisition des capteurs.
+
+TROUVER UN MODEL GENERIQUE capteur -> site -> client
