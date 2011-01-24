@@ -1,0 +1,6 @@
+Résume de l'existant.
+
+Il existe des sites isolés où sont batis des reservoirs abritans des déchets, de l'essence, de l'eau ou toutes autres substances.
+
+Les sites étant isolé, le réseaux téléphonique couvrant la globalité du térritoire européen parrait le plus adapté.
+COPEVUE doit probablement posséder un certains nombre de postes clients déjà en place, il faudras donc fournir une solution adapté à ces postes clients, avec probablement une solution d'adaptation entre le réseaux téléphonique, et les postes clients.

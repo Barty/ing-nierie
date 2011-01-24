@@ -1,0 +1,15 @@
+Système de communication
+
+
+On identifie deux type de communication : longue distance (>100m) et courte distance (<100m).
+Le système de communication se fera par GPRS sur longue distance (relais -> client) et par zigbee sur courte distance (capteur -> relais)
+
+Pour illustrer, prenons 2 exemples de sites distants :
+- Un ensemble de sillos regroupé sur un perimètre restreint.
+- Une cuve unique.
+
+Dans le premier cas, chaque sillos sera équipé de capteurs , de communication zigbee et d'un système simple.
+Un relais au centre des sillos sera équipé de communication Zigbee, de communication GPRS, et d'un système plus complexe.
+Chaque capteurs de sillos sera cloné sur un relais grace à la communication zigbee, et le relais s'occuperas de faire l'interface avec le client.
+
+Dans le second cas, la cuve est équipé d'un capteur, de communication GPRS et d'un système complexe permettant de faire l'interface avec le client.
