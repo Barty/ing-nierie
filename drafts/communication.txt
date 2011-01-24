@@ -13,3 +13,21 @@ Un relais au centre des sillos sera équipé de communication Zigbee, de communi
 Chaque capteurs de sillos sera cloné sur un relais grace à la communication zigbee, et le relais s'occuperas de faire l'interface avec le client.
 
 Dans le second cas, la cuve est équipé d'un capteur, de communication GPRS et d'un système complexe permettant de faire l'interface avec le client.
+
+
+
+Zigbee :
+Il existe une multitude d'appareils zigbee, il apparait donc possible de choisir n'importe lequel en fonction des besoins.
+
+Liste des appareils Zigbee :
+http://www.zigbee.org/Products/CertifiedProducts/ZigBeeSmartEnergy.aspx
+
+GPRS :
+
+Le gprs est une téchnologie suffisament éprouvé pour pouvoir trouver l'antenne qui correspondras à nos besoin.
+
+Exemple de modem GPRS :
+http://www.multitech.com/en_US/PRODUCTS/Families/MultiModemGPRS/
+
+Liste de modems GPRS :
+http://www.nextag.com/gprs-modem/stores-html
