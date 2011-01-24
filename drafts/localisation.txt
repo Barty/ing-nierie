@@ -24,3 +24,12 @@ Sensibilité du récepteur GPS : -185 dBW minimum
 Températures de fonctionnement : -30°C à +80°C
 Températures de stockage : -40°C à +80°C
 
+
+
+Elta
+http://www.elta.fr/fr_marches_espace.htm
+Système de localisation et de transimssion de données
+
+
+Galiléo
+Système de localisation prévu pour 2013
