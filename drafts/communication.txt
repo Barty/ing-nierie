@@ -15,12 +15,33 @@ Chaque capteurs de sillos sera cloné sur un relais grace à la communication zi
 Dans le second cas, la cuve est équipé d'un capteur, de communication GPRS et d'un système complexe permettant de faire l'interface avec le client.
 
 
+Courte distance :
+
+Wifi :
+Porté : 100m
+plus couteux en énergie que Zigbee
+
+Bluetooth :
+Porté 10m
+ plus couteux en énergie et en code que Zigbee
 
 Zigbee :
 Il existe une multitude d'appareils zigbee, il apparait donc possible de choisir n'importe lequel en fonction des besoins.
 
 Liste des appareils Zigbee :
 http://www.zigbee.org/Products/CertifiedProducts/ZigBeeSmartEnergy.aspx
+
+Longue distance :
+
+Filaire :
+lol
+
+Satellite :
+Globalement beaucoup plus chere que GPRS.
+http://stic.cnam.fr/elau/publi/autres/images/Communication_satellite.pdf
+
+Radio longue distance :
+à étudier.
 
 GPRS :
 

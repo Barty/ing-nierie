@@ -1,0 +1,36 @@
+﻿Capteurs: Un capteur est un dispositif transformant l'état d'une grandeur physique observée en une grandeur utilisable. 
+
+Contexte : 
+++L’objectif est de surveiller les réservoirs, ce qui stock  les déchets, l’essence… et se situent dans un site isolé, en temps réel. Les capteurs doivent être capables de détecter si le niveau du contenu des réservoirs est passé un certain seuil pré-défini pour ensuite envoyer cette information au système embarqué. 
+Pour répondre à ces besoins, il y a plusieurs solutions :
+
+Il existe deux types d'informations relatives au niveau :
+
+A.Mesure de niveau continue: c'est-à-dire que le capteur et son conditionneur délivrent un signal proportionnel au niveau de liquide dans le réservoir. À chaque instant, l'opérateur connaît exactement le volume du liquide ( ou le volume encore disponible dans le réservoir).  On peut trouver parmi les autres 2 types de capteur  courants
+
+1. Le capteur à flotteur : Il se maintient à la surface du liquide dans les réservoirs de stockage à distance et mobiles. 
+--Advantage : 
+   -Il s'agit d'une mesure directe de la hauteur du liquide et elle ne dépend pas de sa masse volumique. 
+   -Sur une grande étendue de mesure (plusieurs mètres), la mesure est précise.
+   - Simple et économique.
+--Inconvénients :
+-Le flotteur est en contact direct avec le liquide : les produits corrosifs sont donc à exclure
+- la mesure est très sensibles aux perturbations à la surface du liquide (vague, remous,...) 
+-Il est nécessaire d'entretenir régulièrement le système
+
+2. Mesure par plongeur: Un cylindre est immergé verticalement dans le liquide contenu dans le reservoir. La hauteur de ce plongeur doit au moins être égale à la hauteur maximale du liquide dans le réservoir.Le plongeur est suspendu à un capteur dynamométrique.
+Avantage : Bonne precision, La mesure n'est pas influencée par les modifications de surface du liquide (mousses,...)
+ 
+Inconvénient : Le plongeur est en mouvement et en contact avec le liquide. S'il y a des dépôts sur le plongeur, cela fausse la mesure. La mesure est modifiée par les mouvements du liquide. La mesure n'est valable que pour les liquides Le coût d'achat et d'entretien est important.
+
+B.Détection de niveau : La détection de niveau est une mesure binaire, c'est-à-dire que le capteur délivre une information binaire indiquant si le niveau seuil défini est atteint ou pas. La détection de niveau ne permet donc pas de connaître le volume de liquide contenu dans le réservoir, mais permet de savoir si le liquide a atteint un seuil. En général, plus simple et moins couteux que ceux de la 1er catégorie :
+
+Example ;
+Détection par micro-ondes: base sur l’électromagnétique. Lorsque le produit s'interpose entre l'émetteur et le récepteur, le signal reçu par le récepteur est atténué,  l'état de la valeur binaire de sortie.
+
+Avantage : Sans contact. Quasiment aucun entretien n'est nécessaire. Cette méthode convient aussi bien pour les liquides que les solides…
+Inconvénient : Ne convient donc pas pour les produits plastiques. (tranverse)
+...
+
+Energie+transmission: le capteur pourrait être doté par un générateur d'énergie (cellule solaire) pour générer l'énergie lui-même. 
+La transmission d'information est probablement de type sans fil en utilisant le plateforme ZigBee (indiqué dans un autre draft). 
