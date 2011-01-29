@@ -1,11 +1,14 @@
 Système de localisation
 
-La localisation se fera par l'intermédiaire de coordonnées GPS.
+	Mon avis :
+		Est-ce necessaire d'avoir une telle précision sur un site fixe, ou peu mobile (on parle de citerne ancré dans le sol, pas de rongeurs ...)
+		La question pourrait se poser pour des balises en mer, mais c'est pas le cas.
 
-Pour la gestion de l'énérgie, la valeur GPS peut être soit acquise en temps réel par un capteur externe, soit définie à l'installation.
-(Cette valeur pourras être redéfinie, si le capteur est déplacé.)
+    	Utiliser un emetteur recepteur de localisation est parfaitement inutile.
 
-Exemple d'antenne GPS :
+GPS
+
+
 
 	http://www.orbitica.com/gps/oem/gps16.htm
 	Vérifier l'intégration en dimension, en qualité et en consommation d'énérgie.
@@ -25,12 +28,8 @@ Exemple d'antenne GPS :
 	Températures de stockage : -40°C à +80°C
 
 	Pour ce qui est des températures, la couverture semble plus que correcte.
-	Pour ce que est de la précision, idem, la précision est parfaite, mais est-ce necessaire d'avoir une telle précision sur un site fixe, ou peu mobile (on parle de citerne...)
+	Pour ce que est de la précision, idem, la précision est parfaite.
 
-	La question pourrait se poser pour des balises en mer, mais c'est pas le cas.
-
-	Mon avis :
-		Utiliser un emetteur recepteur GPS est parfaitement inutile.
 
 Elta
 	http://www.elta.fr/fr_marches_espace.htm
