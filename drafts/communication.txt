@@ -2,53 +2,89 @@ Système de communication
 
 
 On identifie deux type de communication : longue distance (>100m) et courte distance (<100m).
-Le système de communication se fera par GPRS sur longue distance (relais -> client) et par zigbee sur courte distance (capteur -> relais)
-
-Pour illustrer, prenons 2 exemples de sites distants :
-- Un ensemble de sillos regroupé sur un perimètre restreint.
-- Une cuve unique.
-
-Dans le premier cas, chaque sillos sera équipé de capteurs , de communication zigbee et d'un système simple.
-Un relais au centre des sillos sera équipé de communication Zigbee, de communication GPRS, et d'un système plus complexe.
-Chaque capteurs de sillos sera cloné sur un relais grace à la communication zigbee, et le relais s'occuperas de faire l'interface avec le client.
-
-Dans le second cas, la cuve est équipé d'un capteur, de communication GPRS et d'un système complexe permettant de faire l'interface avec le client.
 
 
 Courte distance :
 
-Wifi :
-Porté : 100m
-plus couteux en énergie que Zigbee
+    Wifi :
+        Porté : 100m
+        plus couteux en énergie que Zigbee
 
-Bluetooth :
-Porté 10m
- plus couteux en énergie et en code que Zigbee
+    Bluetooth :
+        Porté 10m
+        plus couteux en énergie et en code que Zigbee
 
-Zigbee :
-Il existe une multitude d'appareils zigbee, il apparait donc possible de choisir n'importe lequel en fonction des besoins.
+    Zigbee :
+        Le Zigbee, c'est comme le bluetooth, mais en mieux.
+        Il existe une multitude d'appareils zigbee, il apparait donc possible de choisir n'importe lequel en fonction des besoins.
 
-Liste des appareils Zigbee :
-http://www.zigbee.org/Products/CertifiedProducts/ZigBeeSmartEnergy.aspx
+        Liste des appareils Zigbee :
+        http://www.zigbee.org/Products/CertifiedProducts/ZigBeeSmartEnergy.aspx
 
 Longue distance :
 
-Filaire :
-lol
+    Filaire :
+        Il est précisé dans le cahier des charges que les zones à surveiller sont inaccessible.
+        Il parait donc impensable de tirer des câbles du centrales jusqu'à chacun de ces points.
 
-Satellite :
-Globalement beaucoup plus chere que GPRS.
-http://stic.cnam.fr/elau/publi/autres/images/Communication_satellite.pdf
+        En revanche, il peut être envisageable de tirer des câble depuis le point d'accès internet le plus proche pour bénéficier du réseaux filaire.
+        Dans la pratique, il faudra étudier chacun des points séparement pour choisir la solution la plus adapté en fonction de la distance le séparant du point d'accès le plus proche.
 
-Radio longue distance :
-à étudier.
+        TODO : impossible de trouver des prix de câblage.
 
-GPRS :
+    Communication satellite :
 
-Le gprs est une téchnologie suffisament éprouvé pour pouvoir trouver l'antenne qui correspondras à nos besoin.
+        L'avantage de ces systèmes de communications, c'est qu'ils ont une couverture parfaite.
+        En revanche, il seront probablement plus chère que les réseaux mobiles, mais impossible d'avoir des prix.
 
-Exemple de modem GPRS :
-http://www.multitech.com/en_US/PRODUCTS/Families/MultiModemGPRS/
+        http://stic.cnam.fr/elau/publi/autres/images/Communication_satellite.pdf
 
-Liste de modems GPRS :
-http://www.nextag.com/gprs-modem/stores-html
+        L   1  - 2 GHz  Communications avec les mobiles.
+            La bande L est la partie du spectre électromagnétique définie par les fréquences de 1,4 à 1,5 gigahertz environ. Elle est attribuée au service de Radioastronomie à des fins de recherches spatiales et scientifiques (projet SETI, etc.). Elle est utilisée en France pour la Radio Numérique Terrestre en DMB (Digital Multimédia Broadcasting).
+
+        S   2  - 3 GHz  Communications avec les mobiles.
+            La bande S est une bande de fréquences définie sur la partie du spectre électromagnétique allant de 2 à 4 GHz.
+            La bande S est surtout utilisée par les radars météorologiques et quelques satellites de communication, spécialement ceux que la NASA emploie pour communiquer avec leurs navettes spatiales et la Station internationale.
+
+        C   4  - 6 GHz  Communications civiles nationales et internationales, télévision.
+            La bande C est la partie du spectre électromagnétique définie par les fréquences :
+                De 3,4 à 4,2 GHz en réception et de 5,725 et 7,075 GHz en émission attribué au service de Radiodiffusion par Satellite (Broadcasting) particulièrement utilisée sur les zones tropicales et faiblement sur les autres zones.
+                De 4 à 8 GHz pour des usages comme les radars météorologiques.
+            La puissance d'émission, qui lui est généralement associée, est relativement faible, en comparaison avec la bande Ku par exemple. Elle nécessite donc des paraboles de grande taille pour sa réception (de 2,5 à 3 mètres de diamètre). Cependant la bande C est moins sensible à la pluie que la bande Ku.
+
+        X   7  - 8 GHz  Communications militaires.
+            J'ai un oncle dans l'armé, je lui demanderais si on peut squatter une petite plage de fréquence.
+
+        Ku  11 - 14 GHz Communications civiles nationales et internationales, télévision.
+            La Bande Ku (Kurtz-under) est la partie du spectre électromagnétique définie par la bande de fréquence micro-ondes de 10,7 gigahertz (GHz) à 12,75 GHz. La bande Ku est la plus employée de toutes les bandes de fréquences.
+            Elle est attribuée au service de radiodiffusion par satellite (services de télévision, de radio et données informatiques). Cette bande est la plus répandue en Europe, du fait de la petite taille des paraboles nécessaires à sa réception.
+            De nombreux démodulateurs, ainsi que les têtes universelles, intégrent cette bande de fréquence.
+                        
+        Ka  20 - 30 GHz nouveaux systèmes d’accès aux réseaux large bande.
+            La bande Ka (Kurtz-above) est une gamme de fréquences utilisée principalement pour l’internet par satellite. Pour les télécommunications spatiales commerciales, elle s’étend en émission de 27,5 à 31 GHz et en réception, de 18,3 à 18,8 GHz et de 19,7 à 20,2 GHz. Les paraboles nécessaires pour recevoir les signaux sont encore plus petites que pour la bande Ku (certaines antennes Ka mesurent 20cm de diamètre). Cependant, les signaux de cette bande sont beaucoup plus sensibles à l’atténuation atmosphérique et principalement, à la pluie. Cette atténuation la rend inutilisable pour la diffusion télévisuelle et pour d’autres services dits « critiques ».
+
+            Telesat a été le premier opérateur, avec le satellite Anik F2 lancé en juillet 2004, à utiliser un satellite en Bande Ka en Amérique du Nord. Les premiers satellites émettant vers l'Europe sont à lancer fin 2010 (Hylas 1 et Ka-Sat), avant d'autre lancements au Moyen-Orient et pour l'Australie1.
+
+        EHF 21 - 45 GHz Communications militaires.
+            J'ai un oncle dans l'armé, je lui demanderais si on peut squatter une petite plage de fréquence.
+
+    Réseaux cellulaires :
+
+            GPRS :
+                Le réseau GPRS couvre la quasi-totalité des terres (la suéde à la meilleur couverture réseau d'Europe)
+                Le gprs est une téchnologie suffisament éprouvé pour pouvoir trouver l'antenne qui correspondras à nos besoin.
+
+                Exemple de modem GPRS :
+                http://www.multitech.com/en_US/PRODUCTS/Families/MultiModemGPRS/
+
+                Liste de modems GPRS :
+                http://www.nextag.com/gprs-modem/stores-html
+
+                TODO : Trouver une carte de couverture GPRS
+
+            EDGE :
+                Le reseaux EDGE est plus performant et plus rapide que le réseaux GPRS, mais il est plus couteux.
+                Etant donné que le volume d'informations à transférer risque d'être relativement réduit, il est moins adapté que le réseaux GPRS.
+
+            UMTS :
+                Le réseaux UMTS est encore plus performant et plus couteux que EDGE, il en est donc de même.
