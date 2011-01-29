@@ -3,7 +3,7 @@ Système de localisation
 La localisation se fera par l'intermédiaire de coordonnées GPS.
 
 Pour la gestion de l'énérgie, la valeur GPS peut être soit acquise en temps réel par un capteur externe, soit définie à l'installation.
-(Cette valeur pourras être redéfini, si le capteur est déplacé.)
+(Cette valeur pourras être redéfinie, si le capteur est déplacé.)
 
 Exemple d'antenne GPS :
 
