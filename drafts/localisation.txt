@@ -1,35 +1,40 @@
 Système de localisation
 
-La localisation se fera par l'intermédiaire de coordonnées GPS.
+	Mon avis :
+		Est-ce necessaire d'avoir une telle précision sur un site fixe, ou peu mobile (on parle de citerne ancré dans le sol, pas de rongeurs ...)
+		La question pourrait se poser pour des balises en mer, mais c'est pas le cas.
 
-Pour la gestion de l'énérgie, la valeur GPS peut être soit acquise en temps réel par un capteur externe, soit définie à l'installation.
-(Cette valeur pourras être redéfini, si le capteur est déplacé.)
+    	Utiliser un emetteur recepteur de localisation est parfaitement inutile.
 
-Exemple d'antenne GPS :
+GPS
 
-http://www.orbitica.com/gps/oem/gps16.htm
-Vérifier l'intégration en dimension, en qualité et en consommation d'énérgie.
 
-Dimensions : 91 mm de diamètre et 42 mm de hauteur
 
-Tension d'entrée :
-    GPS 16x LVS : 3,3 Vdc à 6,0 Vdc régulée, <100 mV ripple
-    GPS 16x HVS : 8,0 Vdc à 40 Vdc non régulée
-Courant d'entrée :
-    GPS 16x LVS : 90 mA typical
-    GPS 16x HVS : 100 mA@8 Vdc, 65 mA@12 Vdc, 28 mA@40 Vdc
-Courant de veille : <10 µA pour tous les modèles
-Sensibilité du récepteur GPS : -185 dBW minimum
+	http://www.orbitica.com/gps/oem/gps16.htm
+	Vérifier l'intégration en dimension, en qualité et en consommation d'énérgie.
 
-Températures de fonctionnement : -30°C à +80°C
-Températures de stockage : -40°C à +80°C
+	Dimensions : 91 mm de diamètre et 42 mm de hauteur
 
+	Tension d'entrée :
+	    GPS 16x LVS : 3,3 Vdc à 6,0 Vdc régulée, <100 mV ripple
+	    GPS 16x HVS : 8,0 Vdc à 40 Vdc non régulée
+	Courant d'entrée :
+	    GPS 16x LVS : 90 mA typical
+	    GPS 16x HVS : 100 mA@8 Vdc, 65 mA@12 Vdc, 28 mA@40 Vdc
+	Courant de veille : <10 µA pour tous les modèles
+	Sensibilité du récepteur GPS : -185 dBW minimum
+
+	Températures de fonctionnement : -30°C à +80°C
+	Températures de stockage : -40°C à +80°C
+
+	Pour ce qui est des températures, la couverture semble plus que correcte.
+	Pour ce que est de la précision, idem, la précision est parfaite.
 
 
 Elta
-http://www.elta.fr/fr_marches_espace.htm
-Système de localisation et de transimssion de données
+	http://www.elta.fr/fr_marches_espace.htm
+	Système de localisation et de transimssion de données
 
 
 Galiléo
-Système de localisation prévu pour 2013
+	Système de localisation prévu pour 2013
