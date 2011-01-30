@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.27)  27 JAN 2011 22:38
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.27)  30 JAN 2011 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -833,10 +833,15 @@ driver: pdftex
 \openout4 = `main.toc'.
 
 
-(./satellite.tex <insa-couleur.jpg, id=40, 425.4294pt x 227.6505pt>
-File: insa-couleur.jpg Graphic file (type jpg)
+(./satellite.tex
+Overfull \hbox (0.2776pt too wide) in paragraph at lines 7--26
+\OT1/cmr/m/n/10.95 breuses r^^Segions de l'UE, se situ-ant dans les pays Nordiq
+ues, ou cer-taines r^^Segions m^^Sedit^^Serran^^Seennes
+ []
 
-<use insa-couleur.jpg>
+<insa-couleur.jpg, id=185, 425.4294pt x 227.6505pt>
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg>
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
  Make it at least 26.91588pt.
@@ -847,48 +852,103 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 \item B
-            RODU Etienne [1 <./insa-couleur.jpg>]
-File: insa-couleur.jpg Graphic file (type jpg)
- <use insa-couleur.jpg>
-[2]
-File: insa-couleur.jpg Graphic file (type jpg)
- <use insa-couleur.jpg> [3]) AED: lastpage setting LastPage
+l.26 \subsection
+                {Les objectifs} [1 <./insa-couleur.jpg>]
 File: insa-couleur.jpg Graphic file (type jpg)
 
-<use insa-couleur.jpg> [4] (./main.aux)
+<use insa-couleur.jpg> [2]
+Overfull \hbox (8.39471pt too wide) in paragraph at lines 72--73
+[]\OT1/cmr/m/n/10.95 S^^Securit^^Se et pr^^Sevention con-tre les risques de cat
+as-tro-phes na-turelles (tels que les in-cendies..etc) 
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 76.
+
+File: insa-couleur.jpg Graphic file (type jpg)
+<use insa-couleur.jpg> [3]
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg> [4]
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
+
+ []
+
+
+Overfull \hbox (9.24635pt too wide) in paragraph at lines 141--144
+\OT1/cmr/m/n/10.95 Il s'agit d'as-surer la com-mu-ni-ca-tion en-tre les dif-fer
+-ents mem-bres afin de garan-tir la coh^^Serences
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--157
+
+ []
+
+File: insa-couleur.jpg Graphic file (type jpg)
+<use insa-couleur.jpg> [5]
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg> [6]
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg>
+[7]
+\c@risques=\count129
+\c@solutions=\count130
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg> [8]) AED: lastpage setting LastPage
+File: insa-couleur.jpg Graphic file (type jpg)
+
+<use insa-couleur.jpg> [9] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 8559 strings out of 495061
- 118596 string characters out of 1182621
- 217167 words of memory out of 3000000
- 11531 multiletter control sequences out of 15000+50000
- 9709 words of font info for 35 fonts, out of 3000000 for 9000
+ 8613 strings out of 495061
+ 119315 string characters out of 1182621
+ 219007 words of memory out of 3000000
+ 11579 multiletter control sequences out of 15000+50000
+ 10356 words of font info for 37 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 43i,15n,43p,264b,558s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
-msfonts/cm/cmr17.pfb>
-Output written on main.pdf (5 pages, 281486 bytes).
+ 43i,15n,43p,445b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pf
+b>
+Output written on main.pdf (10 pages, 340528 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 54 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 59 named destinations out of 1000 (max. 500000)
+ 286 words of extra memory for PDF output out of 10000 (max. 10000000)
 

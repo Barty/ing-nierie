@@ -4,21 +4,99 @@ TODO
 TODO
 \section{Rappel du problème}
 \subsection{Le contexte}
-TODO
+Le COPEVUE (Comité pour la Protection de l'EnVironnement de l'UE), présidé par le commissaire Norvégien souhaite étudier \textbf {un système
+de monitoring de sites isolés} .
+De nombreuses régions de l'UE, se situant dans les pays Nordiques, ou certaines régions méditérranéennes (à haut risque en terme d'incendies) sont peu peuplées et peu aisément accessibles. Néanmoins
+de nombreux lieux de travail existent dans ces régions tels que ceux nécessaires à l'abattage de bois, l'installation de réseaux (éléctrique ou de télécommunication),
+de stations de pompage ou encore des lieux dédiés à certaines études sur la faune et la flore. Ces lieux sont bien souvent isolés et disséminés loin des villes et des grans centres et doivent donc être autonomes en termes 
+d'énergie, de déchets etc...
+Un des points importants est de répondre à ces besoins en terme d'autonomie.
+Pour illustrer le problème, nous allons prendre le cas particulier de stations-réservoirs utilisées pour stocker des déchets, de l'essence, de l'eau ou éventuellement d'autres substances. Ces réservoirs doivent donc être
+surveillés pour bien entendu être ravitaillés, nettoyés (ou vidés le cas échéant) avant que le niveau n'atteigne un seuil critique. Actuellement la surveillance de ces lieux est assurée par le propriétaire du lieu de travail qui, en fonction du niveau qu'il constate, avertit la société chargée de s'occuper du réservoir pour qu'elle vienne le remplir / vider
+Les sociétés chargées de la maintenance des réservoirs doivent donc équiper et envoyer un camion pour s'occuper des réservoirs lorsque le propriétaire en fait la demande. Mais lorsque ces sociétés s'occupent de plusieurs dizaines de sites différents, cette méthode est loin d'etre optimale en terme de cout de tranport et de main d'oeuvre car il est assez rare que le camion revienne plein / vide
+Par ailleurs, pour des raisons de cout, on a pu constater des manquements vis-à-vis des exigences de surveillance... qui peuvent se traduire par des risques de désastres stratégiques dans des forets méditéranéennes ayant
+de fort risque d'incendie.
+La surveillance du niveau de ces réservoirs doit donc être assurée d'une autre manière afin de permettre aux sociétés chargées de leur maintenance de planifier les trajets des camions
+afin de faire des économies logistiques tout en garantissant certaines autres exigences.
+A ce titre, un appel d'offres est ouvert au 1er janvier 2011, avec échéance en semaine \textbf{S7 TODO date réelle}.Cet appel d'offres porte sur une étude
+de faisabilité du point de vue technologique, la proposition d'un Cahier des Charges (spécification technique des besoins) et d'une proposition 
+de conception du futur système.
+La première implantation complète de ce système générique sera déployaée pour la surveillance de réservoirs (essence) et containers (déchets) ...etc
+dans la partie nord de la Norvège pour le \textbf{30 mars 2012.}
 \subsection{Les objectifs}
-TODO
-\section{Les contraites générales}
+Pour répondre aux besoins crées par ces lieux isolés et reculés, il s'agit d'étudier et de concevoir un système complet autonome et générique de mesure et de monitoring à distance de stations ainsi 
+que le pilotage, la configuration et la maintenance à distance de ces stations. Le résultat doit constituer ne solution évolutive, autonome et fiable.
+\section{Les contraintes générales}
+Une des contraintes qui n'est pas négligeable est la considération des coûts, non seulement par rapport à la conception et au développement du système
+mais aussi par rapport à la maintenance et au fonctionnement.
 \subsection{Confidentialités}
-TODO
+Aucune information relative à ce sujet n'a été communiquée.
 \subsection{Existant}
-TODO
+
 \subsection{Exigences non fonctionnelles}
-TODO
+De nombreuses exigences non fonctionnelles sont jugées critiques et doivent impérativement etre prises en compte lors de l'élaboration de la solution.
+Cette partie sera détaillée dans un livrable qui lui est consacré. \textit{(voir spécifications techniques des besoins)}
+Néanmoins, on peut citer :
+\begin{itemize}
+\item {INTEGRATION DE L'EXISTANT} \\
+Définir le système avec les exploitants chargés actuellement de la surveillance de ces différents sites, les camionneurs;
+\item {ROBUSTESSE}\\
+Le système doit toujours revenir à un état stable en cas de redémarrage intempestif pour une cause environnementale comme un EMP ou une
+alimentation électrique défaillante par exemple;
+\item {FIABILITE}\\De part le besoin d'autonommie du système global, ce dernier ne doit pas se bloquer ou "planter" en cours de fonctionnement
+(un redémarrage manuel n'est pas envisageable");
+\item {EVOLUTIVITE et MAINTENABILITE}\\
+Le système bien que conçu dans un but précis de surveillance (par exemple surveillance de niveau d'un réservoir) doit pouvoir s'adapter facilment
+à de nombreuses autres applications sans demander de modifications majeures. De plus il doit être aisé de modifier le système pour en améliorer
+les performances et les fonctionnalités; On devra élaborere une solution prenant en compte les 3 types d'évolution: evolution dimensionnelle, évolution
+fonctionnelle et évolution materielle;
+\item {LIMITATIONS TECHNOLOGIQUES}\\
+Le système utilisera du matériel GPS et GPRS dont le fonctionnement interne n'est pas maitrisé à 100\% par le système. Le système devra donc pouvoir
+s'adapter aux différentes situations possibles engendrées par l'utilisation de ces technologies.
+\item {GENERICITE}\\
+Ce type de problèmatique se rencontre assez fréquemment (ex. surveillance des réservoirs d'eau dispersés sur un territoire (forêt) pour lutter
+contre les incendies, etc...). Il convient donc d'avoir une approche de "progicialisation"; Il faut pouvoir décliner ce système à moindre coût pour d'autres
+applications de type surveillance de train, de personnes agées... Cela doit nous amener à une reflexion approfondie sur le paramétrage des modules, de l'interface...etc
+
+\item {REUTILISATION}\\
+Il conviendra d'avoir une démarche de coneption orientée réutilisation au niveau système dans le but d'une part, de réutiliser des composants existants
+, d'autre part, de définir des composants susceptibles d'etre réutilisés dans d'autres applications;
+\item {ERGONOMIE}\\
+Ce sont des non informaticiens qui devront utiliser votre futur système. On définira les IHM en fonction de ces utilisateurs : sur site central pour les acteurs de la télésurveillance, sur station (Mobile/PDA) pour les intervenantssur site (camionneur, propriétaire,...);
+\item {TRACABILITE}\\
+Il est important de garder une trace de toute activité effectuée dans le système; toute intervention (distante ou sur site) devra etre répertoriée pour ne
+période de minimum 2 ans; cette trace permettra de remonter en temps pour avoir qui a fait une éventuelle erreur, mais aussi pour une analyse de données.
+
+\item Autonomie de la solution en termes d'énergie, de déchets ...etc, elle ne doit pas dépendre de l'intervetion du propriétaire des lieux comme c'est le cas actuellement.
+\item Proposion d'uns solution peu coûteuse
+\item Sécurité et prévention contre les risques de catastrophes naturelles (tels que les incendies..etc)
+\end{itemize}
 \section{Organisation du travail}
 \subsection{Ressources humaines}
-\subsubsection{Chef de projet et coordinateur}
-BACHATENE Chafik
-TODO : rôle du chef de projet
+\subsubsection{Chef de projet et coordinateur : Chafik \textsc{BACHATENE}}
+
+Son rôle est de mener à bien le projet à travers un certain nombre d'activités d'animation et de suivi :
+\begin{itemize}
+    \item Le chef de projet doit maîtriser l'ensemble du projet. Il doit élaborer le plus rapidement possible un ébauche
+    du mode opératoire et un macro phasage qu'il doit faire valider. Ce mode opératoire montre l'enchainement des principales activités et surtout le flux 
+    chronologique;
+    \item Vis-à-vis du travail du groupe d'étude, il définira avec précision la remise des différents drafs et les livrables définitifs correspondant
+    à l'évolution des idées et des solutions. Ce travail est très important puisqu'il correspond à l'appropriation du prjet d'un point de vue global.    
+    \item Suivi stratégique du projet
+        \subitem Le chef de projet doit évaluation les risques liés au projet et à l'application même
+        \subitem Le chef de projet doit constamment rappeler les objectifs et orienter les GEI s'ils partent dans de mauvaises directions
+        \subitem Le chef de projet doit faire preuve d'autorité et faire respecter les délais de livraison en particulier
+    \item Pilotage opérationnel
+        \subitem Le chef de projet élabore la liste des tâches et répartie ces dernières entre les membres de l'équipe
+        \subitem Le chef de projet est chargé du suivi et de l'encadrement des tâches
+    \item Organisation humaine
+        \subitem Le chef de projet est chargé de définir le rôle des membres et leurs responsabilités
+        \subitem Le chef de projet est capable de résoudre les conflits en trouvant les outils d'arbitrage idéaux
+    \item Pilotage de la production
+        \subitem Le chef de projet est responsable du suivi des résultats et des livrables
+        \subitem Le chef de projet en étroite collaboration avec le responsable qualité est chargé de définir les méthodes opératoires et outils utilisés
+    
+\end{itemize}
 \subsubsection{Responsable qualité / méthode / documentation}
 LECORNU Baptiste
 TODO : rôle du responsable qualité
@@ -29,26 +107,58 @@ TODO : rôle du responsable qualité
 \item DIAKITE Naby Daouda 
 \item PHAN Duc Than
 \end{itemize}
-TODO : Rôles des GEI
+Le groupe d'étude informatique doit élaborer une réponse à l'appel d'offres par rapport au cahier des charges préléminaire dans le but de propse
+selon des axes qu'ils ont à définir un système générique de surveillance à distance. Cette équipe doit entre autre réaliser:
+
+\subitem Une analyse exploratoire
+\subitem Une spécification technique des besoins
+\subitem Une conception détaillée du nouveau système
 
 \subsection{Activités}
 \subsubsection{Production}
+Il s'agit de toutes les activités visant à répondre à l'appel d'offre sous forme de livrables. Il sera systématiquement demandé
+un draft par tâche à partir duquel le livrable final sera élaboré.
 \begin{itemize}
-\item Etude, expertise (etat de l'art, faisabilité ...)
-\item Analyse des besoins techniques
-\item Conception
+\item {Etude, expertise}\\
+Ce sont des activités nécessaires à la bonne compréhension du sujet. Il s'agit en particulier des tâches regroupant l'étude de faisabilité, l'état 
+de l'art et les divers recherches d'expertise.
+
+\item {Analyse des besoins techniques}\\
+Une spécification technique du nouveau système est un élément majeur de le réponse à l'appel d'offre. Il s'agit à l'issue de l'étude de faisabilité
+de dégager une spécification claire du nouveau système.
+\item {Conception}\\
+Il s'agit de définir l'architecture générique applicative et technique du nouveau système. L'objectif étant de définir l'ensemble des composants
+du système aussi bien d'un point de vue bords, differentes stations que d'un point de vue applicatif décrivant les differents modèles et autres IHM...etc
 \end{itemize}
 \subsubsection{Controle (qualité)}
 Voir RQ
 \subsubsection{Gestion de projet}
 \begin{itemize}
-\item Suivi et contrôle
-\item Validation
-\item Réunion
-\item ...
+\item {Suivi et contrôle\\}
+Il s'agit de suivre l'avancement des tâches et leurs réalisations par les personnes concernées\\
+\item {Validation\\}
+Il s'agit de faire des validations aussi bien intermediaires que finales. Elles permettent notamment de suivre l'avancement et d'orienter les GEI le cas échéant.
+\item {Coordination\\}
+Il s'agit d'assurer la communication entre les differents membres afin de garantir la cohérences travaux. Le chef de projet qui a une vision plus globale du projet oriente les GEI 
+pour assurer une integration correcte des differents modules.\\
+\item {Respect des délais et échéances}
+Le chef de projet fixe des échances pour les differentes tâches. communique ces dernières aux GEI et s'assure du repect de celles-ci. \\
+\item {Réunion\\}
+Le chef de projet provoque des réunions. Il s'agit par exemple de faire des points (réguliers ou non) avec les membres de l'équipe, il peut également
+provoquer des réunions avec le client afin d'éclaircir certains points restés flous. Il est en charge de planifier les revues (intermediaires et finales)\\
+\item {Livrables\\} 
+Le chef de projet en collaboration avec le responsable qualité vérifie en permanence la production des livrables. Il s'assure de la qualité des livrables en termes de fond principalement 
+et vérifie que ca correspond bien aux évolutions des dratfs préalablement validés.\\
+\item {Gestion des risques\\}
+Il s'agit dans un premier temps d'élaborer une liste exhaustive des risques liés à l'application et au projet même.\\
+\item {Motivation des membres de l'équipe\\}
+Il s'agit de trouver d'efficaces moyens et outils afin de motiver les membres de l'équipe en instaurant une ambiance de travail agréable.
+Prendre en compte les profils et les interet des differents memebres lors de la répartition des tâches.\\
 \end{itemize}
 \section{Liste des livrables attendus}
 \subsection{Livrables de production}
+Il faut bien distinguer les draft des livrables. un draft n'est pas un livrable, il sera néanmoins demandé par le chef de projet 
+pour assurer un suivide projet de qualité.
 \begin{itemize}
 \item Première phase
 \begin{enumerate}
@@ -68,19 +178,19 @@ Voir RQ
 \begin{itemize}
 	   
 \item Description des composants du système
-\item Draft de la description de la station générique
-\item Draft de la description du site central
-\item Draft de la description des bords nécessaires
-\item Draft de l'architecture applicative   
+\item Description de la station générique
+\item Description du site central
+\item Description des bords nécessaires
+\item Description de l'architecture applicative   
 \begin{itemize}
 
-\item Draft de la description des données manipulées
-\item Description choix modélisation      
+\item Description des données manipulées
+\item Description des choix de modélisation      
 \item Conception Modèle des application
 \item Liste des applications nécessitant une IHM          
 \end{itemize}          
-\item Draft protocoles utilisés
-\item Draft analyse de la complexité
+\item Protocoles utilisés
+\item Analyse de la complexité
 \end{itemize}       
 \end{enumerate} 
 \item Deuxième phase
@@ -120,71 +230,98 @@ Voir RQ
 Voir le responsable qualité
 \section{Organigramme des tâches}
 \subsection{Macro-Phasage}
-\begin{enumerate}
-\item Tâches de production :
+
+\subsubsection {Tâches de production} 
     Par livrable et par phase 
     \begin{itemize}
-    \item Pase 1:
-    \begin{enumerate}
-    \item Synthèse de l'analyse des besoins 
-    \begin{itemize}
-			\item Rassembler les questions et réponses de la première séance et les partager
-			\item Lire les documents et bien comprendre
-			\item Lire le cahier des charges 
-			\item Synthétiser les besoins en suivant le formalisme défini par le RQ
+		\item Analyse exploratoire     
+		\begin{enumerate}
+			\item Synthèse de l'analyse des besoins 
+			\begin{itemize}
+				\item Rassembler les questions et réponses de la première séance et les partager
+				\item Lire les documents et bien comprendre
+				\item Lire le cahier des charges 
+				\item Synthétiser les besoins en suivant le formalisme défini par le RQ
 			\end{itemize}
-	\item Synthèse de la faisabilité :
-	\begin{itemize}
-			\item Trouver les sources pour analyser les faisabilités
-			\item Synthétiser les faisabilités par domaines (formalisme défini par le RQ)
-			
+			\item Synthèse de la faisabilité :
+			\begin{itemize}
+				\item Trouver les sources pour analyser les faisabilités
+				\item Synthétiser les faisabilités par domaines (formalisme défini par le RQ)			
 			\end{itemize}
-	\item Axes d'amélioration :
-	\begin{itemize}
-		    \item Dégager un ensemble d'axes d'amélioration (début du marketing)
-	        \item Synthèse des besoins fonctionnels 	       
-	        \item Description et détail des besoins fonctionnels des aspects suivants
-	        \begin{itemize}
-	            \item Les besoins d'interfaces
-	            \item Les besoins de communication
-	            \item Les besoins de stockage
-	        \end{itemize}
-	        \item Explication de l'évolutivité des besoins
-	        \begin{itemize}
-	            \item Citer les besoins pouvant s'ajouter
-	            \item Citer les méthodes de gestion et d'integration de nouveaux besoins
-	        \end{itemize}
-	        
-	    	\item Synthèse des besoins non fonctionnels
-	    	\begin{itemize}
+			\item Axes d'amélioration :
+			\begin{itemize}
+				\item Dégager un ensemble d'axes d'amélioration (début du marketing)
+			\end{itemize}
+		\end{enumerate}
+		
+		
+		\item Analyse des besoins techniques du système			 
+		\begin{enumerate}
+			\item Synthèse des besoins fonctionnels 	       
+			\item Description et détail des besoins fonctionnels des aspects suivants
+			\begin{itemize}
+				\item Les besoins d'interfaces
+				\item Les besoins de communication
+				\item Les besoins de stockage
+			\end{itemize}
+			\item Explication de l'évolutivité des besoins
+			\begin{itemize}
+				\item Citer les besoins pouvant s'ajouter
+				\item Citer les méthodes de gestion et d'integration de nouveaux besoins
+			\end{itemize}	        
+			\item Synthèse des besoins non fonctionnels
+			\begin{itemize}
 				\item Faire une liste (exhaustive) des besoins non fonctionnels
 				\item Faire un tableau des besoins par priorité
 			\end{itemize}
-	\end{itemize}
-	    	
-	\item D3 Voir livrables
-	\end{enumerate}
-	\item Phase 2 :	
-	\item D4 Voir livrables
-	\item D5 Voir livrables
-	\item D6 Voir livrables
-    
+		\end{enumerate}	  
+		  	
+		\item Conception du nouveau système
+		
+			\begin{itemize}
+				\item Lister les differents composants du système
+				\item Description générale de la station générique
+				\item Description générale du site central
+				\item Description des bords nécessaires (Smartphone, PDA, capteurs...)
+				\item Concevoir l'architecture applicative 
+				\begin{itemize}  
+					\item Décrire les données manipulées
+					\item Décrire les choix de modélisation      
+					\item Conception Modèle des application
+					Cette partie évoluera en fonction des parties précédentes
+					\begin{itemize}
+					\item Modèle du domaine					
+					\end{itemize}
+					\item Liste des applications nécessitant une IHM          
+				\end{itemize}          
+				\item Lister les protocoles utilisés
+				\item Analyser la complexité du système
+			\end{itemize}       
+				   
     \end{itemize}
     
-\item Tâches de suivi (gestion de projet)
+\subsubsection {Tâches de suivi (gestion de projet)}
 	\begin{itemize}
-	\item Rédaction dossier d'initialisation
-	\item Répartition des rôles
-	\item Rédaction dossier de suivi
+		\item NE PAS OUBLIER LES DRAFTS
+		\item Dossier d'initialisation
+		\item Fiche commerciale
+		\item PMP
+		\item Procédure d'aide à la rédaction d'un cahier des charges
+		\item Bilan
+		\item Rédaction dossier d'initialisation	
+		\item Répartition des rôles		
+		\item Rédaction dossier de suivi
+		\item Provoquer des réunion
 	
 	\end{itemize}
 	
-\item Tâches de controle qualité :
+\subsubsection {Taches de controle qualité}
 \begin{itemize}
     \item Validation des documents (livrables
 	\item Formation outils de travail
+	\item Voir RQ 
 \end{itemize}	
-\end{enumerate}
+
 \subsection{Diagramme de Gantt}
 Voir diagramme de gantt Redmine (saise des tâches en cours...)
 \section{Modalités de suivi}
@@ -195,8 +332,68 @@ TODO : Compte rendu réunion, principe
 TODO : Lien avec le responsable qualité
 \subsection{les procédures de révision du planning}
 \section{Gestion des risques}
-\subsection{Risques concernant l'application du projet}
-\subsection{Risques propres au projet}
-TODO : Tableau des risques et solutions
+\subsection{Risques}
+
+\newcounter{risques}
+\setcounter{risques}{0}
+
+\newcommand{\risque}[1]{
+    \addtocounter{risques}{1}
+    \item[R\therisques]{\indent#1}
+}
+Les risques sont les suivants :
+\begin{description}
+    \risque{Risque humains (liés aux compétence, absence, maladie..)}
+    \risque{Apparition de tâches supplémentaires liées à la saisie des livrables ( rapport)}
+    \risque{Difficulté d’évaluation du temps nécessaire à chaque tâche(prise en main des outils et méthodes utilisés,...)}
+    \risque{Spécification incomplète des points à traiter}
+    \risque{Risque de sur-qualité}
+    \risque{Délais tendus}
+    \risque{Demande régulière de modification durant l’élaboration des solutions}
+\end{description}
+
+\subsubsection{Gestion des risques}
+
+\newcounter{solutions}
+\setcounter{solutions}{0}
+
+\newcommand{\solution}[1]{
+    \addtocounter{solutions}{1}
+    \item[S\thesolutions]{\indent#1}
+}
+
+Les solutions que nous préconisons sont :
+\begin{description}
+    \solution{
+        \begin{itemize}
+            \item Imposer un certain nombre de règles à suivre pour le bon déroulement du projet et veiller au respect de ceux-ci. Si nécessaire formaliser ces règles sous forme de “règlement intérieur”.
+            \item Motiver suffisamment les membres de l’équipe  et répartir les tâches en fonction des profils et des compétences de chacun
+            \item Redistribuer le travail du membre indisponible aux autres membres de l’équipe durant toute la durée de son indisponibilité.
+        \end{itemize}}
+    \solution{
+        Prévoir des créneaux horaires (hors séance) pour la prise en main des outils utilisés  et la centralisation de façon efficace des différents livrables.}
+
+    \solution{
+        Contrôle du planning prévisionnel et mise à jour de celui-ci et si nécessaire réaffectation des tâches}
+    \solution{
+        S’adresser au client pour éclaircir les points flous}
+    \solution{
+        \begin{itemize}
+            \item Contrôler de façon permanente l’avancement des tâches et les documents produit
+            \item Maquettage
+        \end{itemize}}
+    \solution{
+        \begin{itemize}
+            \item Planification détaillée du projet avec un GANTT
+            \item Suivi de l’avancement des livrables
+        \end{itemize}}
+    \solution{
+        \begin{itemize}
+            \item Seuil d’acceptation des modifications
+            \item Report des modifications en fin de projet
+            \item Gestion de versions
+        \end{itemize}}
+\end{description}        
+
 
 

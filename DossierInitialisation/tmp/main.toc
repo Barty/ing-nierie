@@ -1,33 +1,36 @@
 \select@language {french}
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \contentsline {section}{\numberline {2}Contexte du document}{1}{section.2}
-\contentsline {section}{\numberline {3}Rappel du probl\IeC {\`e}me}{1}{section.3}
-\contentsline {subsection}{\numberline {3.1}Le contexte}{1}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Les objectifs}{1}{subsection.3.2}
-\contentsline {section}{\numberline {4}Les contraites g\IeC {\'e}n\IeC {\'e}rales}{1}{section.4}
-\contentsline {subsection}{\numberline {4.1}Confidentialit\IeC {\'e}s}{1}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Existant}{1}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Exigences non fonctionnelles}{1}{subsection.4.3}
-\contentsline {section}{\numberline {5}Organisation du travail}{1}{section.5}
-\contentsline {subsection}{\numberline {5.1}Ressources humaines}{1}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Chef de projet et coordinateur}{1}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Responsable qualit\IeC {\'e} / m\IeC {\'e}thode / documentation}{1}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Groupe d'Etude Informatique}{2}{subsubsection.5.1.3}
-\contentsline {subsection}{\numberline {5.2}Activit\IeC {\'e}s}{2}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Production}{2}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Controle (qualit\IeC {\'e})}{2}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Gestion de projet}{2}{subsubsection.5.2.3}
-\contentsline {section}{\numberline {6}Liste des livrables attendus}{2}{section.6}
-\contentsline {subsection}{\numberline {6.1}Livrables de production}{2}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Livrables de suivi de projet}{3}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Livrables de qualit\IeC {\'e}}{3}{subsection.6.3}
-\contentsline {section}{\numberline {7}Organigramme des t\IeC {\^a}ches}{3}{section.7}
-\contentsline {subsection}{\numberline {7.1}Macro-Phasage}{3}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Diagramme de Gantt}{4}{subsection.7.2}
-\contentsline {section}{\numberline {8}Modalit\IeC {\'e}s de suivi}{4}{section.8}
-\contentsline {subsection}{\numberline {8.1}Les r\IeC {\`e}gles de suivi}{4}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Les outils utilis\IeC {\'e}s}{4}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}les proc\IeC {\'e}dures de r\IeC {\'e}vision du planning}{4}{subsection.8.3}
-\contentsline {section}{\numberline {9}Gestion des risques}{4}{section.9}
-\contentsline {subsection}{\numberline {9.1}Risques concernant l'application du projet}{4}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Risques propres au projet}{4}{subsection.9.2}
+\contentsline {section}{\numberline {3}Rappel du probl\IeC {\`e}me}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}Le contexte}{2}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Les objectifs}{2}{subsection.3.2}
+\contentsline {section}{\numberline {4}Les contraintes g\IeC {\'e}n\IeC {\'e}rales}{2}{section.4}
+\contentsline {subsection}{\numberline {4.1}Confidentialit\IeC {\'e}s}{2}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Existant}{3}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Exigences non fonctionnelles}{3}{subsection.4.3}
+\contentsline {section}{\numberline {5}Organisation du travail}{4}{section.5}
+\contentsline {subsection}{\numberline {5.1}Ressources humaines}{4}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Chef de projet et coordinateur : Chafik \textsc {BACHATENE}}{4}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Responsable qualit\IeC {\'e} / m\IeC {\'e}thode / documentation}{4}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Groupe d'Etude Informatique}{4}{subsubsection.5.1.3}
+\contentsline {subsection}{\numberline {5.2}Activit\IeC {\'e}s}{5}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Production}{5}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Controle (qualit\IeC {\'e})}{5}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Gestion de projet}{5}{subsubsection.5.2.3}
+\contentsline {section}{\numberline {6}Liste des livrables attendus}{6}{section.6}
+\contentsline {subsection}{\numberline {6.1}Livrables de production}{6}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Livrables de suivi de projet}{6}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Livrables de qualit\IeC {\'e}}{7}{subsection.6.3}
+\contentsline {section}{\numberline {7}Organigramme des t\IeC {\^a}ches}{7}{section.7}
+\contentsline {subsection}{\numberline {7.1}Macro-Phasage}{7}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}T\IeC {\^a}ches de production}{7}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}T\IeC {\^a}ches de suivi (gestion de projet)}{7}{subsubsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.3}Taches de controle qualit\IeC {\'e}}{8}{subsubsection.7.1.3}
+\contentsline {subsection}{\numberline {7.2}Diagramme de Gantt}{8}{subsection.7.2}
+\contentsline {section}{\numberline {8}Modalit\IeC {\'e}s de suivi}{8}{section.8}
+\contentsline {subsection}{\numberline {8.1}Les r\IeC {\`e}gles de suivi}{8}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Les outils utilis\IeC {\'e}s}{8}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}les proc\IeC {\'e}dures de r\IeC {\'e}vision du planning}{8}{subsection.8.3}
+\contentsline {section}{\numberline {9}Gestion des risques}{8}{section.9}
+\contentsline {subsection}{\numberline {9.1}Risques}{8}{subsection.9.1}
+\contentsline {subsubsection}{\numberline {9.1.1}Gestion des risques}{8}{subsubsection.9.1.1}
