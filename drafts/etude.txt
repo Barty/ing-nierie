@@ -1,0 +1,20 @@
+Etude de faisablilité
+
+Production et gestion de l'energie
+
+Une part importante du projet consistera en la création de systèmes de gestion et de production d'energie.
+Nous pouvons dès à présent définir les diverses sources d'energie nécessaires au bon fonctionnement du système à développer.
+Le système général sera tout d'abord composé d'un serveur principal, probablement alimenté par le secteur mais nous pouvons cependant prévoir également un moyen d'alimentation d'urgence en cas de coupure locale du courant.
+Les nombreux appareil mobiles présents sur site (systèmes embarqués, capteurs) seront quant à eux munis de batteries.
+
+De nombreuses contraintes apparaissent du fait de l'utilisation d'appareil alimentés par batteries, La durée de vie de ces dernière étant toujours limitée, une bonne gestion de l'energie sera necessaire. Il faudra pour cela concevoir, dans la limite des coût et des moyens technologiques, des système à basse consommation afin d'éviter un surcoût lié à l'utilisation de batteries plus performantes. De nombreuses autres contraintes apparaissent en raison du caractère isolé des sites : les batteries devront être capable de résister à diverses conditions climatiques et présenter d'excellentes performances en matière de fiabilité tout en requérant une maintenance minimale même sur des périodes prolongées de plusieurs années.
+
+
+
+
+
+De nombreuses technologies actuelles semblent satisfaire ces contraintes. Les prix et technologies utilisées étant cependant très variés.
+La société EnerSage propose effectivement un large choix de batteries pouvant être utilisées dans notre projet : leur gamme de batteries "Power line SC Series" propose en effet des batteries longue durée pouvant alimenter des capteurs à faible consommation énergétique pendant une durée prolongée. Cette même entreprise propose également toute une gamme de batteries pour énergies renouvelables permettant de rendre des sites distants complètement autonomes en énergie. Nous pouvons ainsi imaginer installer des panneaux solaires sur des sites suffisamment ensoleillé, des éoliennes sur d'autres... 
+
+D'autres entreprises telles que yuasa, avec sa gamme de batteries NP à longue durée de vie, proposent des solutions similaires.
+

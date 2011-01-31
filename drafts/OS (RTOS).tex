@@ -4,23 +4,23 @@
 
 
 \subsection{RTOS}
-		Les RTOS permettront de g�rer les communications entre les ressources mat�rielles et les applications informatiques de notre syst�me. On pourrait envisager de mettre en place un systeme d'exploitation mais il existe certainement des solutions couvrant nos besoins.
+		Les RTOS permettront de gérer les communications entre les ressources matérielles et les applications informatiques de notre système. On pourrait envisager de mettre en place un système d'exploitation mais il existe certainement des solutions couvrant nos besoins.
 		
 		Les principales contraintes de notre RTOS sont que :
 		\begin{itemize}
-				\item Il doit etre l�ger car probablement sur micro-controleur, donc on disposera d'une place limitee
-				\item Il doit etre le plus stable possible dans un souci d'autonomie
-				\item Il doit etre g�n�rique comme l'ensemble dus systeme
-				\item Il doit etre fiable, ne pas se planter ou se bloquer en fonctionnemenent car les interventions sur les sites doivent etre minimiser le plus possible.
+				\item Il doit être léger car probablement sur micro-contrôleur, donc on disposera d'une place limitée
+				\item Il doit être le plus stable possible dans un souci d'autonomie
+				\item Il doit être générique comme l'ensemble dus système
+				\item Il doit être fiable, ne pas se planter ou se bloquer en fonctionnement car les interventions sur les sites doivent être minimiser le plus possible.
 		\end{itemize}
 
-		Certains RTOS du march� r�pondent � nos besoins, le premier cite ci-dessus semble etre idealement concu pour notre systeme :
+		Certains RTOS du marché répondent à nos besoins, le premier cite ci-dessus semble être idéalement conçu pour notre système :
 		
 		\subsubsection{TinyOS}
-		RTOS concu pour des reseaux de capteurs sans fil, soon architecture est base sur une association de composants, ce qui reduit la taille du code encessaire a sa mise en place (respect contrainte de place en memoire). La bibliotheque de TinyOS est tres complete, on y retrouve des protocoles reseaux, des pilotes de capteurs et des outils d'acquisition de donnees. L'ensemble de ces composants est adaptable a une application specifique. TinyOS propose aussi a l'utilisateur une gestion tres precise de la consommation des capteurs
+		RTOS conçu pour des réseaux de capteurs sans fil, son architecture est base sur une association de composants, ce qui réduit la taille du code nécessaire a sa mise en place (respect contrainte de place en mémoire). La bibliothèque de TinyOS est très complète, on y retrouve des protocoles réseaux, des pilotes de capteurs et des outils d'acquisition de données. L'ensemble de ces composants est adaptable a une application spécifique. TinyOS propose aussi a l'utilisateur une gestion très précise de la consommation des capteurs
 
 		\subsubsection{LynxOS}
-		RTOS de type UNIX concu pour des systemes embarques. Il est conforme au standard POSIX et offre une compabtibilite avec Linux. Il s'emploie surtout dans des logiciels critiques par exemple : dans l'aviation, le militaire, la fabrication industrielle et dans les communications.
+		RTOS de type UNIX conçu pour des systèmes embarques. Il est conforme au standard POSIX et offre une compatibilité avec Linux. Il s'emploie surtout dans des logiciels critiques par exemple : dans l'aviation, le militaire, la fabrication industrielle et dans les communications.
 
 
 \end{document}
