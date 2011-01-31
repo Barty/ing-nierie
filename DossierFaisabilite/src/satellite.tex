@@ -1,33 +1,42 @@
-\section{Prise en main de latex}
-\subsection{Installation}
-	\begin{description}
-		\item[Linux]~\\
-			\texttt{sudo aptitude install texlive-full}
-		\item[Windows]~\\
-			\href{http://mirror.ctan.org/systems/texlive/tlnet/install-tl.zip}{lien}
-	\end{description}
+\section{Système de localisation}
 
-\subsection{Compilation}
-	Pour simplifier le processus, j'ai fais un Makefile qui automatise le processus.
-	il peut être remplaçé par :\\
-		\texttt{\$ cp src\/*.tex tmp\/}\\
-		\texttt{\$ cd tmp\/}\\		
-		\texttt{\$ pdflatex main.tex}\\
-		\texttt{\$ mv main.pdf ..\/bin\/}\\
+    \subsection{Système de localisation en temps réel}
+        \subsubsection{GPS}
+	        http://www.orbitica.com/gps/oem/gps16.htm
 
-\section{Quelques exemples en latex}
-\subsection{formattage de texte}
+            Le système de localisation GPS, d'origin américaine, est actuellement le plus utilisé pour les utilisations civiles.
+            Il à une précision de environ 3 mêtres.
+            
+            Les caractéristiques d'un recepteur GPS commun :
+            \begin{itemize}
+	            \item Dimensions : 91 mm de diamètre et 42 mm de hauteur
 
-	\textbf{gras}\\
-	\textit{italique}\\
-	\emph{emphatique}\\
-	\texttt{chasse fixe}\\
+	            \item Tension d'entrée :
+	                \subitem GPS 16x LVS : 3,3 Vdc à 6,0 Vdc régulée, <100 mV ripple
+	                \subitem GPS 16x HVS : 8,0 Vdc à 40 Vdc non régulée
+	            \item Courant d'entrée :
+	                \subitem GPS 16x LVS : 90 mA typical
+	                \subitem GPS 16x HVS : 100 mA@8 Vdc, 65 mA@12 Vdc, 28 mA@40 Vdc
+	            \item Courant de veille : <10 µA pour tous les modèles
+	            \item Sensibilité du récepteur GPS : -185 dBW minimum
 
-\subsection{Les listes}
-		
-	\begin{itemize}
-	\item un item
-	\item un deuxième item
-		\subitem un sous item
-	\item un troisème item
-	\end{itemize}
+	            \item Températures de fonctionnement : -30°C à +80°C
+	            \item Températures de stockage : -40°C à +80°C
+            \end{itemize}
+
+	        Pour ce qui est des températures, la couverture semble plus que correcte.
+	        Pour ce que est de la précision, idem, la précision est parfaite.
+	        
+	    \subsubsection{Améliorations GPS}
+	        Plusieurs systèmes se basent sur le système GPS pour améliorer sa précison de localisation.
+	        Ainsi, CDGPS peut localiser
+
+
+        \subsubsection{Galiléo}
+	        Galiléo est le système de navigation par satellite européen prévu pour 2013.
+	        
+    \subsection{Alternatives}
+        Le cahier des charges précise que les appareils de mesures seront utilisé pour vérifier des niveaux dans des cuves ou des entrepot.
+        Il n'est peut être pas utile de les localiser en temps réel à tout moment, étant donné qu'ils ne bougeront pas.
+        On peut penser à effectuer une localisation à l'installation, qui permettras au système embarqué de nous informé de sa position à chaque demande.
+        Cela réduit le coût de production, et réduit la consommation d'énergie.
