@@ -1,0 +1,90 @@
+Les principales exigences fonctionnelles sont :
+
+- Traitement sur site central
+- Maintenance
+- Traitement sur station
+- Aide à la décision
+- Sécurité
+
+- Communication
+- Localisation/Suivi temps réel
+- Gestion de l'énergie
+- Stockage
+
+
+
+- Traitement sur site central : 
+1. Le système central doit être capable de récolter et exploiter les informations provenant des stations.
+Exigences non fonctionnelles : fiabilité, robustesse
+Détails : Les informations concernant les sites sont toutes transmises au site central, on doit disposer des moyens
+de stockage nécéssaires (serveurs, bases de données de stockage, de sécurité). Aussi le système doit proposer un
+ensemble de services (fonctionnalités) permettant à ces utilisateurs d'assurer un suivi temps réel des stations et
+d'effectuer des actions (commandes) si nécéssaire.
+
+2. 
+Exigences non fonctionnelles : 
+Détails : 
+
+
+- Maintenance
+1. De manière génrale, le système embarqué doit être conçu pour être maintenu à distance.
+Exigences non fonctionnelles : Maintenabilité, générécité, ergonomie
+Détails : En plus d'être capable de recevoir des commandes distances et d'effectuer les traitements nécéssaires.
+Le système embarqué en cas d'intervention humaine doit permettre un certain nombre d'actions 
+simples (réinitialisation..).
+
+2. La configuration des systèmes embarqués doit être modifiable à distance sans nécéssiter de déplacement vers 
+ces systèmes.
+Exigences non fonctionnelles : Maintenabilité, robustesse, ergonomie
+Détails : En effet, à partir du système central, les utilisateurs doivent pouvoir envoyer des commandes au système
+embarqué (réinitialisation dud systéme embarqué, reprise dans un état donné..). De ce faite, le système central 
+proposera un service de pilotage distant ergonomique qui permettra aux utilisateurs d'effectuer des commandes 
+adéquates si nécéssaire.
+
+
+- Traitement sur station
+1. Le système embarqué doit être capable de récupérer les informations en provenance des différents capteurs.
+Exigences non fonctionnelles : fiabilité
+Détails : Les capteurs transmettent des informations aux stations au travers de signaux, les systèmes embarquées des
+stations disposent de cartes d'acquisition qui transformeront ces signaux en données numériques. 
+
+2. Le système embarqué doit pouvoir communiquer avec le serveur central de manière fiable et sans perte de données.
+Exigences non fonctionnelles : Fiabilité, robustesse
+Détails : Les systèmes emarqués seront équipés de petites mémoires afin de sauvegarder temporairement les informations
+qu'elles reçoivent si pendant un courte période, elles ne réussissent pas à communiquer avec le sytème central.
+
+3.Le système embarqué doit fonctionner de manière autonome sans intervention humaine et cela même en cas de problème
+environnemental.
+Exigences non fonctionnelles : Fiabilité, robustesse
+Détails : En effet le système embarqué doit être robuste car les interventions humains doivent être minimiser sur
+les sites. Cela implique que le système ne doit pas planter ou doit être capable de reprendre un fonctionnement normal
+après reprise en cas d'erreur, ou après des rédémarrages intempestifs; aussi le système embarqué doit supporter des 
+problèmes environnement comme un EMP. Il devrait pouvoir régler ces dysfonctionnement temporaires en se 
+réinitialisant par exemple.
+
+
+- Aide à la décision
+1. Le système embarqué doit pouvoir détecter les problèmes majeurset pouvoir avertir l'utilisateur rapidement le cas
+échéant.
+Exigences non fonctionnelles : Fiablité, robustesse
+Détails : En cas de problèmes (cuves pleines, mauvais fonctionnement des capteurs..), différents dysfonctionnement,
+le système embarquer doit être capable de détecter le problème survenu et d'envoyer à travers le protocole de
+communication avec le site central, un message aidant à connaître la nature du problème survenu.
+
+2. Le système central proposera un service qui permettra d'optimiser le trajet du camionneur, de sa position
+actuel au site sur lequel il doit intervenir.
+Exigences non fonctionnelles : Intégration de l'existant, Ergonomie, Traçabilité
+Détails : Un des services proposé par le système sera d'optimiser les trajets des camionneurs en cas d'intervention.
+Ces derniers auront juste à se connecter au serveur central et saisir leur position puis celle du site concerné,
+un calcul de trajet basé sur des modèles mathématiques (algorithme de djistra par exemple) permettra d'optimiser 
+leur trajet.
+
+- Sécurité
+1. Les équipements des sites isolés et stations doivent être mis en sécurité.
+Exigences non fonctionnelles : Robustesse
+Détails : Les équipements des sites isolés et stations devront être mis à l'abris des imtempéries (pluies, tornade) 
+et des dégradations naturels (exposition au soleil, au vent..). Ainsi les capteurs pourront être caché au niveau 
+des cuves, quant aux systèmes embarqués, on peut envisager d'avoir un petit entrepôt sécurisé par un cadenas ou 
+seront entreprosés les équipements. Les systèmes embarqués pourrotn être mis dans une boite isothermique, 
+protégé elle aussi avec un système de sécurité (cadenas par exemple).
+
