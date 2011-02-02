@@ -102,15 +102,19 @@ Détails: Les futurs utilisateurs sont les non informaticiens, il faut ainsi dé
 2. Certains informations telles que des mesures ou des opérations utilisateur doivent être enregistrées pour afin d’analyser des statistiques, effectuer les suivis… 
 Exigences non-fonctionnelles associées: traçabilité, 
 Détails: Pour pouvoir suivre les opérations utilisateur, il est indispensable que le site central soit capable d’enregistrer tous les opérations effectuées par l’utilisateur connecté au système tandis que le système embarqué ait assez mémoire pour stocker les erreurs. Il pourrait être intéressant aussi de pouvoir sauvegarder les informations telles que la mesures et l’historique des interventions afin de les analyser pour optimiser le coût maintenance et pour mieux planifier.  
-3.Le serveur central doit être capable de stocker les traces de toute activité durant une période minimum de 2ans. Un serveur de sécurité sera mis en place pour éviter toute perte de données. (fiabilité, traçabilite)
+3. Le serveur central doit être capable de stocker les traces de toute activité durant une période minimum de 2 ans. Un serveur de sécurité sera mis en place pour éviter toute perte de données. 
+Détails : Il est important de garder cette trace car il permettra d’analyser les données afin de trouver les sources majeures d’erreurs par exemple. 
 
 7. Localisation/ Suivi temps réel:
  a. Le système embarqué doit être entièrement localisable sur la surface de la planète. 
 Exigences non-fonctionnelles associées: traçabilité, 
 Le système embarqué doit être localisable à tout moment sur la sur surface de la planète afin de suivre sa performance ainsi que afin de pouvoir faire intervenir en cas de problème. 
-b.Les camionneurs doivent être localisables en temps réel pour connaître leurs positions par rapport aux sites (Fiabilite)
-c. Le système doit avoir un planning pour les vidanges/remplissages des réservoirs, les maintenances préventives et urgentes. (Fiabilite, Ergonomie)
-d. Le système doit être capable de surveilleir automatiquement les stations (Fiabilite).
+b. Les camionneurs doivent être localisables en temps réel pour connaître leurs positions par rapport aux sites (Fiabilité)
+Détails : Il est indispensable de localiser les camionneurs en temps réel durant leurs déplacements pour suivre s’ils respectent le trajet et surtout pour savoir s’il y des problèmes.
+c. Le système doit avoir un planning pour les vidanges/remplissages des réservoirs, les maintenances préventives et urgentes. (Fiabilité, Ergonomie, Réactivité)
+Détails : L’un des problèmes du système actuel est lorsqu’un camion se fait appel, il ne peut se déplacer vers un seul réservoir. Etant  donné qu’il est fondé sur l’analyse des données reçues, ce planning pourrait permettre de maximiser l’efficacité d’un trajet et d’optimiser le processus d’intervention des propriétaires. 
+d. Le système doit être capable de surveiller automatiquement les stations (Fiabilité).
+Détails : Etant donné que les stations soient nombreuses, le système doit être capable de surveiller automatiquement  l’état de toute station pour pouvoir détecter tous les dysfonctionnements.  La vérification périodique est indispensable pour réduire le risque d’incendie.  
 
 6. Communication:
 +Le système embarqué doit communiquer avec le serveur central de manière fiable et sans perte:
