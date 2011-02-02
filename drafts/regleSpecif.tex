@@ -41,8 +41,33 @@
 
         Le protocole doit pouvoir spécifier la fréquence d'acquisition des capteurs.
 
+        {\huge TODO}
         %TODO TROUVER UN MODEL GENERIQUE capteur -> site -> client
 
 
-\subsection{}
-
+    \subsection{regles de conception}
+        
+        \subsubsection{Communication}
+        
+            Suivant la distance entre le site générique et le site isolé où sont installé les capteurs, la téchnologie de communication entre les deux sites diffère.
+            \begin{description}
+                \item[< 3 mètres] communication filaire
+                \item[< ~100 mètres] communication Zigbee
+                \item[< ~400 mètres] communication par radio fréquence
+                \item[> 400 mètres] étude au cas par cas, la communication par radio fréquence ou filaire peut être envisagé, mais probable impossibilité.
+            \end{description}
+            
+            Suivant la couverture GPRS du site générique, la technologie de communication entre le site générique et le site centrale diffère.
+            \begin{description}
+                \item[Couverture GPRS] Utilisation du réseau GPRS
+                \item[Non couverture GPRS] Utilisation de communication par satellite
+            \end{description}
+            
+            La communication entre le site central et la société de maintenance ne se fera pas de manière automatique.
+            Le site centrale sera alerté par un site isolé pour tout besoin. Par exemple, pour remplir ou vider une cuve, ou pour réparation.
+            Le site central sera alors en charge d'envoyer les instructions à la société de maintenance, par mail, ou par téléphone.
+            Cependant, l'application du site central pourras permettre d'optimiser les déplacement de la société de maintenance, pour une réduction des couts.
+            
+        \subsubsection{Localisation}
+        
+            Suivant si le site isolé est mobile ou non, une balise GPS pourras être embarqué ou non.
