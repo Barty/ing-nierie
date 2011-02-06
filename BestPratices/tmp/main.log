@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.1.9)  2 FEB 2011 11:16
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.1.9)  2 FEB 2011 11:46
 entering extended mode
 **main.tex
 (C:\msysgit\msysgit\ing-nierie\BestPratices\tmp\main.tex
@@ -915,34 +915,93 @@ File: insa-couleur.jpg Graphic file (type jpg)
  <use insa-couleur.jpg> [2 <C:/msysgit/msysgit/ing-nierie/BestPratices/tmp/logi
 gramme.jpg>]
 (C:\msysgit\msysgit\ing-nierie\BestPratices\tmp\BP2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
-
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+[]\OT1/cmr/m/n/10 Formulation des be-soins,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 ex-ploi-ta-tion et er-go-no-mie,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--34
-
+Underfull \hbox (badness 7925) in paragraph at lines 25--26
+[]\OT1/cmr/m/n/10 Fonction de base, per-for-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--38
-
+Underfull \hbox (badness 2818) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 mettre en oeuvre la fonc-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--43
+Underfull \hbox (badness 7256) in paragraph at lines 30--31
+[]\OT1/cmr/m/n/10 Contraintes im-posees, fai-sa-bi-lite
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+\OT1/cmr/m/n/10 tech-no-lo-gique et eventuellement
+ []
+
+
+Underfull \hbox (badness 6316) in paragraph at lines 32--33
+[]\OT1/cmr/m/n/10 S^urete, plan-ning, or-ga-ni-sa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+[]\OT1/cmr/m/n/10 Competences, moyens et
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 43--44
+[]\OT1/cmr/m/n/10 Guide de reponse au ca-hier des
+ []
+
+
+Underfull \hbox (badness 7522) in paragraph at lines 51--52
+[]\OT1/cmr/m/n/10 Image(s) d'ecran(s) prin-ci-
  []
 
 File: insa-couleur.jpg Graphic file (type jpg)
-<use insa-couleur.jpg> [3]) AED: lastpage setting LastPage 
+<use insa-couleur.jpg> [3]
 File: insa-couleur.jpg Graphic file (type jpg)
-<use insa-couleur.jpg> [4]
+ <use insa-couleur.jpg> [4]
+Overfull \vbox (101.0899pt too high) has occurred while \output is active []
+
+File: insa-couleur.jpg Graphic file (type jpg)
+
+<use insa-couleur.jpg> [5]
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--90
+
+ []
+
+)
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg> [6] AED: lastpage setting LastPage 
+File: insa-couleur.jpg Graphic file (type jpg)
+<use insa-couleur.jpg> [7]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 16.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 16.
 
@@ -952,10 +1011,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B4F9B988EAE92CF0E5ABCD2A1FCE71B9;928.
  ) 
 Here is how much of TeX's memory you used:
- 9206 strings out of 494019
- 132062 string characters out of 3143883
- 236873 words of memory out of 3000000
- 12303 multiletter control sequences out of 15000+200000
+ 9241 strings out of 494019
+ 132299 string characters out of 3143883
+ 239873 words of memory out of 3000000
+ 12304 multiletter control sequences out of 15000+200000
  8872 words of font info for 32 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  43i,16n,43p,300b,370s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -965,9 +1024,9 @@ Here is how much of TeX's memory you used:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on main.pdf (4 pages, 302003 bytes).
+Output written on main.pdf (7 pages, 310586 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 500000)
+ 161 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
  99 words of extra memory for PDF output out of 10000 (max. 10000000)
 
