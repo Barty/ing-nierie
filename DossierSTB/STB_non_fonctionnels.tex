@@ -1,43 +1,45 @@
+\section{Exigences non fonctionnelles}
+
 Les principales exigences non fonctionnelles sont (classement par priorité décroissante) : 
-- Fiabilité
-- Autonomie
-- Robustesse (limitations technlogique)
-- Générécité (evolutivite, maintenabilite, reutilisation)
-- Intégration de l'existant
-- Ergonomie
-- Traçabilité
 
+\begin{itemize}
+       \item Fiabilité
+       \item Autonomie
+       \item Robustesse (limitations technologiques)
+       \item Généricité (evolutivite, maintenabilite, réutilisation)
+       \item Intégration de l'existant
+       \item Ergonomie
+       \item Traçabilité
+\end{itemize}
 
-==>		Faut-il le tableau bizarre du choix de la priorité?		<==
+\subsection{Fiabilité}
+Comme on souhaite assurer le pilotage, la configuration et la maintenance à distance du système, celui-ci se doit d’être le plus fiable possible pour limiter au maximum le nombre d’interventions à fournir sur site comme des opérations de maintenance. De même on cherchera à être le plus fiable possible pour tout ce qui concerne le traitement sur site distant ou central, le suivi temps réel ou encore les communications.
 
-
-- Fiabilité
-
-- Autonomie
+\subsection{Autonomie}
 	Ce critère apparaît clairement au vu des besoins du nouveau système comme une réelle exigence non fonctionnelle.
 En effet les systèmes distant doivent pouvoir fonctionner de façon autonome et sur de longues périodes (voir 1an)
-pour réduire au maximum les inverventions sur les sites isolés. Cette exigence fonctionnelle est critique pour le bon
+pour réduire au maximum les interventions sur les sites isolés. Cette exigence fonctionnelle est critique pour le bon
 fonctionnement de notre système.
 
-- Robustesse
+\subsection{Robustesse}
+Le système se doit donc d’être le plus robuste possible, que ce soit au niveau du traitement sur site central où le système doit toujours revenir à un état de fonctionnement stable après la maintenance à distance; où le système doit pouvoir être configuré et maintenu à distance sans problèmes. Il doit également pouvoir revenir à un état stable en cas de redémarrage intempestif. De plus au niveau du traitement sur site distant le système doit être conçu pour toujours revenir à un état stable après un problème type environnemental (EMP) ou autre.
 
-- Générécité
+\subsection{Généricité}
 	Bien que la mise en place de notre système découle d'un besoin spécifique (surveillance à distance de sites 
 isolés), notre système doit être adaptable à d'autres besoins avec un minimum de modifications à y apporter. De ce 
 fait, durant toutes les phases de spécifications/conception ainsi que de réalisation, la solution qui devra être 
 proposée ainsi que ces différentes briques doit être conçus dans un but de réutilisation. En effet notre système 
 devra être adaptable pour aboutir à des applications du type : surveillance de trains, surveillance de vieux lol..
 
-- Intégration de l'existant:
+\subsection{Intégration de l'existant}
+Le système devrait s'adapter aux processus existants qui seront partiellement/totalement conservés.
+La re-utilisation des processus sera aussi un atout pour le nouveau système.
 
-Le système devrait s'adapter aux processus existants qui seront partiellement/totallement conservés.
-La re-utilisation des processus sera aussi un atout pour le nouveau système...???
-
-- Ergonomie:  Les utilisateurs sont les non-informaticiens, alorrs les IHM 
-développées devront être intuitive, facile à utiliser. Egalement, ils doivent être adaptés aux
+\subsection{Ergonomie}  
+Les utilisateurs sont les non-informaticiens, alors les IHM développées devront être intuitives, facile à utiliser. Également, ils doivent être adaptés aux
 différents périphériques (PDA, PC).   
 
-- Traçabilité: 
+\subsection{Traçabilité} 
 il est indispensable de sauvegarder une trace de toute activité effectuée par les utilisateurs connectés
 au système. Il est aussi important de garder une historique de toute opération maintenance, les logs d'erreur
 pour trouver la source de dysfonctionnement....
