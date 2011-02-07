@@ -3,55 +3,58 @@
 \catcode`;\active
 \catcode`!\active
 \catcode`?\active
-\ifx\hyper@anchor\@undefined
-\global \let \oldcontentsline\contentsline
-\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
-\global \let \oldnewlabel\newlabel
-\gdef \newlabel#1#2{\newlabelxx{#1}#2}
-\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
-\AtEndDocument{\let \contentsline\oldcontentsline
-\let \newlabel\oldnewlabel}
-\else
-\global \let \hyper@last\relax 
-\fi
-
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
 \select@language{french}
 \@writefile{toc}{\select@language{french}}
 \@writefile{lof}{\select@language{french}}
 \@writefile{lot}{\select@language{french}}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Contexte du document}{1}{section.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Rappel du probl\IeC {\`e}me}{2}{section.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Le contexte}{2}{subsection.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Les objectifs}{2}{subsection.3.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Les contraintes g\IeC {\'e}n\IeC {\'e}rales}{2}{section.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Confidentialit\IeC {\'e}s}{2}{subsection.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Existant}{3}{subsection.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Exigences non fonctionnelles}{3}{subsection.4.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Organisation du travail}{4}{section.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Ressources humaines}{4}{subsection.5.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}Chef de projet et coordinateur : Chafik \textsc  {BACHATENE}}{4}{subsubsection.5.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Responsable qualit\IeC {\'e} / m\IeC {\'e}thode / documentation}{4}{subsubsection.5.1.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.3}Groupe d'Etude Informatique}{4}{subsubsection.5.1.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Activit\IeC {\'e}s}{5}{subsection.5.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Production}{5}{subsubsection.5.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Controle (qualit\IeC {\'e})}{5}{subsubsection.5.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Gestion de projet}{5}{subsubsection.5.2.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Liste des livrables attendus}{6}{section.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Livrables de production}{6}{subsection.6.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Livrables de suivi de projet}{6}{subsection.6.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Livrables de qualit\IeC {\'e}}{7}{subsection.6.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Organigramme des t\IeC {\^a}ches}{7}{section.7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Macro-Phasage}{7}{subsection.7.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.1}T\IeC {\^a}ches de production}{7}{subsubsection.7.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.2}T\IeC {\^a}ches de suivi (gestion de projet)}{7}{subsubsection.7.1.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.3}Taches de controle qualit\IeC {\'e}}{8}{subsubsection.7.1.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Diagramme de Gantt}{8}{subsection.7.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Modalit\IeC {\'e}s de suivi}{8}{section.8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Les r\IeC {\`e}gles de suivi}{8}{subsection.8.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Les outils utilis\IeC {\'e}s}{8}{subsection.8.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}les proc\IeC {\'e}dures de r\IeC {\'e}vision du planning}{8}{subsection.8.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {9}Gestion des risques}{8}{section.9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Risques}{8}{subsection.9.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.1.1}Gestion des risques}{8}{subsubsection.9.1.1}}
-\newlabel{LastPage}{{}{9}{}{page.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Contexte du document}{2}{section.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Rappel du probl\IeC {\`e}me}{3}{section.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Le contexte}{3}{subsection.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Les objectifs}{3}{subsection.3.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Les contraintes g\IeC {\'e}n\IeC {\'e}rales}{3}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Confidentialit\IeC {\'e}s}{3}{subsection.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Existant}{4}{subsection.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Exigences non fonctionnelles}{4}{subsection.4.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Organisation du travail}{5}{section.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Ressources humaines}{5}{subsection.5.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}Chef de projet et coordinateur : Chafik \textsc  {BACHATENE}}{5}{subsubsection.5.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Responsable qualit\IeC {\'e} / m\IeC {\'e}thode / documentation}{5}{subsubsection.5.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.3}Groupe d'Etude Informatique}{5}{subsubsection.5.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Activit\IeC {\'e}s}{6}{subsection.5.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Production}{6}{subsubsection.5.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Controle (qualit\IeC {\'e})}{6}{subsubsection.5.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Gestion de projet}{6}{subsubsection.5.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Liste des livrables attendus}{7}{section.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Livrables de production}{7}{subsection.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Livrables de suivi de projet}{7}{subsection.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Livrables de qualit\IeC {\'e}}{8}{subsection.6.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Organigramme des t\IeC {\^a}ches}{8}{section.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Macro-Phasage}{8}{subsection.7.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.1}T\IeC {\^a}ches de production}{8}{subsubsection.7.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.2}T\IeC {\^a}ches de suivi (gestion de projet)}{8}{subsubsection.7.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.3}Taches de controle qualit\IeC {\'e}}{9}{subsubsection.7.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Diagramme de Gantt}{9}{subsection.7.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Modalit\IeC {\'e}s de suivi}{9}{section.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Les r\IeC {\`e}gles de suivi}{9}{subsection.8.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Les outils utilis\IeC {\'e}s}{9}{subsection.8.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}les proc\IeC {\'e}dures de r\IeC {\'e}vision du planning}{9}{subsection.8.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Gestion des risques}{9}{section.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Risques}{9}{subsection.9.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.1.1}Gestion des risques}{9}{subsubsection.9.1.1}}
+\newlabel{LastPage}{{}{10}{}{page.10}{}}
