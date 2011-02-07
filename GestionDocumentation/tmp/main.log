@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.1.9)  2 FEB 2011 11:06
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.1.9)  6 FEB 2011 12:55
 entering extended mode
 **main.tex
 (C:\msysgit\msysgit\ing-nierie\GestionDocumentation\tmp\main.tex
@@ -526,6 +526,20 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\moreverb\moreverb.sty"
+Package: moreverb 2008/06/03 v2.3 `more' verbatim facilities
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks22
+\verbatim@line=\toks23
+\verbatim@in@stream=\read1
+)
+\verbatim@out=\write3
+\tab@position=\count103
+\tab@size=\count104
+\listing@line=\count105
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2010/12/16 v6.81z Hypertext links for LaTeX
 
@@ -585,8 +599,8 @@ Package: letltxmacro 2008/06/24 v1.3 Let assignment for LaTeX macros (HO)
 Package: kvoptions 2010/02/22 v3.7 Keyval support for LaTeX options (HO)
 )
 \@linkdim=\dimen117
-\Hy@linkcounter=\count103
-\Hy@pagecounter=\count104
+\Hy@linkcounter=\count106
+\Hy@pagecounter=\count107
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2010/12/16 v6.81z Hyperref: PDFDocEncoding definition (HO)
@@ -596,7 +610,7 @@ Now handling font encoding PD1 ...
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\intcalc.sty"
 Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
 )
-\Hy@SavedSpaceFactor=\count105
+\Hy@SavedSpaceFactor=\count108
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -608,7 +622,7 @@ Package hyperref Info: Plain pages OFF on input line 4008.
 Package hyperref Info: Backreferencing OFF on input line 4013.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4231.
-\c@Hy@tempcnt=\count106
+\c@Hy@tempcnt=\count109
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip11
@@ -622,7 +636,7 @@ Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\bigintcalc.sty"
 Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
 ))
-\Fld@menulength=\count107
+\Fld@menulength=\count110
 \Field@Width=\dimen118
 \Fld@charsize=\dimen119
 Package hyperref Info: Hyper figures OFF on input line 5668.
@@ -638,9 +652,9 @@ LaTeX Info: Redefining \pageref on input line 5742.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
 Package: atbegshi 2010/03/25 v1.12 At begin shipout hook (HO)
 )
-\Hy@abspage=\count108
-\c@Item=\count109
-\c@Hfootnote=\count110
+\Hy@abspage=\count111
+\c@Item=\count112
+\c@Hfootnote=\count113
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
@@ -652,8 +666,8 @@ File: hpdftex.def 2010/12/16 v6.81z Hyperref driver for pdfTeX
 Package: atveryend 2010/03/24 v1.5 Hooks at very end of document (HO)
 Package atveryend Info: \enddocument detected (standard).
 )
-\Fld@listcount=\count111
-\c@bookmark@seq@number=\count112
+\Fld@listcount=\count114
+\c@bookmark@seq@number=\count115
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2010/03/16 v1.6 Rerun checks for auxiliary files (HO)
@@ -668,9 +682,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count113
-\Gm@cntv=\count114
-\c@Gm@tempcnt=\count115
+\Gm@cnth=\count116
+\Gm@cntv=\count117
+\c@Gm@tempcnt=\count118
 \Gm@bindingoffset=\dimen120
 \Gm@wd@mp=\dimen121
 \Gm@odd@mp=\dimen122
@@ -679,7 +693,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutheight=\dimen125
 \Gm@layouthoffset=\dimen126
 \Gm@layoutvoffset=\dimen127
-\Gm@dimlist=\toks22
+\Gm@dimlist=\toks24
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
@@ -691,12 +705,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
 (Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 (Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
-Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks23
-\verbatim@line=\toks24
-\verbatim@in@stream=\read1
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
@@ -720,7 +728,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \everycr=\toks26
 \minrowclearance=\skip58
 )
-\rownum=\count116
+\rownum=\count119
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
@@ -732,23 +740,23 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count117
+\lst@mode=\count120
 \lst@gtempboxa=\box28
 \lst@token=\toks27
-\lst@length=\count118
+\lst@length=\count121
 \lst@currlwidth=\dimen130
-\lst@column=\count119
-\lst@pos=\count120
+\lst@column=\count122
+\lst@pos=\count123
 \lst@lostspace=\dimen131
 \lst@width=\dimen132
-\lst@newlines=\count121
-\lst@lineno=\count122
+\lst@newlines=\count124
+\lst@lineno=\count125
 \lst@maxwidth=\dimen133
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count123
-\lst@skipnumbers=\count124
+\c@lstnumber=\count126
+\lst@skipnumbers=\count127
 \lst@framebox=\box29
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
@@ -789,15 +797,15 @@ Package frenchb.ldf Warning: OT1 encoding should not be used for French.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
+\scratchcounter=\count128
 \scratchdimen=\dimen134
 \scratchbox=\box30
-\nofMPsegments=\count126
-\nofMParguments=\count127
+\nofMPsegments=\count129
+\nofMParguments=\count130
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count128
+\MPscratchCnt=\count131
 \MPscratchDim=\dimen135
-\MPnumerator=\count129
+\MPnumerator=\count132
 \everyMPtoPDFconversion=\toks29
 )
 Package lastpage Info: Have a look at the pagesLTS package at
@@ -818,7 +826,7 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2009/12/18 v1.3 Cleanup title references (HO)
 )
-\c@section@level=\count130
+\c@section@level=\count133
 )
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
@@ -826,7 +834,7 @@ LaTeX Info: Redefining \nameref on input line 21.
 
 (C:\msysgit\msysgit\ing-nierie\GestionDocumentation\tmp\main.out)
 (C:\msysgit\msysgit\ing-nierie\GestionDocumentation\tmp\main.out)
-\@outlinefile=\write3
+\@outlinefile=\write4
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -862,7 +870,7 @@ LaTeX Info: Redefining \nameref on input line 21.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count131
+\c@lstlisting=\count134
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 22.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -880,10 +888,10 @@ Overfull \hbox (12.79999pt too wide) in paragraph at lines 22--22
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (C:\msysgit\msysgit\ing-nierie\GestionDocumentation\tmp\main.toc)
-\tf@toc=\write4
+\tf@toc=\write5
 
 (C:\msysgit\msysgit\ing-nierie\GestionDocumentation\tmp\satellite.tex
-<insa-couleur.jpg, id=221, 425.4294pt x 227.6505pt>
+<insa-couleur.jpg, id=216, 425.4294pt x 227.6505pt>
 File: insa-couleur.jpg Graphic file (type jpg)
  <use insa-couleur.jpg>
 
@@ -895,61 +903,85 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
 [2
 
  <C:/msysgit/msysgit/ing-nierie/GestionDocumentation/tmp/insa-couleur.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
+Overfull \hbox (2.35454pt too wide) in paragraph at lines 22--24
+\OT1/cmr/m/n/10.95 Les do-cu-ments presents a l'adresse []$\OT1/cmtt/m/n/10.9
+5 /servif-[]baie / Fichiers _ Eleves / EspacePedagogique / 4IF /
  []
 
 File: insa-couleur.jpg Graphic file (type jpg)
 <use insa-couleur.jpg> [3]
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
 File: insa-couleur.jpg Graphic file (type jpg)
 <use insa-couleur.jpg> [4]
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 File: insa-couleur.jpg Graphic file (type jpg)
-<use insa-couleur.jpg> [5]) AED: lastpage setting LastPage 
+<use insa-couleur.jpg> [5]
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
+
+ []
+
 File: insa-couleur.jpg Graphic file (type jpg)
-<use insa-couleur.jpg> [6]
+<use insa-couleur.jpg> [6]) AED: lastpage setting LastPage 
+File: insa-couleur.jpg Graphic file (type jpg)
+<use insa-couleur.jpg> [7]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
 
 (C:\msysgit\msysgit\ing-nierie\GestionDocumentation\tmp\main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9F7EED2C72D43A50E42DFFE544B52B6A;3560.
+(rerunfilecheck)             Checksum: 31C671897464ACA1E79044D24FFBC494;3485.
  ) 
 Here is how much of TeX's memory you used:
- 9381 strings out of 494019
- 134676 string characters out of 3143883
- 242389 words of memory out of 3000000
- 12419 multiletter control sequences out of 15000+200000
- 16005 words of font info for 43 fonts, out of 3000000 for 9000
+ 9434 strings out of 494019
+ 135458 string characters out of 3143883
+ 243205 words of memory out of 3000000
+ 12463 multiletter control sequences out of 15000+200000
+ 16173 words of font info for 44 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 43i,15n,43p,378b,541s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,16n,43p,378b,541s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (6 pages, 335249 bytes).
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/urw/times/utmr8a.pfb>
+Output written on main.pdf (7 pages, 365370 bytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 66 named destinations out of 1000 (max. 500000)
- 342 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
+ 334 words of extra memory for PDF output out of 10000 (max. 10000000)
 

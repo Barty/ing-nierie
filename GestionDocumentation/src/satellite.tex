@@ -14,12 +14,18 @@
   
   \subsection{Documents applicables <> Documents de référence}
     \subsubsection{Documents applicables}
-      Document cité directement ou indirectement dans un contrat ou dans un autre document et requis contractuellement comme devant être impérativement appliqué au titre de ce contrat ou de cet autre document.
-      \par Un document applicable est un document devrant être suivi à lettre. Le Cahier des Charges est par exemple un document applicable
+      Le dossier ing-nierie/Model/ regroupe l'ensemble des documents applicables. Trois documents y sont présents : \textit{nation.tex} s'occupe de la mise
+      en page des documents. Il ne doit en aucun cas être modifié. \textit{main.tex} reprend les informations importantes du document tel que l'auteur,
+      la date de création, la version... Son fonctionnement sera expliqué dans le chapitre "Norme de présentation". Enfin \textit{satellite.tex} représente
+      le corps du document. Son fonctionnement sera aussi expliqué dans "Norme de présentation".
     \subsubsection{Documents de référence}
-      DGA - RG Aéro 00040 : Document cité dans un contrat ou dans un autre document et pouvant être utilement consulté pour l'exercice des activités liées au contrat.
-      \par Au contraire du document applicable, le document de référence est qu'un support à la réflexion. 
+      Le site du CNRS : \url{http://www.dsi.cnrs.fr/conduite-projet/}.\\
+      Les documents présents à l'adresse \url{/servif-baie/Fichiers_Eleves/Espace Pedagogique/4IF/Developpement de Logiciel/Qualite logiciel/Projet_ingenierie_4IF}.
   \subsection{Terminologie et Abréviations}
+  \LaTeX : \LaTeX est un langage et un système de composition de documents. L'intérêt de \LaTeX est qu'il différencie le fond de la forme.
+            \LaTeX exige du rédacteur de se concentrer sur la structure logique de son document, son contenu, tandis que la mise en page du document (césure des mots, alinéas) est laissée au logiciel lors d'une compilation ultérieure.
+            Ainsi, la mise en page du document n'est plus à la charge des rédacteurs mais au responsable qualité.
+             
 \section{Règles générales}
 Ce chapitre précise les règles de gestion de la documentation à mettre en oeuvre dans tout projet.
   \subsection{Identification des documents}
@@ -30,8 +36,59 @@ Ainsi, chaque document reçoit une référence unique au sein du projet, constit
 \par Exemple : "ing-nierie/DossierFaisabilite/Existant" représente la partie "Analyse de l'existant" du dossier de Faisabilité.
 
   \subsection{Norme de présentation}
-    \subsubsection{Structure} 
-      \par Il est convenu que tout document doit comporter les éléments suivants sur la page de garde : \\
+    \subsubsection{Structure}
+      Du fait de l'utilisation de \LaTeX, un document ne correspond pas à un fichier mais à un dossier (portant le nom du document), composé de deux dossiers :
+       "/bin" : contient le document final (après compilation) en pdf.
+       "/src" : contient plusieurs fichiers .tex (au minimum 3) :
+          \paragraph{nation.tex} : ne doit en aucun cas être modifié. Il s'occupe de la mise en page du document.\\
+          
+          \paragraph{main.tex} : reprend les informations importantes du documents pour la mise en page. \\
+\begin{center}
+\begin{boxedverbatim}
+  \documentclass[a4paper, 11pt, titlepage]{article}
+  \input{nation}
+  \title{_________________\\~\\ \small{Version ____________}}
+  \blurb{
+  \begin{tabular}{|p{\linewidth}|}
+  Rédacteur(s) : ______________	\\ \hline
+  Date de création : __________________\\
+  Date de modification : \today \\ \hline
+  Etat (En cours/à valider/à corriger/validé) : ______________\\ \hline
+  Responsable qualité : Baptiste Lecornu\\ \hline                     
+  \end{tabular}
+  }
+  \author{H4212}
+  \lhead{Hexanome 4212 - Projet Ingénierie}
+  \rhead{\includegraphics [width=1.5cm]{insa-couleur.jpg}}
+  \rfoot{\thepage\ de \pageref{LastPage}}
+                        
+  \begin{document}
+  \maketitle
+  \newpage
+  \tableofcontents 
+            
+  \input{__Satellite1.tex__}
+  ...
+  \input{__SatelliteN.tex__}
+            
+  \end{document}
+\end{boxedverbatim}
+\end{center}
+\par Les espaces vides soulignés doivent être renseignés par les rédacteurs, à savoir le nom du document; sa version; le nom des rédacteurs,
+la date de création et l'état. Pour l'état, les rédacteurs ne peuvent mettre que "En cours" ou "A valider". "A corriger" ou "Validé" ne peuvent
+être attribués que par le responsable qualité. Enfin, la liste de "SatelliteN.tex"(explication à la suite) doit être mise à jour à chaque modification.\\
+          \paragraph{satelliteN.tex} : correspond au corps du texte. Peut être divisé en plusieurs fichiers .tex, notamment lorsque le document
+                est écrit par plusieurs rédacteurs qui s'occupent chacun d'une partie différente. Les fichiers portent alors le nom de cette partie
+                est doit être inclus dans main.tex de la manière suivante :
+\begin{center}\begin{boxedverbatim}
+\input{Nom_du_Fichier.tex}
+\end{boxedverbatim} 
+\end{center}
+           
+       
+      
+      \paragraph{Récapitulatif :\\~\\}  
+       Au final, doit être présents pour chaque document :
       \begin{itemize}
         \item le titre du document,
         \item la référence du document,
@@ -49,18 +106,23 @@ Ainsi, chaque document reçoit une référence unique au sein du projet, constit
       \end{itemize}         
       
       Chaque document comprend un sommaire, qui reprend les titres des chapitres et des différents paragraphes et précise les numéros de pages correspondants.
-    
-    \subsubsection{Automatisation}
-    Pour automatiser la mise en page des documents, une série de documents applicables à été créer dans le dossier ing-nierie/model/. 
-    La création d'un nouveau document se passe de la façon suivante : 
-    \begin{itemize}
-      \item création d'un dossier dans ing-nierie/ pour le document en question
-      \item copie des dossiers présents dans ing-nierie 
-    \end{itemize}  
+  
+   
   \subsection{Etats d'un documents}
+  
+    Quatre états différents permettent de définir un document :
+    \begin{itemize}
+      \item \textit{en cours} : état initial de tout document, il signifie que le document n'est pas encore terminé.
+      \item \textit{à valider} : état de transition signifiant que la rédaction du document est terminée et qu'il doit donc être vérifié par le RQ.
+      \item \textit{à corriger} : état \textbf{donné par le RQ} signifiant que le document contient des erreurs de cohérence et qu'il doit être modifier en conséquence.
+      \item \textit{validé} : état final signifiant que le document est apte à être consulté et/ou communiqué.
+    \end{itemize}
   
   \subsection{Cycle de vie d'un document}
     \subsubsection{Production du document}
+      La production du document se fait en \LaTeX au sein des fichiers "SatelliteN.tex".\\ Aucune mise en garde sur la mise en page n'est à
+      prescrit, puisque celle-ci se fait de manière automatique.\\ A la fin de chaque phase de travail, le rédacteur se doit de compiler ça partie
+      afin de corriger toute erreur éventuelle de programmation.
     \subsubsection{Vérification/Validation du document}
     \subsubsection{Archivage du document}
   \subsection{Gestion des versions}

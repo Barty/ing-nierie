@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.12.3)  2 FEB 2011 09:03
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.16)  6 FEB 2011 23:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -722,35 +722,35 @@ Package: listings 2007/02/22 1.4 (Carsten Heinz)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
 
 (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Info: Redefining \degres on input line 10.
-LaTeX Info: Redefining \dots on input line 10.
-LaTeX Info: Redefining \up on input line 10.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Info: Redefining \degres on input line 21.
+LaTeX Info: Redefining \dots on input line 21.
+LaTeX Info: Redefining \up on input line 21.
 
 
 Package frenchb.ldf Warning: OT1 encoding should not be used for French. 
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(frenchb.ldf)                of your document, on input line 10.
+(frenchb.ldf)                of your document, on input line 21.
 
 (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -765,7 +765,7 @@ Package frenchb.ldf Warning: OT1 encoding should not be used for French.
 \MPnumerator=\count126
 \everyMPtoPDFconversion=\toks30
 )
-Package hyperref Info: Link coloring OFF on input line 10.
+Package hyperref Info: Link coloring OFF on input line 21.
  (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -774,8 +774,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count127
 )
-LaTeX Info: Redefining \ref on input line 10.
-LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
  (./main.out)
 (./main.out)
 \@outlinefile=\write3
@@ -825,6 +825,19 @@ driver: pdftex
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
 \c@lstlisting=\count128
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 22.
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 22.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+Overfull \hbox (12.79999pt too wide) in paragraph at lines 22--22
+ [] 
+ []
+
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc)
@@ -833,11 +846,15 @@ driver: pdftex
 
 
 (./satellite.tex
-<img/schemaAnalyseExistant.png, id=15, 968.61874pt x 467.7475pt>
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+<img/schemaAnalyseExistant.png, id=36, 968.61874pt x 467.7475pt>
 File: img/schemaAnalyseExistant.png Graphic file (type png)
 
-<use img/schemaAnalyseExistant.png>) AED: lastpage setting LastPage
-<insa-couleur.jpg, id=16, 425.4294pt x 227.6505pt>
+<use img/schemaAnalyseExistant.png>
+<insa-couleur.jpg, id=37, 425.4294pt x 227.6505pt>
 File: insa-couleur.jpg Graphic file (type jpg)
  <use insa-couleur.jpg>
 
@@ -846,29 +863,29 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.18 \end{document}
-                    [1 <./insa-couleur.jpg> <./img/schemaAnalyseExistant.png (P
-NG copy)>] (./main.aux) ) 
+[2
+
+ <./insa-couleur.jpg> <./img/schemaAnalyseExistant.png (PNG copy)>])
+AED: lastpage setting LastPage
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg> [3] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 8499 strings out of 493848
- 118059 string characters out of 1152823
- 204535 words of memory out of 3000000
- 11614 multiletter control sequences out of 15000+50000
- 8562 words of font info for 31 fonts, out of 3000000 for 9000
+ 8615 strings out of 493848
+ 119569 string characters out of 1152823
+ 211535 words of memory out of 3000000
+ 11715 multiletter control sequences out of 15000+50000
+ 14614 words of font info for 39 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 43i,15n,43p,264b,369s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on main.pdf (2 pages, 284573 bytes).
+ 43i,15n,43p,496b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/d
+vips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf
+-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/urw/times/utmr8a.pfb>
+Output written on main.pdf (3 pages, 290751 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
- 19 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
