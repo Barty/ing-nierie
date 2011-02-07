@@ -1,46 +1,64 @@
-\documentclass{article}
+\section{Système central}
 
-\begin{document}
-
-
-\subsection{SYSTEME CENTRAL}
-		Son rôle est de collecter les informations des différents sites et de permettre l'exploitation de ces dernières.
+    \subsection{Introduction}
+		Son rôle est de collecter les informations des différents sites et de permettre l'exploitation de ces dernières.\\
 		Des contraintes apparaissent clairement : 
 		\begin{description}
 				\item[Fiabilité/Sureté de fonctionnement :] afin d'exploiter correctement les données et d'envoyer en temps réel des commandes aux sites distants si nécessaire.
-				\item[Traçabilité :] sur 2ans au moins des informations provenant des sites afin de gérer correctement les reprises sur erreur, apporter les corrections nécessaires en cas de fausses manipulations humaines ou de dysfonctionnement temporaire du système.
+				\item[Traçabilité :] sur 2 ans au moins des informations provenant des sites afin de gérer correctement les reprises sur erreur, apporter les corrections nécessaires en cas de fausses manipulations humaines ou de dysfonctionnement temporaire du système.
 				\item[Efficacité :] proposer un ensemble de services permettant le pilotage et le monitoring a distance des systèmes distants.
 		\end{description}
-
-		Une des alternatives pour le système central serait d'utiliser le système \textbf{Data Management System} de AXYS Technologies INC.
-
-\domaine{Data Management System de AXYS Technologies INC}
-
-{Cette solution qui intègre avec les systèmes Watchman500 Node et des capteurs, permet le pilotage a distance des Watchman500 Node, la collecte des données, ainsi que leur exploitation.}
-{}
-{}
-{}
-{}
-{Cependant, ce qui apparait en premier lieu, serait de mettre en place une solution spécifique qui convienne le mieux a nos besoins, mais il ne faut pas négliger le fait que cette alternative soit plus couteuse.}
-
-		Concernant la collecte des données, on peu observer qu'elles semblent être de petites tailles donc on pourrait s'orienter vers un SGBD tel que MySQL. Ou plutôt dans une optique d'évolution et de généricité, on pourrait essayer de prévoir des montées en charge des données et faire le choix de systèmes tels que Orcal, SQL Server.
-		Pour la collecte des données une autre solution serait de la confier a des hébergeurs professionnels, des solutions très intéressantes existent sur le marche, par exemple la solution \textbf{Windows Select Server} de Orange Business Service. Cette solution a de gros avantages supplémentaires :
-		\begin{itemize}
-				\item Pas de maintenance des serveurs, un service de maintenance professionnel sous 4h pour moins de 140euros HT/mois.
-				\item Donc pas besoin d'équipe de maintenance technique.
-		\end{itemize}
-
-\domaine{Windows Select Server}
-{Il s'agit d'une solution d'hébergement de nos serveurs chez des hébergeurs professionnels}
-{La solution Windows Select Serveur permet de bénéfcier d’un serveur dédié optimisé pour l’hébergement multisite et l’hébergement d’applications standard, complexes ou critiques. Ce serveur intègre toutes les technologies spécifiques au développement en environnement Windows.}
-{}
-{Cela coûte 139,3euros/mois}
-{}
-{Cependant cela a des limites en terme d'administration de notre système.}
+		% Naby, arrête de faire ton commercial en utilisant des mots en chocs qui finissent par "ité".
 
 
-Liens utilles : 
-- pour Data Management System : http://www.axystechnologies.com/BusinessUnit/CoreTechnology/DataManagementSystem/tabid/104/Default.aspx
-- pour Windows Select Server : http://hebergementweb.orange-business.com/hebergement-dedie/dedie-windows/windows-select-serveur.html
+    \subsection{Communication avec les sites isolés}
+    
+        Le système centrale sera le seule à gérer les communication avec tous les sites isolés.
+        Il est plus qu'envisageable de proposer une solution mobile pour les smartphone, cependant, elle s'inscrira dans le même câdre que le système centrale.\\
+        
+        Pour assurer les communication avec les sites isolé, il faudra donc mettre en place les extrémités de ces canaux de communications.\\
+        Dans la plupart des cas il s'agiras de communication GPRS, mais plusieurs autres solutions seront utilisés (filaires, satellite).
+        Il apparait donc indispensable d'avoir une interface qui permettras de s'abstraire de ces technologies pour que l'usager n'ai pas à faire de différences.\\
+        Cette interface permettras à un ensemble de machine défini de communiquer avec l'ensemble des sites isolés, mais n'empêcheras pas d'autres machines de communiquer également avec ces sites isolés. Ce n'est pas un dispositif de sécurité, mais plus un dispositif d'aide à la communication. Ce système sera, par conception décentralisé.\\
+        
+        Sur le site centrale, pour minimiser l'achat de dispositif d'émission/réception, une seule machine disposeras de cette capacité.
+        Elle feras office d'interface entre les sites isolés et les machines du site centrale chargé de la surveillance.
+        
+        Le schema d'installation possible suivant peut être envisagé :\\
+            La machine 
+            
+        
 
-,\end{document}
+    \subsection{Base de données}
+
+		Une des alternatives pour éviter le stockage de données sur le système central serait d'utiliser le système \textbf{Data Management System} de AXYS Technologies INC.
+
+        \domaine{Data Management System de AXYS Technologies INC}
+
+        {Cette solution qui intègre avec les systèmes Watchman500 Node et des capteurs, permet le pilotage a distance des Watchman500 Node, la collecte des données, ainsi que leur exploitation.}
+        {}
+        {}
+        {}
+        {}
+        {Cependant, ce qui apparait en premier lieu, serait de mettre en place une solution spécifique qui convienne le mieux a nos besoins, mais il ne faut pas négliger le fait que cette alternative soit plus couteuse.}
+
+		        Concernant la collecte des données, on peu observer qu'elles semblent être de petites tailles donc on pourrait s'orienter vers un SGBD tel que MySQL. Ou plutôt dans une optique d'évolution et de généricité, on pourrait essayer de prévoir des montées en charge des données et faire le choix de systèmes tels que Orcal, SQL Server.
+		        Pour la collecte des données une autre solution serait de la confier a des hébergeurs professionnels, des solutions très intéressantes existent sur le marche, par exemple la solution \textbf{Windows Select Server} de Orange Business Service. Cette solution a de gros avantages supplémentaires :
+		        \begin{itemize}
+				        \item Pas de maintenance des serveurs, un service de maintenance professionnel sous 4h pour moins de 140euros HT/mois.
+				        \item Donc pas besoin d'équipe de maintenance technique.
+		        \end{itemize}
+
+        \domaine{Windows Select Server}
+        {Il s'agit d'une solution d'hébergement de nos serveurs chez des hébergeurs professionnels}
+        {La solution Windows Select Serveur permet de bénéfcier d’un serveur dédié optimisé pour l’hébergement multisite et l’hébergement d’applications standard, complexes ou critiques. Ce serveur intègre toutes les technologies spécifiques au développement en environnement Windows.}
+        {}
+        {Cela coûte 139,3euros/mois}
+        {}
+        {Cependant cela a des limites en terme d'administration de notre système.}
+
+
+        Liens utilles : 
+        - pour Data Management System : http://www.axystechnologies.com/BusinessUnit/CoreTechnology/DataManagementSystem/tabid/104/Default.aspx
+        - pour Windows Select Server : http://hebergementweb.orange-business.com/hebergement-dedie/dedie-windows/windows-select-serveur.html
+
