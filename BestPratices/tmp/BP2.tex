@@ -1,11 +1,17 @@
+  
+\twocolumn[
 \section{Best Pratice 2 : Rédaction d'un cahier des charges}
-
 Un cahier des charges vise à définir simplement les \textbf{"spécifications de base"} d’un produit ou d’un service à réaliser.
-\textbf{C'est définir le besoin du client.}
+\textbf{C'est définir le besoin du client.\\~\\}
+                  
+]{
+\setlength{\columnsep}{0.3cm}
+
 \subsection{Plan type}
-\begin{tabular}{p{0.4\textwidth} p{0.5cm} p{0.4\textwidth}}
- \small{
+      \noitemsep
+      \small{
     \begin{enumerate}
+
       \item  Introduction
         \begin{enumerate}
           \item Présentation du projet
@@ -56,49 +62,32 @@ Un cahier des charges vise à définir simplement les \textbf{"spécifications d
         \end{enumerate}         
         
       \end{enumerate}
-      }
-   &  & 3 \\
-   a &  & c
-\end{tabular}
+        }
+       
+        \doitemsep
+\subsubsection{Objectifs du Cahier des Charges}
+  \begin{itemize}
+    \item Exprimer les objectifs, les besoins et les exigences de l'utilisateur
+    \item Définir les caractéristiques et le champ d'application du produit à acquérir
+    \item Répondre à la question "Que doit faire le produit/service?"
+  \end{itemize}
+\subsubsection{Bonnes Pratiques}
+   \begin{itemize}
+    \item Le CdC doit être le plus exhaustif possible
+    \item Une question doit être précise et compréhensible
+    \item Plus les réponses à une question sont nombreuses et quantifiées, plus l'évaluation est simple
+    \item Le processus d'évaluation doit si possible être informatisé
+    \item Le CdC traduit les obligations de résultat et non les exigences de moyens
+    \item Comme pour tout, Un beau dessin vaut mieux qu’un long discours (faire des schémas)
+    \item utiliser un langage général, compréhensible de tous
+    \item Utiliser des verbes clef
+    \item Utiliser le futur, afin de positionner le CdC dans le processus global
+  \end{itemize}
+  \subsubsection{Documents de Référence}
+  \begin{itemize}
+\item Document "exemple de procedure pour la redaction d'un CdC" présent dans servif-baie.
+\item Cours de Génie Logiciel 3IF, Chapitre II
+\end{itemize}       
+}
+
    
-\subsubsection{Introduction au problème posé}
-
-
-Ici, l'idée est simple : il faut donner une description succincte du projet. Expliquer en quoi il consiste, son objectif, une éventuelle prévision des dépenses et bénéfices s'il y a lieu, etc.
-Il faut aussi lui donner un contexte : les études effectuées et celles à effectuer, ainsi qu'une liste exhaustive des personnes concernées par le projet si elles sont connues à l'avance.
-
-\subsubsection{Expression fonctionnelle du besoin}
-
-C'est la partie clé du Cahier des Charges, il ne faut absolument pas la rater. En effet, c'est là qu'on définit les fonctions et les contraintes.
-Chaque fonction et chaque contrainte est définie par un certain nombre d'informations la concernant :\\
-\begin{itemize}
-  \item Son nom (il est très important celui-là )\\
-  \item Ses critères : ils indiquent dans quelles condition la fonction en question est considérée comme réalisée.
-    Par exemple, prenons une tondeuse à gazon, une contrainte pourrait être "Ne pas mettre l'utilisateur en danger". 
-    Cette fonction est importante, mais il faut la préciser : dans quels cas peut-on considérer que l'utilisateur est en sécurité ? 
-    Un des critères pourrait être "La lame de la tondeuse doit être inaccessible". Ainsi, si l'utilisateur ne peut pas toucher la lame, il est clair qu'il ne risque pas de se blesser avec. 
-    En général, une fonction est accompagnée de plusieurs critères.\\
-  \item Son niveau : si le critère de la fonction est défini d'une façon numérique, le niveau est la valeur qui est associée à ce critère. 
-    Toujours avec notre tondeuse, une contrainte pourrait être "Correspondre à l'énergie disponible". 
-    Le critère est la nature de l'énergie (en général, énergie électrique). 
-    Par conséquent, le niveau est la quantité d'électricité avec laquelle fonctionnera la tondeuse (on parle de tension) : 230V si la tondeuse est commercialisée en France.\\
-  \item Sa flexibilité : il est possible, dans certains cas, d'accorder une tolérance au niveau de réalisation d'une fonction. 
-    Si la tension d'alimentation de la tondeuse est de 224V (Volts) au lieu de 230V, ça n'a rien de dramatique : on donne une flexibilité au niveau, 
-    qui précise jusqu'à quelles limites la fonction est considérée comme réalisée même si son niveau n'est pas strictement égal à celui défini préalablement. 
-    On peut par exemple accorder une flexibilité de +/-12\% à la tension d'alimentation. Comme ça, si on a une tension de 224V, ça marche quand même. 
-    Le tout est de trouver une flexibilité cohérente en fonction du résultat souhaité. Bien entendu, la flexibilité n'est pas indispensable : pour le respect des normes, elle n'a pas lieu d'être (les normes doivent être respectées dans tous les cas).\\
-\end{itemize}
-
-\subsubsection{Solution proposée pour répondre au besoin}
-
-Cette partie est un peu la transition entre la rédaction du Cahier des Charges et la conception. En effet, on commence ici à proposer des pistes de recherche pour la réalisation de chacune des fonctions.
-L'objectif est d'organiser au mieux la suite du projet, en le découpant en "sous projets". Pour cela, une connaissance parfaite des fonctions du produit en question est indispensable, pour connaitre la teneur en travail qu'elles nécessiteront.
-
-Il y a peu à dire. C'est un peu la zone du gros brainstorming.         
-
-
-\subsection{Bonnes Pratiques}
-La partie technique d’un Cahier des Charges doit se limiter à énumérer les contraintes techniques avérées.
-L’erreur la plus courante est de confondre préférences et contraintes. 
-Pour remédier à ce problème, on confie parfois la rédaction du cahier des charges à un non technicien et on cherche à fournir le même niveau de détail pour chaque besoin.
-On peut aussi faire appel à un consultant « assistance à maîtrise d’ouvrage » (AMO) pour valider la cohérence du cahier des charges. Cela réduit considérablement les risques…
