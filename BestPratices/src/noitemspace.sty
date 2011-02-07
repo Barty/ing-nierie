@@ -1,0 +1,32 @@
+
+%%%% debut macro %%%%
+%% ----------------------------------------------------
+%% Copyright (c) 1993 Hydro-Quebec mboyer at robot.ireq.ca
+%% ----------------------------------------------------
+
+%% Bring items closer together in list environments
+% Prevent infinite loops
+\let\orig@Itemize =\itemize
+\let\orig@Enumerate =\enumerate
+\let\orig@Description =\description
+% Zero the vertical spacing parameters
+\def\Nospacing{\itemsep=0pt\topsep=0pt\partopsep=0pt%
+\parskip=0pt\parsep=0pt}
+% Redefinition de art12.sty pour commencer a la marge de gauche
+%\leftmargini 1.2em      % 2.5em
+
+\def\noitemsep{
+% Redefine the environments in terms of the original values
+\renewenvironment{itemize}{\orig@Itemize\Nospacing}{\endlist}
+\renewenvironment{enumerate}{\orig@Enumerate\Nospacing}{\endlist}
+\renewenvironment{description}{\orig@Description\Nospacing}%
+{\endlist}
+}
+
+\def\doitemsep{
+% Redefine the environments to the original values
+\renewenvironment{itemize}{\orig@Itemize}{\endlist}
+\renewenvironment{enumerate}{\orig@Enumerate}{\endlist}
+\renewenvironment{description}{\orig@Description}{\endlist}
+}
+%%%% fin macro %%%%
