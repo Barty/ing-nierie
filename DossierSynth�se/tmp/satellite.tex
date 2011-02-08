@@ -1,33 +1,54 @@
-\section{Prise en main de latex}
-\subsection{Installation}
-	\begin{description}
-		\item[Linux]~\\
-			\texttt{sudo aptitude install texlive-full}
-		\item[Windows]~\\
-			\href{http://mirror.ctan.org/systems/texlive/tlnet/install-tl.zip}{lien}
-	\end{description}
+\section{Introduction}
+  \subsection{Contexte global}
+    Le COPEVUE (Comité pour la Protection de l'EnVironnement de l'UE), présidé par le commissaire Norvégien souhaite étudier \textbf {un système
+    de monitoring de sites isolés} .
+    De nombreuses régions de l'UE, se situant dans les pays Nordiques, ou certaines régions méditérranéennes (à haut risque en terme d'incendies) sont peu peuplées et peu aisément accessibles. Néanmoins
+    de nombreux lieux de travail existent dans ces régions tels que ceux nécessaires à l'abattage de bois, l'installation de réseaux (éléctrique ou de télécommunication),
+    de stations de pompage ou encore des lieux dédiés à certaines études sur la faune et la flore. Ces lieux sont bien souvent isolés et disséminés loin des villes et des grans centres et doivent donc être autonomes en termes 
+    d'énergie, de déchets etc...
+    Les réservoirs doivent être surveillés pour être ravitaillés, nettoyés ou vidés avant que le niveau n'atteigne un seuil critique. 
+    Actuellement la surveillance de ces lieux est assurée par le propriétaire du lieu de travail qui, en fonction du niveau qu'il constate, 7
+    avertit la société chargée de s'occuper du réservoir pour qu'elle vienne le remplir / vider.
+    Les sociétés chargées de la maintenance des réservoirs doivent donc équiper et envoyer un camion pour s'occuper des réservoirs lorsque 
+    le propriétaire en fait la demande. Mais lorsque ces sociétés s'occupent de plusieurs dizaines de sites différents.
+    Par ailleurs, pour des raisons de coût, on a pu constater des manquements vis-à-vis des exigences de surveillance qui peuvent se traduire par des risques 
+    de désastres stratégiques dans des forets méditéranéennes ayant de fort risque d'incendie.\\
+    La surveillance du niveau de ces réservoirs doit donc être assurée d'une autre manière afin de permettre aux sociétés chargées de leur maintenance de planifier les trajets des camions
+    afin de faire des économies logistiques tout en garantissant certaines autres exigences.
+  \subsection{Objectif du document}
+    Le but principal de ce document est de synthètiser l'étude technique réalisée par notre équipe en présentant de manière claire et détaillée une vision globale du futur système.\\
+    Ce document s'adresse aussi bien à COPEVUE qu'aux menbres de l'équipes pour les aider à rédiger tout autre document
+  \subsection{Références}
+    \begin{itemize}
+      \item Dossier d'initialisation
+      \item Dossier Spécifications Techniques des Besoins
+      \item Dossier de Conception du Système
+    \end{itemize}  
+      
+\section{L'existant}
+  \subsection{Cadre de l'étude et objectifs}  
+  systeme de monitoring
+  Une composante importante : le caractère hostile de l'environnement hostile
+  \begin{itemize}
+    \item Fiabilité du matériel
+    \item Généricité du système
+    \item Robustesse logicielle
+  \end{itemize}
+  \subsection{Critique de l'existant} 
+    
 
-\subsection{Compilation}
-	Pour simplifier le processus, j'ai fais un Makefile qui automatise le processus.
-	il peut être remplaçé par :\\
-		\texttt{\$ cp src\/*.tex tmp\/}\\
-		\texttt{\$ cd tmp\/}\\		
-		\texttt{\$ pdflatex main.tex}\\
-		\texttt{\$ mv main.pdf ..\/bin\/}\\
-
-\section{Quelques exemples en latex}
-\subsection{formattage de texte}
-
-	\textbf{gras}\\
-	\textit{italique}\\
-	\emph{emphatique}\\
-	\texttt{chasse fixe}\\
-
-\subsection{Les listes}
-		
-	\begin{itemize}
-	\item un item
-	\item un deuxième item
-		\subitem un sous item
-	\item un troisème item
-	\end{itemize}
+\section{Solution proposée}  
+  \subsection{Architecture}
+  \subsection{Fonctionnement général}                          
+    \subsubsection{Gestion de l'énergie}
+    \subsubsection{Récupération de l'information}
+    \subsubsection{Communications Capteurs - Site local}
+    \subsubsection{Communications Site locaux - Station central}
+    \subsubsection{Exploitation des données}
+    \subsubsection{Maintenance}
+    \subsubsection{Aide à la décision et communication externe}
+\section{Apport de la solution / Thèmes de progrès}
+\section{Investissement et mise en place de la solution}  
+  \subsection{Coûts estimés}
+  \subsection{Mise en place du système}
+\section{Conclusion}  
