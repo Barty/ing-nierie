@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.16)  2 FEB 2011 11:48
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.16)  8 FEB 2011 19:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -858,31 +858,43 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
 [2
 
  <./insa-couleur.jpg>]) (./OS.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
+! Undefined control sequence.
+l.17 \domaine
+             {Nom du domaine}
+? 
+! Undefined control sequence.
+l.29 \domaine
+             {Nom du domaine}
+? 
+File: insa-couleur.jpg Graphic file (type jpg)
+<use insa-couleur.jpg> [3]
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+ []
+
+) (./Energie.tex
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
 
  []
 
 File: insa-couleur.jpg Graphic file (type jpg)
-<use insa-couleur.jpg> [3]) (./Energie.tex
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+<use insa-couleur.jpg> [4]
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 ) (./capteurs.tex
 File: insa-couleur.jpg Graphic file (type jpg)
- <use insa-couleur.jpg> [4]
+ <use insa-couleur.jpg> [5]
 Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 ) (./communication.tex
-File: insa-couleur.jpg Graphic file (type jpg)
- <use insa-couleur.jpg> [5]
 Overfull \hbox (64.36517pt too wide) in paragraph at lines 19--21
 []\OT1/cmr/m/n/10.95 Liste des ap-pa-reils Zig-bee : http ://www.zigbee.org/Pro
 ducts/CertifiedProducts/ZigBeeSmartEnergy.aspx 
@@ -896,10 +908,10 @@ AED: lastpage setting LastPage
 File: insa-couleur.jpg Graphic file (type jpg)
  <use insa-couleur.jpg> [8] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 8689 strings out of 493848
- 120522 string characters out of 1152823
+ 8691 strings out of 493848
+ 120540 string characters out of 1152823
  216535 words of memory out of 3000000
- 11741 multiletter control sequences out of 15000+50000
+ 11743 multiletter control sequences out of 15000+50000
  14955 words of font info for 40 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  43i,15n,43p,796b,419s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -911,7 +923,7 @@ e/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type
 1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
 rm1095.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
 share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (8 pages, 320639 bytes).
+Output written on main.pdf (8 pages, 322698 bytes).
 PDF statistics:
  241 PDF objects out of 1000 (max. 8388607)
  48 named destinations out of 1000 (max. 500000)
