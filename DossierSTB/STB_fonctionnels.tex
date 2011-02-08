@@ -1,7 +1,7 @@
 \section{Exigences fonctionnelles}
 
 Les principales exigences fonctionnelles sont :
- \begin{itemize}
+ \begin{enumerate}
        \item Traitement sur site central
        \item Maintenance
        \item Traitement sur station
@@ -11,7 +11,7 @@ Les principales exigences fonctionnelles sont :
        \item Localisation/Suivi temps réel
        \item Gestion de l'énergie
        \item Stockage
-\end{itemize}
+\end{enumerate}
 
 
 \subsection {Traitement sur site central }
@@ -57,14 +57,6 @@ stations disposent de cartes d'acquisition qui transformeront ces signaux en don
 
 \subsubsection {Description 2}
 \begin{description}
-           \item[Intitulé :] Le système embarqué doit pouvoir communiquer avec le serveur central de manière fiable et sans perte de données.
-           \item[Exigences non fonctionnelles :] Fiabilité, robustesse
-           \item[Détail :] Les systèmes embarqués seront équipés de mémoires suffisantes pour quelques jours afin de sauvegarder temporairement les informations qu'elles reçoivent si pendant un courte période, elles ne réussissent pas à communiquer avec le système central. Les systèmes embarqués transmettront des données au système central uniquement quand les valeurs des niveaux des capteurs changent. Cependant un utilisateur du site central
-peut demander via une commande à recevoir les informations en temps réel concernant les niveaux des capteurs.
-\end{description}
-
-\subsubsection {Description 3}
-\begin{description}
            \item[Intitulé :] Le système embarqué doit fonctionner de manière autonome sans intervention humaine et cela même en cas de problème
 environnemental.
            \item[Exigences non fonctionnelles :]Fiabilité, robustesse
@@ -74,7 +66,6 @@ après reprise en cas d'erreur, ou après des redémarrages intempestifs; aussi 
 problèmes environnement comme un EMP. Il devrait pouvoir régler ces dysfonctionnement temporaires en se 
 réinitialisant par exemple.
 \end{description}
-
 
  \subsection {Aide à la décision}
  \subsubsection {Description 1}
@@ -105,7 +96,6 @@ leur trajet.
 les opérations de maintenance (préventives/urgentes). Ce planning pourra bien entendu être modifié manuellement.
 \end{description}
 
-
 \subsection {Sécurité}
  \subsubsection {Description 1}
 \begin{description}
@@ -126,34 +116,36 @@ protégé elle aussi avec un système de sécurité (cadenas par exemple).
            \item[Détail :] Les futurs utilisateurs sont les non informaticiens, il faut ainsi définir l’interface utilisateur simple, intuitive, facile à utiliser. Les informations doivent être accédées indépendamment de la plateforme utilisé (ordinateur, PDA), une application web est alors adaptée à ce contraint.  Les données devraient alors se mettre en format générique et normalisé tel que XML pour facilement se traiter.
 \end{description}
 
-\subsubsection {Description 2}
+\subsection {Description 2}
 \begin{description}
-           \item[Intitulé :] Certains informations telles que des mesures ou des opérations utilisateur doivent être enregistrées pour afin d’analyser des statistiques, effectuer les suivis… 
-           \item[Exigences non fonctionnelles :] Traçabilité, 
-           \item[Détail :] Pour pouvoir suivre les opérations utilisateur, il est indispensable que le site central soit capable d’enregistrer tous les opérations effectuées par l’utilisateur connecté au système tandis que le système embarqué ait assez mémoire pour stocker les erreurs. Il pourrait être intéressant aussi de pouvoir sauvegarder les informations telles que la mesures et l’historique des interventions afin de les analyser pour optimiser le coût maintenance et pour mieux planifier. 
+           \item[Intitulé :] Certains informations telles que des mesures ou des opérations utilisateur doivent être enregistrées 
+           \item[Exigences non fonctionnelles :] Traçabilité, Fiabilité, Robutesse
+           \item[Détail :] En cas de rupture/delais de la communication avec le site central, certaines informations doivent être stockées temporairement au système embarqué  le temps que le 
+réseau redevienne disponible.
 \end{description}
 
 \subsubsection {Description 3}
 \begin{description}
            \item[Intitulé :] Le serveur central doit être capable de stocker les traces de toute activité durant une période minimum de 2 ans. Un serveur de sécurité sera mis en place pour éviter toute perte de données. 
-           \item[Exigences non fonctionnelles :] ?????????????????????????????????????????????????????????
+           \item[Exigences non fonctionnelles :] Traçabilité
            \item[Détail :] Il est important de garder cette trace car il permettra d’analyser les données afin de trouver les sources majeures d’erreurs par exemple. 
 \end{description}
-
 
 \subsection {Localisation/ Suivi temps réel}
 subsubsection {Description 1}
 \begin{description}
            \item[Intitulé :] Le système embarqué doit être entièrement localisable sur la surface de la planète. 
            \item[Exigences non fonctionnelles :] Traçabilité, 
-           \item[Détail :] Le système embarqué doit être localisable à tout moment sur la sur surface de la planète afin de suivre sa performance ainsi que afin de pouvoir faire intervenir en cas de problème. 
+           \item[Détail :] Le système embarqué est muni d'un émetteur GPRS permettant sa localisation par le site central ou par un périphérique mobile.
+Dans le cas de problème (localisation non-détectée) le site central sauvegarder l'évenement et va faire signaler le responsable du système embarqué pour intervenir. 
 \end{description}
 
 \subsubsection {Description 2}
 \begin{description}
            \item[Intitulé :] Les camionneurs doivent être localisables en temps réel pour connaître leurs positions par rapport aux sites 
            \item[Exigences non fonctionnelles :] Fiabilité
-           \item[Détail :] Il est indispensable de localiser les camionneurs en temps réel durant leurs déplacements pour suivre s’ils respectent le trajet et surtout pour savoir s’il y des problèmes.
+           \item[Détail :] Il est indispensable de localiser les camionneurs en temps réel durant leurs déplacements pour suivre s’ils respectent le trajet et surtout pour savoir s’il y des problèmes. Pour ce faire, chaque camionneur doit être doté d'un 
+périphérique mobile qui émet périodiquement sa localisation vers le site central.
 \end{description}
 
 \subsubsection {Description 3}
@@ -165,41 +157,54 @@ subsubsection {Description 1}
 
 \subsubsection {Description 4}
 \begin{description}
-           \item[Intitulé :] Le système doit être capable de surveiller automatiquement les stations 
+           \item[Intitulé :] Le système doit être capable de surveiller automatiquement les stations et d'avertir l’utilisateur rapidement le cas échéant 
            \item[Exigences non fonctionnelles :] Fiabilité
            \item[Détail :] Etant donné que les stations soient nombreuses, le système doit être capable de surveiller automatiquement  l’état de toute station pour pouvoir détecter tous les dysfonctionnements.  La vérification périodique est indispensable pour réduire le risque d’incendie.  
+Dans le cas échéant, le système embarqué va envoyer un message signalant le site central et ensuite se démarre ou attend l'intervention.  
 \end{description}
 
 \subsection {Communication}
-\subsubsection {Description 1}
+\subsubsection {Capteur-Système embarqué}
+\begin{description}
+           \item[Intitulé :] La communication entre les capteurs et le système embarqué doit être fiable, sans perte 
+           \item[Exigences non fonctionnelles :] Fiabilité
+           \item[Détail :] Le réseau avec le protocole choisi doit être capable d’assurer la circulation d’information régulière entre le système embarqué et les capteurs. Ce protocole doit être peu sécurisé car les informations circulant ne sont pas critiques, un réseau peu crypté semble suffisant dans ce cas. De l'autre côté, en terme d'énergie, la communication doit avoir une basse consommation.
+Un réseau de type Zigbee est proposé grace à ses bons charactéristiques.
+\end{description} 
+
+\subsubsection {Société maintenance-Site central}
+\begin{description}
+           \item[Intitulé :] Les sociétés chargées de la maintenance doivent pouvoir communiquer avec le système central 
+           \item[Exigences non fonctionnelles :] Fiabilité, intégration existant, traçabilité
+           \item[Détail :] Les sociétés souhaient configurer ou surveiller les maintenance des stations à distance via les périphériques. Il faut alors un protocole qui permettre cette communication entre les caminonneurs et le site central. La circulation d'information
+doit être fiable, sans perte et sécurisée. 
+\end{description}
+
+\subsubsection {Serveur central-Système embarqué}
 \begin{description}
            \item[Intitulé :] Le système embarqué doit communiquer avec le serveur central de manière fiable et sans perte:
 Exigences non-fonctionnelles associées
            \item[Exigences non fonctionnelles :]  Fiabilité, traçabilité 
-           \item[Détail :] Le protocole de communication permet la circulation fiable d’information, il est sécurisé et encrypte les données avant de transmettre. Également, le système doit pouvoir sauvegarder temporairement toutes les données échangées comme archive. Une utilisation de la redondance de données est alors envisagée pour minimiser la perte de données.
+           \item[Détail :] Il faut choisir un protocole de communication tel qu'il permet la circulation fiable et sécurisée d’information (les messages doivent être cryptés avant de se transmettre, les correcteurs, la réception accusée sont utilisés pour vérifier si un message est conservé). Les
+Une utilisation de la redondance de données est alors envisagée pour minimiser la perte de données. Le réseau doit être capable 
+de permettre une communication sur des grandes distances.
 \end{description}
 
-\subsubsection {Description 2}
-\begin{description}
-           \item[Intitulé :] La communication entre les capteurs et le système embarqué doit être fiable 
-           \item[Exigences non fonctionnelles :] Fiabilité, 
-           \item[Détail :] Le réseau avec le protocole choisi doit être capable d’assurer la circulation d’information régulière entre le système embarqué et les capteurs. Ce protocole doit être peu sécurisé car les informations circulant ne sont pas critiques, un réseau peu crypté semble suffisant dans ce cas.
-\end{description}
-
-\subsubsection {Description 3}
-\begin{description}
-           \item[Intitulé :] Les sociétés chargées de la maintenance doivent communiquer avec le système central via un protocole? 
-           \item[Exigences non fonctionnelles :] Fiabilité, intégration existant, traçabilité
-           \item[Détail :] 
-\end{description}
-
-\subsubsection {Description 4}
+\subsubsection {Camionneurs-Société et Site Central}
 \begin{description}
            \item[Intitulé :] Les camionneurs doivent être capable de communiquer avec leur société et éventuellement avec le site central pour obtenir des informations, même en déplacement.
-           \item[Exigences non fonctionnelles :] 
-           \item[Détail :] 
+           \item[Exigences non fonctionnelles :] Fiabilité, intégration existant, traçabilité
+           \item[Détail :]  Les camionneurs doivent être capable de communiquer avec leur société et éventuellement avec le site central pour obtenir des informations, même en déplacement pour récupérer des trajets, ou pour pouvoir signaler des problèmes, des changements
+par rapport aux plannings. Il faut logiquement un protocole qui permet cette circulation d'information. 
 \end{description}
 
+\subsubsection {Réseaux Internet}
+\begin{description}
+          \item[Intitulé :] Pour pouvoir répondre aux besoins de communication entres les stations et le site, entre le site et les camionneurs, des réseaux internet sont indispensables. Par contre, il faut bien
+	envisager les problèmes 
+          \item[Cas nominal] Si la région peut être couverte par GPRS/UMTS ou Wifi on peut l'utiliser grace à leurs avantages. 
+          \item[Exceptionnel] Si la couverture totale par GPRS est impossible, il faut penser à un autre alternative comme la communicaton via les satellites.
+\end{description}
 
 \subsection {Gestion d'énergie}
 \subsubsection {Description 1}
@@ -215,3 +220,5 @@ Exigences non-fonctionnelles associées
            \item[Exigences non fonctionnelles :] Autonomie
            \item[Détail :] Le système doit être le plus autonome possible au point vue énergétique. Il pourrait disposer d’un –ou plusieurs) générateur(s) d’énergie adapté au climat (vente, solaire) et également d’une batterie stockant l'énergie pour la période durant laquelle le générateur n'est pas en service. 
 \end{description}
+
+
