@@ -62,3 +62,27 @@
 	~\\
 
 \end{itemize}
+
+
+Ci-dessous la liste des méthodes utiles selon moi aux APIs de comunication
+j'ai mis des attributs pour t'aider mais voilà change si tu veux, c'est toi l'expert des données..
+Mais n'hésite pas à m'en parler car j'ai des raisons d'avoir fait ces choix.
+
+Listes des méthodes à rajouter
+Communication entre les sites génériques et le système central
+    - ConsulterPlanning (IdPlanning)
+    - MAJPlanning (IdPlanning)
+    - RecupererDonneesSite (IdSite)
+    - SignalerMaintenance (IdSociete, IdSite)
+
+Communication entre les sociétés de maintenance et les PDAs des camionneurs
+    - ConsulterPlanning (IdPlanning)
+    - MAJPlanning (IdPlanning)
+    - RecupererDonneesSite (IdSite)
+    - SignalerMaintenance (IdChauffeur, IdSite)
+
+Communication entre les sociétés de maintenance et le système central
+    - MAJDonneesSites (IdSite)
+    - MaintenirDistanteSite (IdSite, typeOperation)
+    - EmettreAlarme (IdSite, typeAlarme)
+
