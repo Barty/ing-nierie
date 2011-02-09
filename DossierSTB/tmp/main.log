@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.1.9)  9 FEB 2011 09:10
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.1.9)  9 FEB 2011 09:22
 entering extended mode
 **main.tex
-(C:\msysgit\msysgit\ing-nierie\DossierFaisabilite\tmp\main.tex
+(C:\msysgit\msysgit\ing-nierie\DossierSTB\tmp\main.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -30,7 +30,7 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\msysgit\msysgit\ing-nierie\DossierFaisabilite\tmp\nation.tex
+(C:\msysgit\msysgit\ing-nierie\DossierSTB\tmp\nation.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/06 v3.8l The Babel package
 
@@ -756,36 +756,36 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 )
-(C:\msysgit\msysgit\ing-nierie\DossierFaisabilite\tmp\main.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 25.
+(C:\msysgit\msysgit\ing-nierie\DossierSTB\tmp\main.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 22.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Info: Redefining \degres on input line 25.
-LaTeX Info: Redefining \dots on input line 25.
-LaTeX Info: Redefining \up on input line 25.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Info: Redefining \degres on input line 22.
+LaTeX Info: Redefining \dots on input line 22.
+LaTeX Info: Redefining \up on input line 22.
 
 
 Package frenchb.ldf Warning: OT1 encoding should not be used for French. 
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(frenchb.ldf)                of your document, on input line 25.
+(frenchb.ldf)                of your document, on input line 22.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -806,9 +806,9 @@ Package lastpage Info: Have a look at the pagesLTS package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pagesLTS.tds.zip
-(lastpage)             ! on input line 25.
+(lastpage)             ! on input line 22.
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 25.
+Package hyperref Info: Link coloring OFF on input line 22.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
@@ -820,12 +820,12 @@ Package: gettitlestring 2009/12/18 v1.3 Cleanup title references (HO)
 )
 \c@section@level=\count130
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 
-(C:\msysgit\msysgit\ing-nierie\DossierFaisabilite\tmp\main.out)
-(C:\msysgit\msysgit\ing-nierie\DossierFaisabilite\tmp\main.out)
+(C:\msysgit\msysgit\ing-nierie\DossierSTB\tmp\main.out)
+(C:\msysgit\msysgit\ing-nierie\DossierSTB\tmp\main.out)
 \@outlinefile=\write3
 
 *geometry* driver: auto-detecting
@@ -863,27 +863,27 @@ LaTeX Info: Redefining \nameref on input line 25.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count131
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 26.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 23.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 26.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 23.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
-Overfull \hbox (12.79999pt too wide) in paragraph at lines 26--26
+Overfull \hbox (12.79999pt too wide) in paragraph at lines 23--23
  [] 
  []
 
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(C:\msysgit\msysgit\ing-nierie\DossierFaisabilite\tmp\main.toc)
+(C:\msysgit\msysgit\ing-nierie\DossierSTB\tmp\main.toc)
 \tf@toc=\write4
 
-(C:\msysgit\msysgit\ing-nierie\DossierFaisabilite\tmp\localisation.tex
-<insa-couleur.jpg, id=151, 425.4294pt x 227.6505pt>
+(C:\msysgit\msysgit\ing-nierie\DossierSTB\tmp\evolutivite.tex
+<insa-couleur.jpg, id=221, 425.4294pt x 227.6505pt>
 File: insa-couleur.jpg Graphic file (type jpg)
  <use insa-couleur.jpg>
 
@@ -894,155 +894,89 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
 
 [2
 
- <C:/msysgit/msysgit/ing-nierie/DossierFaisabilite/tmp/insa-couleur.jpg>])
-(C:\msysgit\msysgit\ing-nierie\DossierFaisabilite\tmp\OS.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
+ <C:/msysgit/msysgit/ing-nierie/DossierSTB/tmp/insa-couleur.jpg>]
+Overfull \hbox (5.14818pt too wide) in paragraph at lines 10--11
+[]\OT1/cmr/m/n/10.95 Le nombre de sites peut aug-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
-Overfull \hbox (0.85803pt too wide) in paragraph at lines 23--24
-\OT1/cmr/m/n/10.95 systeme avait ete cri-tique pour di-verses rai-sons : ma
-u-vaise ges-tion de la memoire (pertes memoire)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
+) (C:\msysgit\msysgit\ing-nierie\DossierSTB\tmp\fonctionnels.tex
+Overfull \hbox (5.54575pt too wide) in paragraph at lines 39--41
+[]\OT1/cmr/m/n/10.95 La confi-gu-ra-tion des systemes em-barques doit ^etre m
+o-di-fiable a dis-tance sans necessiter
  []
 
 File: insa-couleur.jpg Graphic file (type jpg)
 <use insa-couleur.jpg> [3]
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-) (C:\msysgit\msysgit\ing-nierie\DossierFaisabilite\tmp\Energie.tex
 File: insa-couleur.jpg Graphic file (type jpg)
-
-<use insa-couleur.jpg> [4]
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
-
+ <use insa-couleur.jpg> [4]
+Overfull \hbox (12.54411pt too wide) in paragraph at lines 116--117
+\OT1/cmr/m/n/10.95 teur simple, in-tui-tive, fa-cile a uti-li-ser. Les in-for-
+ma-tions doivent ^etre accedees independamment
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-
- []
-
-) (C:\msysgit\msysgit\ing-nierie\DossierFaisabilite\tmp\capteurs.tex
 File: insa-couleur.jpg Graphic file (type jpg)
-
 <use insa-couleur.jpg> [5]
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-
+Overfull \hbox (1.17336pt too wide) in paragraph at lines 147--149
+[]\OT1/cmr/m/n/10.95 Il est in-dis-pen-sable de lo-ca-li-ser les ca-mion-neurs 
+en temps reel du-rant leurs deplacements
  []
 
-) (C:\msysgit\msysgit\ing-nierie\DossierFaisabilite\tmp\communication.tex
 File: insa-couleur.jpg Graphic file (type jpg)
-
 <use insa-couleur.jpg> [6]
-Overfull \hbox (64.36517pt too wide) in paragraph at lines 19--21
-[]\OT1/cmr/m/n/10.95 Liste des ap-pa-reils Zig-bee : http ://www.zigbee.org/Pro
-ducts/CertifiedProducts/ZigBeeSmartEnergy.aspx 
+Overfull \hbox (16.98235pt too wide) in paragraph at lines 195--196
+[]\OT1/cmr/m/n/10.95 Les ca-mion-neurs doivent ^etre ca-pable de com-mu-ni-quer
+ avec leur societe et eventuellement
+ []
+
+
+Overfull \hbox (9.44666pt too wide) in paragraph at lines 197--199
+[]\OT1/cmr/m/n/10.95 Les ca-mion-neurs doivent ^etre ca-pable de com-mu-ni-quer
+ avec leur societe et eventuellement
  []
 
 File: insa-couleur.jpg Graphic file (type jpg)
-<use insa-couleur.jpg> [7]) AED: lastpage setting LastPage 
+<use insa-couleur.jpg> [7])
+(C:\msysgit\msysgit\ing-nierie\DossierSTB\tmp\non_fonctionnels.tex
 File: insa-couleur.jpg Graphic file (type jpg)
+
 <use insa-couleur.jpg> [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
+Overfull \hbox (5.30365pt too wide) in paragraph at lines 42--44
+\OT1/cmr/m/n/10.95 informaticiens). []Egalement, ils doivent ^etre com-pa-tible
+ avec differents pla-te-formes et peripheriques
+ []
 
-(C:\msysgit\msysgit\ing-nierie\DossierFaisabilite\tmp\main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
+) AED: lastpage setting LastPage 
+File: insa-couleur.jpg Graphic file (type jpg)
+<use insa-couleur.jpg> [9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
 
+(C:\msysgit\msysgit\ing-nierie\DossierSTB\tmp\main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D9B43543359A19794A63103A2D07BB6B;3075.
 
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 759FD311D824D1F6973E1F37ADEC3634;1907
-(rerunfilecheck)             After:  877A354A5A70A35BF54CCAD3F4D094AE;1887.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 9365 strings out of 494019
- 134734 string characters out of 3143883
- 239507 words of memory out of 3000000
- 12409 multiletter control sequences out of 15000+200000
- 14955 words of font info for 40 fonts, out of 3000000 for 9000
+ 9387 strings out of 494019
+ 134775 string characters out of 3143883
+ 241447 words of memory out of 3000000
+ 12419 multiletter control sequences out of 15000+200000
+ 14614 words of font info for 39 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 43i,16n,43p,796b,546s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{page.9} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.1.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.1.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{C
-:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (8 pages, 323106 bytes).
+ 43i,15n,43p,497b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+Output written on main.pdf (9 pages, 313272 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 
