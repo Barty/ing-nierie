@@ -8,15 +8,14 @@
 \BOOKMARK [1][-]{section.3}{Solution propos\351e}{}% 8
 \BOOKMARK [2][-]{subsection.3.1}{Architecture}{section.3}% 9
 \BOOKMARK [2][-]{subsection.3.2}{Fonctionnement g\351n\351ral}{section.3}% 10
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Gestion de l'\351nergie}{subsection.3.2}% 11
-\BOOKMARK [3][-]{subsubsection.3.2.2}{R\351cup\351ration de l'information}{subsection.3.2}% 12
-\BOOKMARK [3][-]{subsubsection.3.2.3}{Communications Capteurs - Site local}{subsection.3.2}% 13
-\BOOKMARK [3][-]{subsubsection.3.2.4}{Communications Site locaux - Station central}{subsection.3.2}% 14
-\BOOKMARK [3][-]{subsubsection.3.2.5}{Exploitation des donn\351es}{subsection.3.2}% 15
-\BOOKMARK [3][-]{subsubsection.3.2.6}{Maintenance}{subsection.3.2}% 16
-\BOOKMARK [3][-]{subsubsection.3.2.7}{Aide \340 la d\351cision et communication externe}{subsection.3.2}% 17
-\BOOKMARK [1][-]{section.4}{Apport de la solution / Th\350mes de progr\350s}{}% 18
-\BOOKMARK [1][-]{section.5}{Investissement et mise en place de la solution}{}% 19
-\BOOKMARK [2][-]{subsection.5.1}{Co\373ts estim\351s}{section.5}% 20
-\BOOKMARK [2][-]{subsection.5.2}{Mise en place du syst\350me}{section.5}% 21
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 22
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Station g\351n\351rique}{subsection.3.2}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Site central}{subsection.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Maintenance}{subsection.3.2}% 13
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Aide \340 la d\351cision et communication externe}{subsection.3.2}% 14
+\BOOKMARK [1][-]{section.4}{Apport de la solution / Th\350mes de progr\350s}{}% 15
+\BOOKMARK [1][-]{section.5}{Investissement et mise en place de la solution}{}% 16
+\BOOKMARK [2][-]{subsection.5.1}{Co\373ts estim\351s}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.2}{Mise en place du syst\350me}{section.5}% 18
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 19
+\BOOKMARK [1][-]{section.7}{Annexes}{}% 20
+\BOOKMARK [2][-]{subsection.7.1}{La technologie ZigBee}{section.7}% 21

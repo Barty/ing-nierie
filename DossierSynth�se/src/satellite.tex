@@ -17,7 +17,7 @@
     afin de faire des économies logistiques tout en garantissant certaines autres exigences.
   \subsection{Objectif du document}
     Le but principal de ce document est de synthètiser l'étude technique réalisée par notre équipe en présentant de manière claire et détaillée une vision globale du futur système.\\
-    Ce document s'adresse aussi bien à COPEVUE qu'aux menbres de l'équipes pour les aider à rédiger tout autre document
+    Ce document s'adresse aussi bien à COPEVUE qu'aux membres de l'équipe pour les aider à rédiger tout autre document
   \subsection{Références}
     \begin{itemize}
       \item Dossier d'initialisation
@@ -29,14 +29,15 @@
   \subsection{Cadre de l'étude et objectifs}  
   Notre but dans ce projet est de développer le système de monitoring des sites isolés. Ce système doit être autonome et fiable, afin de limiter au plus l'action de maintenance. De plus,  la fiabilité doit être la première des préoccupations, puisque l'objectif est de prévenir de toute catastrophe au niveau des stations-réservoirs.
 \par Ce caractère catastrophe implique aussi que les communications se doivent d'être brèves. L'action de maintenance doit être menée le plus rapidement possible, et cela n'est possible que si l'information remonte instantanément au service de maintenance.
-\par  Une autre composante importante à prendre en compte reste le caractère hostile de l'environnement dans les sites isolés. Le matériel utilisé (capteurs, systèmes embarqués) doit donc être capable de résister à des températures extrêmes. L'aspect énergétique semble aussi importants. Dans un esprit d'écologie, nous tirerons l'énergie indispensable aux sites isolés à 100\% des énergies renouvelables, solaire comme éolien (ne pas oublier que certains sites se trouvent au dessus du cercle pôlaire).
-\par Du fait d'un nombre importants de sites isolées, avec différentes configurations possibles, le système se doit d'être générique. A l'avenir, l'ajout de nouveaux sites ne doit pas poser problème.  
-\par Enfin, la partie logicielle se doit d'être maintenue au minimum. Elle doit être construite de la façon la plus robuste afin d'avoir une probabilité de plantage la plus faible.
+\par  Une autre composante importante à prendre en compte reste le caractère hostile de l'environnement dans les sites isolés. Le matériel utilisé (capteurs, systèmes embarqués) doit donc être capable de résister à des températures extrêmes. L'aspect énergétique semble aussi important. Dans un esprit d'écologie, nous tirerons l'énergie indispensable aux sites isolés à 100\% des énergies renouvelables, solaire comme éolien (ne pas oublier que certains sites se trouvent au dessus du cercle pôlaire).
+\par Du fait d'un nombre important de sites isolées, avec différentes configurations possibles, le système se doit d'être générique. A l'avenir, la mise à jour des composants, l'ajout de nouveaux sites ou l'augmentation du nombre des capteurs ne doit pas poser problème.  
+\par Enfin, la maintenance de la partie logicielle doit être réduite. Elle doit être construite de la façon la plus robuste afin d'avoir une probabilité de "plantage" la plus faible.
 \par Au final, nos maitres mots seront donc :
   \begin{itemize}
     \item Fiabilité du matériel
+    \item Autonomie
     \item Rapidité des communications
-    \item Généricité du système
+    \item Généricité et évolutivité du système
     \item Robustesse logicielle
   \end{itemize}
   
@@ -48,18 +49,21 @@
   
   
   \subsection{Fonctionnement général}    
-    \subsubsection{Récupération de l'information (Station générique)}
-Une station générique est définie comme l'ensemble des capteurs présents au niveau des réservoirs reliés au système embarqué. Les communications entre les capteurs et le système embarqué se fait soit filaire si la distance capteur/système embarqué est inférieure à 3 mètre, soit par la technologie ZigBee (voir annexe 1) pour une distance supérieure. 
-\par L'ensemble du matériel de la station sera en fourni en électricité par un réseau d'énergies renouvelables implémenté sur le site.
-\par Enfin, le traitement des informations envoyées par les capteurs    
+    \subsubsection{Station générique}
+Une station générique est définie comme l'ensemble des capteurs présents au niveau des réservoirs, reliés au système embarqué, additionné au système de géolocalisation du site. Les communications entre les capteurs et le système embarqué se font soit de façon filaire si la distance capteur/système embarqué est inférieure à 3 mètre, soit par la technologie ZigBee pour une distance supérieure. 
+\par L'ensemble du matériel de la station sera fourni en électricité par un réseau d'énergies renouvelables mis en place sur le site même.
+\par Enfin, le traitement des informations envoyées par les capteurs au système embarqué permet de gérer la priorité des évènements. C'est au niveau du système embarqué qu'est décidé si une information doit être envoyées dans l'immédiat au site central, stockée dans un historique(qui lui est envoyé une fois par jour au site central).
     
-    \subsubsection{Communication Stations génériques - Site central}
-
+    \subsubsection{Site central}
+Les informations concernant les stations sont toutes transmises au site central de façon périodique(1 fois par jour) sauf si l'information a été jugée prioritaire en amont. La communication s'effectue de façon bidirectionnelle par GPRS et/ou par satellite (multiplexage). Les opérations de maintenance sont déclenchées à partir de ces informations et transmises le cas échéant aux entreprises concernées. Un sytème d'aide à la décision permet d'optimiser les trajets des opérateurs de maintenance (cf plus bas). 
 
     \subsubsection{Maintenance}
+La maintenance s'effectue par des entreprises partenaires
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX(comme ta mère)
     
     
     \subsubsection{Aide à la décision et communication externe}
+    
     
 \section{Apport de la solution / Thèmes de progrès}
 \section{Investissement et mise en place de la solution}  
