@@ -14,7 +14,8 @@ De nombreuses contraintes apparaissent du fait de l'utilisation d'appareil alime
 
 
 De nombreuses technologies actuelles semblent satisfaire ces contraintes. Les prix et technologies utilisées étant cependant très variés.
-La société EnerSage propose effectivement un large choix de batteries pouvant être utilisées dans notre projet : leur gamme de batteries "Power line SC Series" propose en effet des batteries longue durée pouvant alimenter des capteurs à faible consommation énergétique pendant une durée prolongée. Cette même entreprise propose également toute une gamme de batteries pour énergies renouvelables permettant de rendre des sites distants complètement autonomes en énergie. Nous pouvons ainsi imaginer installer des panneaux solaires sur des sites suffisamment ensoleillé, des éoliennes sur d'autres... 
-
+La société EnerSage propose effectivement un large choix de batteries pouvant être utilisées dans notre projet : leur gamme de batteries "Power line SC Series" propose en effet des batteries longue durée pouvant alimenter des capteurs à faible consommation énergétique pendant une durée prolongée. Cette même entreprise propose également toute une gamme de batteries pour énergies renouvelables permettant de rendre des sites distants complètement autonomes en énergie. Nous pouvons ainsi imaginer installer des panneaux solaires sur des sites suffisamment ensoleillé, des éoliennes...
 D'autres entreprises telles que yuasa, avec sa gamme de batteries NP à longue durée de vie, proposent des solutions similaires.
+
+Finalement, une dernière solution technologique nous est prposée par Enocean : des capteurs 
 

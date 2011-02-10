@@ -1,43 +1,48 @@
-Draft protocole.
+\section{Règles}
+    \subsection{spécification du protocole de communication}
 
-Le protocole doit pouvoir être intérrogé pour fournir des valeurs correspondant à un ou plusieurs parametres.
-Il doit pouvoir fournir un historique des valeurs, ou dire qu'aucun historique n'est disponible.
-(Tout ce que le protocole peut faire, n'est pas forcement ce que les capteurs devront savoir faire).
+        Le protocole doit pouvoir être intérrogé pour fournir des valeurs correspondant à un ou plusieurs parametres.
+        Il doit pouvoir fournir un historique des valeurs, ou dire qu'aucun historique n'est disponible.
+        (Tout ce que le protocole peut faire, n'est pas forcement ce que les capteurs devront savoir faire).
 
-Le protocole doit permettre de demander au capteur d'envoyer réguliérement , à chaque modification, ou de n'envoyer que sur demande la valeurs correpondant à un parametre.
-En cas de demande sur modification, un seuil de modification doit être précisé.
-Le capteur peut ne pas être capable d'envoyer la valeur sur modification, ou même à la demande.
-Il peut avoir été conçus pour envoyer réguliérement une valeur, afin de simplifier au maximum la technologie du capteur.
+        Le protocole doit permettre de demander au capteur d'envoyer réguliérement , à chaque modification, ou de n'envoyer que sur demande la valeurs correpondant à un parametre.
+        En cas de demande sur modification, un seuil de modification doit être précisé.
+        Le capteur peut ne pas être capable d'envoyer la valeur sur modification, ou même à la demande.
+        Il peut avoir été conçus pour envoyer réguliérement une valeur, afin de simplifier au maximum la technologie du capteur.
 
-Le capteur peut demander un accusé de reception de la valeur.
+        Le capteur peut demander un accusé de reception de la valeur.
 
-Chaque capteur possède une adresse pour l'accés, et éventuellement un nom.
-Le nom du capteur s'acquiert de la même façon que n'importe quel parametre.
-(Il serait stupide mais pas impossible de demander d'envoyer réguliérement le nom du capteur)
+        Chaque capteur possède une adresse pour l'accés, et éventuellement un nom.
+        Le nom du capteur s'acquiert de la même façon que n'importe quel parametre.
+        (Il serait stupide mais pas impossible de demander d'envoyer réguliérement le nom du capteur)
 
-Le protocole permet la modification de valeurs (par exemple le nom, ou plus tard, peut être des valeurs de configuration etc ...)
-L'historique devrait pouvoir retenir qui à modifier la valeur (quel capteur, ou message externe).
+        Le protocole permet la modification de valeurs (par exemple le nom, ou plus tard, peut être des valeurs de configuration etc ...)
+        L'historique devrait pouvoir retenir qui à modifier la valeur (quel capteur, ou message externe).
 
-Le protocole devrait être sécurisé.
+        Le protocole devrait être sécurisé.
 
-Toutes communication avec un terminal sera borné à l'adresse du client et l'adresse du capteur.
-Pour initialiser une nouvelle communication, un code securisant sera demandé.
-Un capteur peut gérer, une ou plusieurs connections.
+        Toutes communication avec un terminal sera borné à l'adresse du client et l'adresse du capteur.
+        Pour initialiser une nouvelle communication, un code securisant sera demandé.
+        Un capteur peut gérer, une ou plusieurs connections.
 
-Un site peut être le relais d'un autre site plus petit, plus faible technologiquement.
-Dans ce cas, les parametres du site plus petit sont cloné sur le site relais.
-La communication entre le site "esclave" et le site relais peut se faire par un autre media que le media entre le site relais et le client.
+        Un site peut être le relais d'un autre site plus petit, plus faible technologiquement.
+        Dans ce cas, les parametres du site plus petit sont cloné sur le site relais.
+        La communication entre le site "esclave" et le site relais peut se faire par un autre media que le media entre le site relais et le client.
 
-Un capteur peut être initialement configuré pour ne communiquer qu'avec une adresse spécifié "en dur".
+        Un capteur peut être initialement configuré pour ne communiquer qu'avec une adresse spécifié "en dur".
 
-La localisation, comme le nom peut être intérrogé comme tout autres paramètre.
+        La localisation, comme le nom peut être intérrogé comme tout autres paramètre.
 
-Un paramètre peut avoir une valeur sous forme de chaine de caractere, de valeur numérique, ou de suite de valeur numérique.
+        Un paramètre peut avoir une valeur sous forme de chaine de caractere, de valeur numérique, ou de suite de valeur numérique.
 
 
-Toutes actions sur la station peut se faire à l'aide de paramètre spécifique (par exemple : vitesse moteur = 10 )
-ou bien par l'intermédiaire d'un parametre de commande (par exemple : commande = exec vitesse_moteur 10)
+        Toutes actions sur la station peut se faire à l'aide de paramètre spécifique (par exemple : vitesse moteur = 10 )
+        ou bien par l'intermédiaire d'un parametre de commande (par exemple : commande = exec vitesse_moteur 10)
 
-Le protocole doit pouvoir spécifié la fréquence d'acquisition des capteurs.
+        Le protocole doit pouvoir spécifier la fréquence d'acquisition des capteurs.
 
-TROUVER UN MODEL GENERIQUE capteur -> site -> client
+        %TODO TROUVER UN MODEL GENERIQUE capteur -> site -> client
+
+
+\subsection{}
+

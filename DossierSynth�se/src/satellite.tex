@@ -1,0 +1,75 @@
+\section{Introduction}
+  \subsection{Contexte global}
+    Le COPEVUE (Comité pour la Protection de l'EnVironnement de l'UE), présidé par le commissaire Norvégien souhaite étudier \textbf {un système
+    de monitoring de sites isolés} .
+    De nombreuses régions de l'UE, se situant dans les pays Nordiques, ou certaines régions méditérranéennes (à haut risque en terme d'incendies) sont peu peuplées et peu aisément accessibles. Néanmoins
+    de nombreux lieux de travail existent dans ces régions tels que ceux nécessaires à l'abattage de bois, l'installation de réseaux (éléctrique ou de télécommunication),
+    de stations de pompage ou encore des lieux dédiés à certaines études sur la faune et la flore. Ces lieux sont bien souvent isolés et disséminés loin des villes et des grans centres et doivent donc être autonomes en termes 
+    d'énergie, de déchets etc...
+    Les réservoirs doivent être surveillés pour être ravitaillés, nettoyés ou vidés avant que le niveau n'atteigne un seuil critique. 
+    Actuellement la surveillance de ces lieux est assurée par le propriétaire du lieu de travail qui, en fonction du niveau qu'il constate, 7
+    avertit la société chargée de s'occuper du réservoir pour qu'elle vienne le remplir / vider.
+    Les sociétés chargées de la maintenance des réservoirs doivent donc équiper et envoyer un camion pour s'occuper des réservoirs lorsque 
+    le propriétaire en fait la demande. Mais lorsque ces sociétés s'occupent de plusieurs dizaines de sites différents.
+    Par ailleurs, pour des raisons de coût, on a pu constater des manquements vis-à-vis des exigences de surveillance qui peuvent se traduire par des risques 
+    de désastres stratégiques dans des forets méditéranéennes ayant de fort risque d'incendie.\\
+    La surveillance du niveau de ces réservoirs doit donc être assurée d'une autre manière afin de permettre aux sociétés chargées de leur maintenance de planifier les trajets des camions
+    afin de faire des économies logistiques tout en garantissant certaines autres exigences.
+  \subsection{Objectif du document}
+    Le but principal de ce document est de synthètiser l'étude technique réalisée par notre équipe en présentant de manière claire et détaillée une vision globale du futur système.\\
+    Ce document s'adresse aussi bien à COPEVUE qu'aux membres de l'équipe pour les aider à rédiger tout autre document
+  \subsection{Références}
+    \begin{itemize}
+      \item Dossier d'initialisation
+      \item Dossier Spécifications Techniques des Besoins
+      \item Dossier de Conception du Système
+    \end{itemize}  
+      
+\section{L'existant}
+  \subsection{Cadre de l'étude et objectifs}  
+  Notre but dans ce projet est de développer le système de monitoring des sites isolés. Ce système doit être autonome et fiable, afin de limiter au plus l'action de maintenance. De plus,  la fiabilité doit être la première des préoccupations, puisque l'objectif est de prévenir de toute catastrophe au niveau des stations-réservoirs.
+\par Ce caractère catastrophe implique aussi que les communications se doivent d'être brèves. L'action de maintenance doit être menée le plus rapidement possible, et cela n'est possible que si l'information remonte instantanément au service de maintenance.
+\par  Une autre composante importante à prendre en compte reste le caractère hostile de l'environnement dans les sites isolés. Le matériel utilisé (capteurs, systèmes embarqués) doit donc être capable de résister à des températures extrêmes. L'aspect énergétique semble aussi important. Dans un esprit d'écologie, nous tirerons l'énergie indispensable aux sites isolés à 100\% des énergies renouvelables, solaire comme éolien (ne pas oublier que certains sites se trouvent au dessus du cercle pôlaire).
+\par Du fait d'un nombre important de sites isolées, avec différentes configurations possibles, le système se doit d'être générique. A l'avenir, la mise à jour des composants, l'ajout de nouveaux sites ou l'augmentation du nombre des capteurs ne doit pas poser problème.  
+\par Enfin, la maintenance de la partie logicielle doit être réduite. Elle doit être construite de la façon la plus robuste afin d'avoir une probabilité de "plantage" la plus faible.
+\par Au final, nos maitres mots seront donc :
+  \begin{itemize}
+    \item Fiabilité du matériel
+    \item Autonomie
+    \item Rapidité des communications
+    \item Généricité et évolutivité du système
+    \item Robustesse logicielle
+  \end{itemize}
+  
+  \subsection{Critique de l'existant}
+
+ 
+\section{Solution proposée}  
+  \subsection{Architecture}
+  
+  
+  \subsection{Fonctionnement général}    
+    \subsubsection{Station générique}
+Une station générique est définie comme l'ensemble des capteurs présents au niveau des réservoirs, reliés au système embarqué, additionné au système de géolocalisation du site. Les communications entre les capteurs et le système embarqué se font soit de façon filaire si la distance capteur/système embarqué est inférieure à 3 mètre, soit par la technologie ZigBee pour une distance supérieure. 
+\par L'ensemble du matériel de la station sera fourni en électricité par un réseau d'énergies renouvelables mis en place sur le site même.
+\par Enfin, le traitement des informations envoyées par les capteurs au système embarqué permet de gérer la priorité des évènements. C'est au niveau du système embarqué qu'est décidé si une information doit être envoyées dans l'immédiat au site central, stockée dans un historique(qui lui est envoyé une fois par jour au site central).
+    
+    \subsubsection{Site central}
+Les informations concernant les stations sont toutes transmises au site central de façon périodique(1 fois par jour) sauf si l'information a été jugée prioritaire en amont. La communication s'effectue de façon bidirectionnelle par GPRS et/ou par satellite (multiplexage). Les opérations de maintenance sont déclenchées à partir de ces informations et transmises le cas échéant aux entreprises concernées. Un sytème d'aide à la décision permet d'optimiser les trajets des opérateurs de maintenance (cf plus bas). 
+
+    \subsubsection{Maintenance}
+La maintenance s'effectue par des entreprises partenaires
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX(comme ta mère)
+    
+    
+    \subsubsection{Aide à la décision et communication externe}
+     Le module d'aide à la décision permet à COPEVUE de garantir une qualité de service et d'amplifier l'aspect écologique de notre solution. Le principe de ce module est de réduire considérablement les déplacements inutiles et à fortiori les consommations dues à ces déplacements. L'aide à la décision représente une grande partie du traitement d'informations. A partir des différentes opérations de maintenance qui découlent de ce traitement, le module va optimiser les trajets en recherchant le chemin le plus court et en allouant plusieurs maintenances à un opérateur(la maintenance de plusieurs sites proches doit être traitée par un seul et même camion de maintenance). Un autre caractère intéressant de ce module est de pouvoir assurer le retour qualité (vérifier que nos recommandations ont bien été prises en compte).
+     
+\section{Apport de la solution / Thèmes de progrès}
+
+Une certaine sûreté
+
+\section{Investissement et mise en place de la solution}  
+  \subsection{Coûts estimés}
+  \subsection{Mise en place du système}
+\section{Conclusion}  

@@ -1,0 +1,16 @@
+\section{Evolutibilité}
+
+Notre système est conçu pour un besoin bien spécifique, mais les besoins du client peuvent évoluer
+donc il faut envisager les solutions pour les gérer.
+Également d'autres demandes de client peuvent nécessiter l'amélioration de notre système, il faut qu'il soit
+le plus générique possible pour permettre ces évolutions. Ci-dessous quelques évolutions :
+
+\begin{description}
+           \item[Augmentation du nombre de capteurs :] Pour ce cas, notre système sera totalement géré les montées en charge. En effet, le système embarqué choisi (Watchman500 Node) permet de communiquer avec 100 capteurs à la fois.
+           \item[Intégration de nouvelles sociétés de maintenance sur site :] Le nombre de sites peut augmenter ainsi donc le nombre de maintenance, ce qui peut entraîner le besoin de signer de nouveaux partenariats avec des sociétés de maintenance. Nous prévoyons un ensemble de procédures afin de rendre opérationnelle sous peu de temps ces sociétés : les intégrer à notre réseau, les former aux procédures en cours..
+           \item[Changement des composants du système :] On imagine très bien que la plupart des sous-systèmes utilisés (système embarqué, capteur..)
+dans notre système seront améliorés et de nouvelles versions proposant beaucoup plus de fonctionnalités et étant plus stables apparaîtront sur le marché. Ce qui bien entendu améliorerait la fiabilité et l'efficacité de notre système. 
+            De ce faite, nous avons choisi des composants ayant une forte interopérabilité (par exemple le système embarqué choisi : Watchman500 Node peut intégrer quasiment tous les capteurs du marché).
+            Également dans cette même optique, nous avons effectué une décomposition applicative en couche en séparant bien les traitements qui ne sont pas similaires, afin d'avoir peut de modifications si une couche devait être modifié lors de l'intégration d'un nouveau composant.
+           \item[ :] 
+\end{description}
