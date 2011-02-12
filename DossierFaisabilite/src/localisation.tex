@@ -1,31 +1,25 @@
 \section{Système de localisation}
 
     \subsection{Système de localisation en temps réel}
-        \subsubsection{GPS}
-	        http://www.orbitica.com/gps/oem/gps16.htm
-
-            Le système de localisation GPS, d'origin américaine, est actuellement le plus utilisé pour les utilisations civiles.
-            Il à une précision de environ 3 mêtres.
-            
-            Les caractéristiques d'un recepteur GPS commun :
-            \begin{itemize}
-	            \item Dimensions : 91 mm de diamètre et 42 mm de hauteur
-
-	            \item Tension d'entrée :
-	                \subitem GPS 16x LVS : 3,3 Vdc à 6,0 Vdc régulée, <100 mV ripple
-	                \subitem GPS 16x HVS : 8,0 Vdc à 40 Vdc non régulée
-	            \item Courant d'entrée :
-	                \subitem GPS 16x LVS : 90 mA typical
-	                \subitem GPS 16x HVS : 100 mA@8 Vdc, 65 mA@12 Vdc, 28 mA@40 Vdc
-	            \item Courant de veille : <10 µA pour tous les modèles
-	            \item Sensibilité du récepteur GPS : -185 dBW minimum
-
-	            \item Températures de fonctionnement : -30°C à +80°C
-	            \item Températures de stockage : -40°C à +80°C
-            \end{itemize}
-
-	        Pour ce qui est des températures, la couverture semble plus que correcte.
-	        Pour ce que est de la précision, idem, la précision est parfaite.
+        \domaine{GPS}
+        { Le système de localisation GPS, d'origin américaine, est actuellement le plus utilisé pour les utilisations civiles.
+          Il à une précision de environ 3 mêtres.}
+        { Températures de fonctionnement : -30°C à +80°C\\
+          Températures de stockage : -40°C à +80°C}
+        { \begin{itemize}
+                \item Tension d'entrée :
+                    \subitem GPS 16x LVS : 3,3 Vdc à 6,0 Vdc régulée, <100 mV ripple
+                    \subitem GPS 16x HVS : 8,0 Vdc à 40 Vdc non régulée
+                \item Courant d'entrée :
+                    \subitem GPS 16x LVS : 90 mA typical
+                    \subitem GPS 16x HVS : 100 mA@8 Vdc, 65 mA@12 Vdc, 28 mA@40 Vdc
+          \en{itemize}
+        }
+        { 140€ l'unité.
+        }
+        {}
+        { La couverture en température de fonctionnement et stockage semble plus que correcte.
+          La précision suffira largement à la pluspart des usages que l'on pourras en faire.}
 	        
 	    \subsubsection{Améliorations GPS}
 	        Plusieurs systèmes se basent sur le système GPS pour améliorer sa précison de localisation.
