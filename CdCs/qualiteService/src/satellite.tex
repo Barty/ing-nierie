@@ -1,3 +1,4 @@
+\newpage
 \section{Introduction}
 
         Dans le cadre de la rénovation du système d'information visant à réduire l'impact écologique, il peut être envisageable et très avantageux de mettre en place un système d'optimisation des trajets de ravitaillement et de maintenance.
@@ -5,12 +6,11 @@
     \subsection{Présentation du projet}
     
         Ce projet d'optimisation s'inscrit dans un projet plus vaste d'amélioration des flux d'information et de rénovation du système d'information.
-        
         Cette solution se placera à la bordure du système avec la communication vers la société en charge du ravitaillement et de la maintenance.
         
     \subsection{Présentation du document}
         
-        %TODO
+        Ce document est un cahier des charges détaillant à la fois les questions relatives au problème posé, et les différentes solutions de manière la plus précise possible.
         
     \subsection{Document applicables / Documents de référence}
     
@@ -22,7 +22,8 @@
         
     \subsection{But}
     
-        Le but de cette solution est de réduire l'impact écologique en agissant sur la gestion des trajet de ravitaillement et de maintenance. En agençant au mieux les étapes des trajets il sera possible de réduire la distance parcouru.
+        La rénovation du système d'information permettras d'automatiser au maximum la récolte d'information concernant des sites isolés.
+        Le but de cette solution d'aide à la décision est de réduire l'impact écologique en agissant sur la gestion des trajet de ravitaillement et de maintenance. En agençant au mieux les étapes des trajets il sera possible de réduire la distance parcouru.
         
     \subsection{Formulation des besoins, exploitation et ergonomie, expérience}
     
@@ -43,7 +44,7 @@
                 Cette solution à néanmoins le désavantage de nécessiter un coût de mise en place plus important.
             \end{itemize}
         
-        \subsubsection{Ergonomie}
+        \subsubsection{Expérience \& Ergonomie}
         
             Durant la phase d'exploitation, cette solution doit être le plus transparente possible.
             Les trajets générés doivent être visible et modifiable très facilement.
@@ -53,30 +54,12 @@
             
             Durant la phase de configuration, en revanche, la solution sera hautement configurable.
         
-        \subsubsection{Expérience}
-    
-            %TODO
-    
     \subsection{Portés, développement, mise en œuvre, organisation de la maintenance}
-    
-        \subsubsection{Portés}
         
             Cette solution sera borné entre la réception des informations concernant les sites isolés et la communication avec la société chargé du ravitaillement et la maintenance.
+            Cette solution ne comprend donc pas la mise en place de la base de données, ou la maintenance de celle-ci. Il est entendu que l'accès à cette base de données est un pré-requis.
             Cependant, elle est directement intégré dans le flux d'information et prend par à sa transformation.
-            
-        \subsubsection{Développement}
-        
-            %TODO
-        
-        \subsubsection{Mise en œuvre}
-        
-            La mise en œuvre de cette solution viendras directement modifier le flux d'information géré par le système d'information.
             Elle s'inscrira à la place du système de communication existant entre le site centrale de COPEVU et la société chargé du ravitaillement et de la maintenance en venant automatiser ce processus.
-        
-        \subsubsection{Organisation de la maintenance}
-    
-            %TODO
-            La solution est entièrement logiciel et relativement simple, elle ne requiert donc pas de maintenance particulière.
     
     \subsection{Limites}
     
@@ -108,7 +91,8 @@
 
     \subsection{Contraintes d'utilisation}
     
-        %TODO
+        L'itinéraire calculé doit être accessible facilement, doit pouvoir être transmis facilement et être recalculé par l'entreprise chargé du ravitaillement et de la maintenance en trés peu de temps (de l'ordre de 5 à 10 minutes).
+        L'itinéraire calculé doit être envoyé automatiquement à la société chargé de la maintenance et du ravitaillement afin d'automatiser complétement ce processus d'information. Cependant, une personne sera chargé de vérfier l'exactitude est la cohérence des informations transmises.
     
     \subsection{Critère d'appréciation de la réalisation effective de la fonction}
     
@@ -117,15 +101,28 @@
     
     \subsection{Flexibilité dans la façon de mettre en œuvre la fonction concernée et variation de coûts associée en fonction de cette flexibilité}
 
+        La fonction ciblé par le logiciel est à la fois trés spécifique, et très générique.
+        La fléxibilité lié à la saisie et à la nature des informations doit être trés flexible, en revanche, la flexibilité de la fonction de calcul et de génération de l'itinéraire ne sera pas flexible.
+
 \section{Contraintes imposées, faisabilité technologique et éventuellement moyens}
 
     \subsection{Sûreté, planning, organisation, communication}
     
-        %TODO
+        La solution pourras être réalisé par deux tâches parallèles.
+        L'une consisteras à spécifier et concevoir l'algorithme de calcul d'itinéraires.
+        L'autre consisteras à mettre en place les outils de communication entre la base de données, la société chargé du ravitaillement et de la maintenance, COPEVU et le coeur de la solution.
+        
+        L'équipe chargé de la première tâche auras peu de communication avec les clients, seulement quelques questions concernant certaines contraintes métiers et quelques améliorations et fonctionnalité supplémentaire susceptible d'intéresser le client.
+        En revanche elle sera plus en relation avec la seconde équipe pour établir précisément les données à échanger et les formats de ces données.
+        
+        L'équipe chargé de la seconde tâche auras beaucoup de relation avec les clients pour discuter de la meilleurs façon dont les données seront entrées, reçus, transmises etc ...
     
     \subsection{Complexité}
     
-        %TODO
+        La partie la plus complexe semble être la conception de l'algorithme de calcul d'itinéraires.
+        Cependant, cette complexité peut rapidement diminuer si une solution équivalente existe.
+        
+        La seconde tâche ne sera pas complexe techniquement, mais peut prendre plus de temps suivant le déroulement des discussions avec le client.
     
     \subsection{Compétences, moyens et règles}
     
@@ -133,28 +130,34 @@
     
     \subsection{Normes de documentation}
 
-        %TODO
+        La documentation compléte sera livré sous format numérique au moment de l'installation du système. 
+        Cependant, les clients ayant pris part à son élaboration, cette documentation sera plus destiné à de nouveaux utilisateurs, ou à des équipes chargés de maintenir et de faire évoluer le logiciel.
+        Une documentation concise et sous la forme d'informations usuelles sera présente tout long des saisies utilisateurs, afin d'aider celui-ci.
 
 \section{Configuration cible}
 
     \subsection{Matériel et logiciels}
-    
-        %TODO
+
+        La solution logicielle sera accessible depuis une interface web, les utilisateurs devront donc avoir à disposition un navigateur web.
+        Elle devras avoir accès aux base de données contenant les informations sur les sites isolés, et les véhicules utilisés par la société chargé du ravitaillement et de la maintenance.
     
     \subsection{Stabilité de la configuration}
     
-        %TODO
-    
-    \subsection{Normes de documentation}
-
-        %TODO
+        La configuration de la solution est constante. Pour chaque site correspond des criticité différente en temps et en volume d'approvisionnement ou de vidange, la solution devras donc constamment gérer ces marges.
+        En revanche, une autre partie de la configuration, concernant les contraintes physiques ne changeront pas ou peu. Par exemple, Les véhicules ne pourront pas dépasser les vitesses autorisés, ou devront se limiter aux itinéraires tracé.
+        
+        Pour résumé, si on considère les informations ci-dessus comme des données d'entrées, la solution n'as besoin que d'une configuration initiale.
 
 \section{Guide de réponse au cahier des charges}
 
     \subsection{Grille d'évaluation}
-
-        %TODO
-
-\section{Annexes}
-
-    ...
+        
+        \begin{tabular}{l l l}
+            \hline
+            Fonction & Priorité & Compléxité \\
+            \hline
+            Spécification et conception de l'algorithme & haute & haute \\
+            Mise en place des outils de communication & haute & faible \\
+            \hline
+            
+        \end{tabular}
