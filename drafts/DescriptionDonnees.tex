@@ -1,4 +1,70 @@
-\section{Description des données manipulées}
+\section{Types de données utilisés}
+	\begin{description}
+	\item [Capteur : ] Variable contenant toutes les informations d'un capteur.\\
+	Format de données :		
+	\begin{tabular}{|c|}
+	\hline
+	id\\
+	\hline
+	Valeur\\
+	\hline
+	Type\\
+	\hline
+	Etat\\
+	\hline
+	Site\\
+	\hline
+	\end{tabular}
+
+	\item [Site : ] Variable contenant toutes les informations d'un site.\\
+	Ce type peut définir un site générique ou un site isolé. Les listes de capteurs ou Site représentent respectivement les capteurs d'un site isolé ou les sites contrôlés par un site générique. Site Parent ne sera pas renseigné pour un site générique.\\
+	Format de données :		
+	\begin{tabular}{|c|}
+	\hline
+	id\\
+	\hline
+	list $<Capteurs>$\\
+	\hline
+	list $<Site>$\\
+	\hline
+	SiteParent\\
+	\hline
+	coordonnees\\
+	\hline
+	\end{tabular}
+
+	\item [Planning : ] Variable contenant toutes les informations d'un planning.\\
+	Format de données :		
+	\begin{tabular}{|c|}
+	\hline
+	id\\
+	\hline
+	list $<Site>$\\
+	\hline
+	Etat\\
+	\hline
+	\end{tabular}
+
+	\item [AlerteSite : ] Type servant à transmettre les différentes alertes émises par les sites\\
+	Format de données :		
+	\begin{tabular}{|c|}
+	\hline
+	id\\
+	\hline
+	typeAlerte\\
+	\hline
+	Etat\\
+	\hline
+	\end{tabular}
+
+			
+	\end{description} 
+
+
+
+\section{Echanges entre les systèmes}
+
+
 \begin{description}
 \item[Échanges entre un site isolé et un site générique :]~\\*
 	\begin{itemize}
@@ -8,12 +74,15 @@
 	Format de données :		
 	\begin{tabular}{|c|}
 	\hline
-	Ref Capteur 1\\
+	id\\
 	\hline
-	Valeur \\
+	idSite\\
+	\hline
+	list $<Capteur>$\\
 	\hline
 	\end{tabular}
 ~\\*
+
 \item[Échanges entre un site générique et les satellites des communication :]~\\*
 	\begin{itemize}
 		\item Envoi des relevés des capteurs au site central, afin de simplifier la communication, les données envoyées peuvent être mises en forme avant l'envoi par le 	site générique.
@@ -22,19 +91,9 @@
 	Format de données : 
 	\begin{tabular}{|c|}
 	\hline
-	Ref Site\\
+	idSite\\
 	\hline
-	Nombre Capteurs modifiés\\
-	\hline
-	Ref Capteur 1\\
-	\hline
-	Valeur Capteur 1\\
-	\hline
-	Ref Capteur 2\\
-	\hline
-	Valeur Capteur 2\\
-	\hline
-	...\\
+	list $<Capteur>$\\
 	\hline
 	\end{tabular}
 ~\\*
@@ -65,4 +124,6 @@
 		\item Récupération en temps réel de la position des camions par le PDA du camionneur
 		\item Les feuilles de routes envoyées par le site central affectées aux différents camions
 	\end{itemize}
+
 \end{description}
+
