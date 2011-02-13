@@ -1,0 +1,35 @@
+\section{Communications et sens de communication}
+
+    \subsection{Flux d'information automatisé}
+        Parmis les flus d'information automatisé, nous entendons toutes les communication concernant les capteurs, les sites isolés, le site centrale et les société chargé du ravitaillement et de la maintenance. Autrement dit, toute communication ou l'action humaine n'intervient pas.
+        \subsubsection{Communications externes au site centrale}
+            Les communication exterieurs au site centrale sont pour la pluspart automatisé.
+            Les noeud du reseaux composé de capteurs, des sites isolés, et du site centrale sont tous similaire, et donc ont les même capacité de communication. Ils peuvent par exemple initier une communication vers un autre noeud pour demander ou soumettre des informations ou des ordres.
+            Une communication peut être :
+            \begin{itemize}
+                \item initié pour demander une valeur, le noeud questionné répondras immediatement;
+                \item initié pour demander à un noeud de retourner une valeur avec un certaines fréquence, ou sous certaines conditions de modifications.
+            \end{itemize}
+            
+            Les communications sont donc à double sens et symétriques.
+            
+        \subsubsection{Communication initié par le site centrale}
+
+            Il s'agit uniquement de la communication avec la société chargé du ravitaillement et de la maintenance.
+            Cette communication n'est pas entiérement automatisé, les informations concernant les trajets à effectuer sont affiché sur une interface web accessible par cette société. Pour informer la société de toute modification, un mail d'alerte est envoyé.
+    
+    \subsection{Communication et interface utilisateur}
+        
+        \subsubsection{Communication avec le réseaux de capteurs}
+            
+            L'interface qui sera utilisé pour le monitoring et la maintenance avec le site centrale met en oeuvre principalement deux types de communications :
+            \begin{itemize}
+                \item une première communication avec la base de données du site centrale permettant d'avoir en temps réel les informations reccueuillies.
+                \item une seconde communication directement en relation avec le réseaux de capteurs pour :
+                    \subitem modifier les fréquences ou les conditions de soumission de valeur,
+                    \subitem pour effectuer des opérations de maintenances.
+            \end{itemize}
+        \subsubsection{Communication avec la société de ravitaillement et de maintenance}
+            
+            La communication avec la société de ravitaillement et de maintenance est automatisé dans le sens où la société est alérté automatiquement, et les ordres de ravitaillement, de vidange ou de maintenance sont mis à jour automatiquement. En revanche, la société est chargé, à l'aide d'une interface web, de prendre connaissance de ces ordres, et de saisir les bilan d'opérations.
+            
