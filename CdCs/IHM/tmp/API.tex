@@ -1,0 +1,59 @@
+\section{API}
+
+\subsection{Communication entre les sociétés de maintenance et le système central}
+\begin{itemize}
+	\item List$<Planning>$ consulterPlannings()
+	\begin{description} 
+		\item[Rôle :] Permet à la société de maintenance de récupérer les nouvelles données présentes sur le serveur.
+		\item[Contrat :] AUCUN
+		\item[En entrée :] AUCUN
+		\item[En sortie :] La liste des nouveaux plannings disponibles sur le site central.
+	\end{description}
+	~\\
+	\item void validerInterventionSurSite(List$<Site>$ sitesControles)
+	\begin{description} 
+		\item[Rôle :] Permet à la société de maintenance de signaler au système central que l'opération de maintenance sur les sites listés a bien  été effectuée
+		\item[Contrat :] Le sites listés doivent être actuellement en demande de maintenance
+		\item[En entrée :] La liste des sites traités par la dernière opération de maintenance
+		\item[En sortie :] AUCUNE
+	\end{description}
+	~\\
+	\item AdresseGPS coordonneesGPS(Site s)
+	\begin{description} 
+		\item[Rôle :] Permet de récupérer les coordonnées GPS d'un site passé en paramètre
+		\item[Contrat :] Le site doit exister
+		\item[En entrée :] un site générique
+		\item[En sortie :] les coordonnées GPS de ce site
+	\end{description}
+	~\\
+
+\end{itemize}
+
+\subsection{Communication entre les sites génériques et le système central}
+\begin{itemize}
+	\item List$<RapportSite>$ MiseAJourEtatSite(List$<Site>$  s) 
+	\begin{description} 
+		\item[Rôle :] Permet de rafraichir l'état des capteurs des sites passés en paramètre et de récupérer les données actuelles instantanément.
+		\item[Contrat :] AUCUN 
+		\item[En entrée :] la liste des sites génériques à contrôler
+		\item[En sortie :] La liste des données capteurs envoyée par les sites
+	\end{description}
+	~\\
+	\item réinitialiserSystemeEmbarque(List$<Site>$  s) 
+	\begin{description} 
+		\item[Rôle :] Permet de réinitialiser les systèmes embarqués
+		\item[Contrat :] 
+		\item[En entrée :] 
+		\item[En sortie :] 
+	\end{description}
+	~\\
+	\item EmettreAlerte(Site s, Alerte a) 
+	\begin{description} 
+		\item[Rôle :] 
+		\item[Contrat :] 
+		\item[En entrée :] 
+		\item[En sortie :] 
+	\end{description}
+	~\\
+
+\end{itemize}
