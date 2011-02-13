@@ -10,12 +10,12 @@
 		\item[En sortie :] La liste des nouveaux plannings disponibles sur le site central.
 	\end{description}
 	~\\
-	\item List$<Site>$ sitesErr validerInterventionSurSite(List$<Site>$ sitesControles)
+	\item mettreAJourPlanning(Planning p)
 	\begin{description} 
-		\item[Rôle :] Permet à la société de maintenance de signaler au système central que l'opération de maintenance sur les sites listés a bien  été effectuée
-		\item[Contrat :] Le sites listés doivent être actuellement en demande de maintenance
-		\item[En entrée :] La liste des sites traités par la dernière opération de maintenance
-		\item[En sortie :] La listes des sites pour lesquels l'opération n'a pu être validée
+		\item[Rôle :] Permet à la société de maintenance de mettre à jour le planning (opérations sur site terminée, opérations inutiles...)
+		\item[Contrat :] AUCUN
+		\item[En entrée :] le planning concerné 
+		\item[En sortie :] Aucune sortie
 	\end{description}
 	~\\
 	\item AdresseGPS coordonneesGPS(Site s)
