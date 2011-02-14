@@ -70,21 +70,26 @@ Mais n'hésite pas à m'en parler car j'ai des raisons d'avoir fait ces choix.
 
 Listes des méthodes à rajouter
 Communication entre les sites génériques et le système central
-	-log
-	
-    - ConsulterPlanning (IdPlanning)
-    - MAJPlanning (IdPlanning)
+    - ConsulterLog(idSite)
     - RecupererDonneesSite (IdSite)
-    - SignalerMaintenance (IdSociete, IdSite)
+    - SignalerAlerte (IdSite, typeAlerte, details)
+    - MAJLogicielle(syteme)
+             systeme : RTOS ou Systeme embarqué
+    - MaintenanceDistante(typeCommande)
+    - ModifierFrequence(idSite, nouvelleFreq)
 
 Communication entre les sociétés de maintenance et les PDAs des camionneurs
-    - ConsulterPlanning (IdPlanning)
-    - MAJPlanning (IdPlanning)
-    - RecupererDonneesSite (IdSite)
-    - SignalerMaintenance (IdChauffeur, IdSite)
+    - MAJPlanning (IdSite)
+    - ConsulterPlanning(IdSite)
+    - SignalerDysfonctionnement (IdSite, typeDysfonctionnement)
+    - ConsulterTraitementDysfonctionnement(idSite, typeDysfonctionnement)
+            Quand le problème est résolu par notre système, on notifie par mail les responsables
+            de la société pour qu'ils puissent demander à leurs employés de faire autre chose 
+            si notre solution ne leur convient pas
 
-Communication entre les sociétés de maintenance et le système central
-    - MAJDonneesSites (IdSite)
-    - MaintenirDistanteSite (IdSite, typeOperation)
-    - EmettreAlarme (IdSite, typeAlarme)
+Communication entre les sociétés de maintenance/ravitaillement et le système central
+    - MAJPlanning (IdSite)
+    - ConsulterPlanning(IdSite)
+    - SignalerDysfonctionnement (IdSite, typeDysfonctionnement)
+    - ConsulterTraitementDysfonctionnement(idSite, typeDysfonctionnement)
 
