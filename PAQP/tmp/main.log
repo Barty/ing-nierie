@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.1.9)  8 FEB 2011 15:17
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.1.9)  15 FEB 2011 14:42
 entering extended mode
 **main.tex
 (C:\msysgit\msysgit\ing-nierie\PAQP\tmp\main.tex
@@ -880,12 +880,12 @@ Overfull \hbox (12.79999pt too wide) in paragraph at lines 23--23
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (C:\msysgit\msysgit\ing-nierie\PAQP\tmp\main.toc
-Overfull \hbox (3.66005pt too wide) in paragraph at lines 29--29
+Overfull \hbox (3.66005pt too wide) in paragraph at lines 35--35
  [][] [][]\OT1/cmr/m/n/10.95 Presentation des demarche de developpement au n
 i-veau sous-projets (niv. realisation)[] [][]  
  []
 
-<insa-couleur.jpg, id=330, 425.4294pt x 227.6505pt>
+<insa-couleur.jpg, id=334, 425.4294pt x 227.6505pt>
 File: insa-couleur.jpg Graphic file (type jpg)
  <use insa-couleur.jpg>
 
@@ -897,7 +897,7 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
 [2
 
  <C:/msysgit/msysgit/ing-nierie/PAQP/tmp/insa-couleur.jpg>]
-Overfull \hbox (8.40506pt too wide) in paragraph at lines 68--68
+Overfull \hbox (8.40506pt too wide) in paragraph at lines 74--74
  [][] [][]\OT1/cmr/m/n/10.95 Interventions du Res-pon-sable Qua-lite (Niv. Pro
 -jet) sur la demarche de Developpement[] [][]  
  []
@@ -905,58 +905,71 @@ Overfull \hbox (8.40506pt too wide) in paragraph at lines 68--68
 )
 \tf@toc=\write4
  (C:\msysgit\msysgit\ing-nierie\PAQP\tmp\satellite.tex
-Overfull \hbox (25.9018pt too wide) in paragraph at lines 32--32
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg>
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+File: insa-couleur.jpg Graphic file (type jpg)
+<use insa-couleur.jpg> [4]
+Overfull \hbox (25.9018pt too wide) in paragraph at lines 91--91
 []\OT1/cmr/bx/n/10.95 Regles sur la definition de criteres d'ac-cep-ta-tion 
 des sous-projets avant integration 
  []
 
 File: insa-couleur.jpg Graphic file (type jpg)
-<use insa-couleur.jpg> [3]
+<use insa-couleur.jpg> [5]
 File: insa-couleur.jpg Graphic file (type jpg)
- <use insa-couleur.jpg> [4]
-Overfull \vbox (24.3782pt too high) has occurred while \output is active []
+ <use insa-couleur.jpg> [6]
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg>
+[7]
+Overfull \vbox (197.33986pt too high) has occurred while \output is active []
 
 File: insa-couleur.jpg Graphic file (type jpg)
 
-<use insa-couleur.jpg> [5]) AED: lastpage setting LastPage 
+<use insa-couleur.jpg> [8]
 File: insa-couleur.jpg Graphic file (type jpg)
-<use insa-couleur.jpg> [6]
-Overfull \vbox (183.73985pt too high) has occurred while \output is active []
-
+ <use insa-couleur.jpg> [9]
 File: insa-couleur.jpg Graphic file (type jpg)
-
-<use insa-couleur.jpg> [7]
+ <use insa-couleur.jpg>
+[10]) AED: lastpage setting LastPage 
+File: insa-couleur.jpg Graphic file (type jpg)
+<use insa-couleur.jpg> [11]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
  (C:\msysgit\msysgit\ing-nierie\PAQP\tmp\main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 498EF087FB199971C963D94E66CA42D2;6985.
+(rerunfilecheck)             Checksum: 285DB754CE39DD2480FDFD63707A2A0A;7029.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 9414 strings out of 494019
- 135004 string characters out of 3143883
- 243428 words of memory out of 3000000
- 12442 multiletter control sequences out of 15000+200000
+ 9433 strings out of 494019
+ 135188 string characters out of 3143883
+ 243430 words of memory out of 3000000
+ 12451 multiletter control sequences out of 15000+200000
  15300 words of font info for 41 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 43i,16n,43p,323b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,16n,43p,467b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (7 pages, 332399 bytes).
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/urw/times/utmr8a.pfb>
+Output written on main.pdf (11 pages, 358433 bytes).
 PDF statistics:
- 443 PDF objects out of 1000 (max. 8388607)
- 78 named destinations out of 1000 (max. 500000)
- 558 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 479 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 566 words of extra memory for PDF output out of 10000 (max. 10000000)
 
