@@ -42,32 +42,55 @@
   \end{itemize}
   
   \subsection{Critique de l'existant}
+La décentralisation de la surveillance des sites isolés est source de nombreux dysfonctionnements qui peuvent être déclinés en deux grandes catégories : - un gaspillage financier (argent provenant pour la majorité des cas des contribuables) - un risque environnemental important, non contrôlé.
 
+Plusieurs facteurs sont sources de gaspillage financier :
+
+La logistique. Il n'existe pas de planification globale et donc pas d'optimisation dans les livraisons/enlèvements de contenant et systématiquement un camion se retrouve avec un chargement nul sur un des trajets (l'aller ou le retour).
+La surveillance. Celle-ci est effectuée par des opérationnels et est donc fortement coûteuse, en particulier lorsque l'on constate que la majorité des déplacements ne débouche sur aucune opération de maintenance. Il s'agit donc d'une monopolisation des ressources humaines pour une tâche sans réelle valeur ajoutée par rapport à ce qu'elles pourraient apporter.
+Une surveillance non globale. L'éparpillement de la gestion de ces sites empêche de faire des économies d'échelles à de nombreux niveaux que ce soit au niveau de la surveillance ou bien dans la mise en commun des achats de contenant ou de services de transport.
+De nombreux points favorisent les risques environnementaux :
+
+Oublis. Le système reposant uniquement sur des ressources humaines, de nombreux oublis de ravitaillement de cuves ont été constatés. C'est totalement inacceptable pour des cuves stratégiques comme celles dédiées à la lutte contre les incendies.
+Fuites. En plus d'être une perte financière, les fuites, suivant le contenant de la cuve, peuvent s'avérer très dangereuses d'un point de vue écologique. Le problème est que ces fuites sont constatées bien souvent trop tard du fait d'une surveillance manuelle, souvent fortement espacée dans le temps.
+D'une manière générale, il manque une traçabilité des opérations effectuées par les divers acteurs et ne permet donc pas un monitoring global.
  
 \section{Solution proposée}  
   \subsection{Architecture}
   
   
-  \subsection{Fonctionnement général}    
+  \subsection{Fonctionnement général} 
+     
     \subsubsection{Station générique}
 Une station générique est définie comme l'ensemble des capteurs présents au niveau des réservoirs, reliés au système embarqué, additionné au système de géolocalisation du site. Les communications entre les capteurs et le système embarqué se font soit de façon filaire si la distance capteur/système embarqué est inférieure à 3 mètre, soit par la technologie ZigBee pour une distance supérieure. 
 \par L'ensemble du matériel de la station sera fourni en électricité par un réseau d'énergies renouvelables mis en place sur le site même.
-\par Enfin, le traitement des informations envoyées par les capteurs au système embarqué permet de gérer la priorité des évènements. C'est au niveau du système embarqué qu'est décidé si une information doit être envoyées dans l'immédiat au site central, stockée dans un historique(qui lui est envoyé une fois par jour au site central).
+\par La localisation des sites pour le service de maintenance se fait par une listes des coordonnées géographiques (latitude, longitude) des sites. Dans le cas d'un site isolé mobile, un emplacement pour balise GPS est prévu.
+\par Enfin, le traitement des informations envoyées par les capteurs au système embarqué permet de gérer la priorité des évènements. C'est au niveau du système embarqué qu'est décidé si une information doit être envoyées dans l'immédiat au site central, stockée dans un historique(qui lui est envoyé une fois par jour au site central). Pour cela, nous utilisons l'ensemble LynxOS + SQLite (le stockage d'un historique demande une base de données). 
     
     \subsubsection{Site central}
-Les informations concernant les stations sont toutes transmises au site central de façon périodique(1 fois par jour) sauf si l'information a été jugée prioritaire en amont. La communication s'effectue de façon bidirectionnelle par GPRS et/ou par satellite (multiplexage). Les opérations de maintenance sont déclenchées à partir de ces informations et transmises le cas échéant aux entreprises concernées. Un sytème d'aide à la décision permet d'optimiser les trajets des opérateurs de maintenance (cf plus bas). 
-
-    \subsubsection{Maintenance}
-La maintenance s'effectue par des entreprises partenaires
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX(comme ta mère)
+Les informations concernant les stations sont toutes transmises au site central de façon périodique(1 fois par jour) sauf si l'information a été jugée prioritaire en amont. La communication s'effectue de façon bidirectionnelle par GPRS et/ou par satellite (multiplexage). Les opérations de maintenance sont déclenchées à partir de ces informations et transmises le cas échéant aux entreprises concernées. Pour cela, nous avons fait le choix de créer un système de monitoring pour 5 sites génériques 5(Donc si au déploiement il existe 12 sites génériques, il faudra prévoir 3 postes de monitoring). Le rôle du poste de monitoring est donc de surveiller les 5 sites génériques qui lui sont alloués. En cas de problèmes, l'employé doit créer une opération de maintenance en y informant le problème rencontré, le lieu et la date butoir de maintenance (certaines maintenances étant moins prioritaires que d'autres). Cette opération est ensuite envoyée au sytème d'aide à la décision(cf plus bas). 
+\par Un poste de maitenance logicielle des stations génériques est prévu au sein du site central.
     
     
     \subsubsection{Aide à la décision et communication externe}
-     Le module d'aide à la décision permet à COPEVUE de garantir une qualité de service et d'amplifier l'aspect écologique de notre solution. Le principe de ce module est de réduire considérablement les déplacements inutiles et à fortiori les consommations dues à ces déplacements. L'aide à la décision représente une grande partie du traitement d'informations. A partir des différentes opérations de maintenance qui découlent de ce traitement, le module va optimiser les trajets en recherchant le chemin le plus court et en allouant plusieurs maintenances à un opérateur(la maintenance de plusieurs sites proches doit être traitée par un seul et même camion de maintenance). Un autre caractère intéressant de ce module est de pouvoir assurer le retour qualité (vérifier que nos recommandations ont bien été prises en compte).
+     Le module d'aide à la décision permet à COPEVUE de garantir une qualité de service et d'amplifier l'aspect écologique de notre solution. Le principe de ce module est de réduire considérablement les déplacements inutiles et à fortiori les consommations dues à ces déplacements, et de permettre la gestion de plusieurs entreprises de maintenance. L'aide à la décision représente une grande partie du traitement d'informations. A partir des différentes opérations de maintenance qu'il reçoit, le module va optimiser les trajets en recherchant le chemin le plus court et en allouant plusieurs maintenances à un opérateur(la maintenance de plusieurs sites proches doit être traitée par un seul et même camion de maintenance), tout en respectant les disponibilités des différentes entreprises. Ces trajets sont ensuites envoyés aux sociétés de maintenance. 
+\par Un autre caractère intéressant de ce module est de pouvoir assurer le retour qualité en vérifiant que nos recommandations ont bien été prises en compte. Les entreprises de maintenance sont dans l'obligation de faire un retour des opérations.
+
+    \subsubsection{Maintenance}
+La maintenance s'effectue par des entreprises partenaires. La communication des différentes opérations de maintenance se fait par le biais d'une interface web. Une entreprise reçoit des notifications de maintenance et doit alors indiquer ses disponibilités (le nombre de camions disponibles). Un retour du module d'aide à la décision sur l'interface web permet alors de connaitre l'itinéraire à suivre ainsi que les réparations à faire. A chaque opération terminée, l'opérateur se doit, via son PDA, de notifier la fin de l'opération. En cas d'imprévus (barrage d'une route, ...), l'opérateur en fait part sur l'interface web (PDA) et le module d'aide à la décision recalcule un nouvel itinéraire (la maintenance peut alors être reporté sur un autre opérateur). 
      
 \section{Apport de la solution / Thèmes de progrès}
 
-Une certaine sûreté
+
+- Automatisation du système de surveillance des sites
+- Suivi temps réel des sites avec possibilité de configurations/commandes à distance
+- Amélioration de la communication (systèmes embarquées, capteurs..)
+- Diminution des coûts de transports
+- Diminution des coûts de main d'œuvre
+- Fiabilité du système de surveillance au vue de risques écologiques
+- Traçabilité des informations et opérations
+- Généricité/Facilité d'évolution du système
+
 
 \section{Investissement et mise en place de la solution}  
   \subsection{Coûts estimés}
