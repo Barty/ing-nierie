@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.1.9)  9 FEB 2011 11:19
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.1.9)  15 FEB 2011 10:45
 entering extended mode
 **main.tex
 (C:\msysgit\msysgit\ing-nierie\DossierSynthèse\tmp\main.tex
@@ -882,7 +882,7 @@ Overfull \hbox (12.79999pt too wide) in paragraph at lines 23--23
 (C:\msysgit\msysgit\ing-nierie\DossierSynthèse\tmp\main.toc)
 \tf@toc=\write4
 
-<insa-couleur.jpg, id=116, 425.4294pt x 227.6505pt>
+<insa-couleur.jpg, id=106, 425.4294pt x 227.6505pt>
 File: insa-couleur.jpg Graphic file (type jpg)
  <use insa-couleur.jpg>
 
@@ -902,42 +902,46 @@ es, ou cer-taines regions mediterraneennes
 
 File: insa-couleur.jpg Graphic file (type jpg)
 <use insa-couleur.jpg> [3]
-Overfull \hbox (442.31938pt too wide) in paragraph at lines 61--63
-[]\OT1/cmr/m/n/10.95 La main-te-nance s'ef-fec-tue par des en-tre-prises par-te
--naires XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX(
-comme
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg> [4]
+Overfull \hbox (7.48514pt too wide) in paragraph at lines 77--78
+\OT1/cmr/m/n/10.95 considerablement les deplacements in-utiles et a for-tior
+i les consom-ma-tions dues a ces deplacements,
  []
 
-) AED: lastpage setting LastPage 
 File: insa-couleur.jpg Graphic file (type jpg)
-<use insa-couleur.jpg> [4]
+<use insa-couleur.jpg> [5]) AED: lastpage setting LastPage 
 File: insa-couleur.jpg Graphic file (type jpg)
- <use insa-couleur.jpg> [5]
+<use insa-couleur.jpg> [6]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
 
 (C:\msysgit\msysgit\ing-nierie\DossierSynthèse\tmp\main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 13DF7AEA85F3B4206BE0E1D2A117036E;1463.
+(rerunfilecheck)             Checksum: D749806C601BAF1DA6069801B7AB34D3;1347.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 9313 strings out of 494019
- 133546 string characters out of 3143883
- 236383 words of memory out of 3000000
- 12393 multiletter control sequences out of 15000+200000
+ 9317 strings out of 494019
+ 133570 string characters out of 3143883
+ 238380 words of memory out of 3000000
+ 12392 multiletter control sequences out of 15000+200000
  14614 words of font info for 39 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 43i,16n,43p,566b,368s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,16n,43p,1066b,368s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (5 pages, 280459 bytes).
+Output written on main.pdf (6 pages, 286096 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 167 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

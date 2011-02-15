@@ -10,14 +10,15 @@ Ce cahier des charges a pour but de présenter la partie IHM du projet en répon
 Une étude préliminaire a déjà été effectuée pour ce projet, pour tout renseignement complémentaire, nous vous encourageons à lire les documents correspondant à l'étude de faisabilité, aux Spécification technique des besoins ainsi que l'analyse de l'existant.
 
 \section{Présentation du problème}
-Un des buts recherchés est la possibilité de visualiser en temps réel l'état des différents sites qu'est chargée de contrôler COPEVUE. La solution proposée a donc été conçue en priorité pour traiter ce problème.
+Un des buts recherchés est la possibilité de visualiser en temps réel l'état des différents sites qu'est chargée de contrôler COPEVUE. La solution proposée a donc été conçue en priorité pour traiter ce problème. Le monitoring à distance sous-entend également la possibilité d'effectuer certaines opérations de maintenance à distance sur les systèmes embarqués. L'application développée devra donc être capable de communiquer directement avec les différents sites et de contrôler les systèmes embarqués à distance.
 
 \subsection{But, utilisateurs concernés, nature du logiciel}
-Une fois terminé et déployé, ce projet aura pour objectif d'assurer un contrôle complet et en temps réel des différents sites isolés présents en Europe. La première partie se limitera cependant aux sites situés dans le Nord de la Norvège. Le but de ce projet est d'éviter aux propriétaires des sites d'être obligés de contrôler manuellement le niveau des cuves en se rendant sur place. Les données des sites seront directement accessibles à travers l'interface conçue.
+Une fois terminé et déployé, ce projet aura pour objectif d'assurer un contrôle complet et en temps réel des différents sites isolés présents en Europe. La première partie se limitera cependant aux sites situés dans le Nord de la Norvège. Le but de ce projet est d'éviter aux propriétaires des sites d'être obligés de contrôler manuellement le niveau des cuves en se rendant sur place. Les données des sites seront directement accessibles à travers l'interface conçue. Les utilisateurs de ce projet seront nombreux et variés, certains se contenteront de consulter des valeurs récupérées des sites isolés, d'autres devront effectuer des rapports de maintenance, d'autres encore devront administrer les systèmes embarqués présents sur les différents sites. \\
+Afin de développer une application simple à déployer et à utiliser, nous avons choisi de priviliégier la solution de l'application Web. Cette solution nous permettra de développer une application simple à utiliser, possédant une interface graphique intuitive et très personnalisable en fonction des comptes utilisateurs.
 
 \section{Formulation des besoins, exploitation et ergonomie}
 \subsection{Formulation des besoins}
-Les besoins exprimés pour ce projet sont simplement la vision et l'exploitation des données reçues des différents sites ainsi que le contrôle à distance des systèmes embarqués situés dans les différents sites.
+Les besoins exprimés pour ce projet sont simplement la vision et l'exploitation des données reçues des différents sites ainsi que le contrôle à distance des systèmes embarqués situés dans ces sites.
 
 \subsection{exploitation et ergonomie}
 La mise en place du projet d'amélioration du système d'information de COPEVUE nécessitera l'installation sur chaque site de divers capteurs permettant de mesurer le niveau de la cuve. Un système embarqué sera également installé afin d'exploiter les données des capteurs et d'envoyer les informations au site central.\\
@@ -53,7 +54,9 @@ La difficulté de développement de cette application n'est pas très élevée :
 La principale difficulté lors de la phase de développement résidera dans la vérification constante de la compatibilité de l'application avec les différents navigateurs ainsi que l'ergonomie de la version mobile.
 
 \subsection{Compétences, moyens et règles}
-Le développement d'une application web nécessite une bonne connaissance en langages webs et en programmation réseau afin d'être en mesure d'optimiser les performances du produit fini. Le développement de la version mobile demande également certaines compétences spécifiques et une bonne notion des principes de création d'interfaces ergonomiques afin de fournir aux utilisateurs non-informaticiens un système facile à prendre en main.
+Le développement d'une application web nécessite une bonne connaissance en langages webs et en programmation réseau afin d'être en mesure d'optimiser les performances du produit fini. Le développement de la version mobile demande également certaines compétences spécifiques et une bonne notion des principes de création d'interfaces ergonomiques afin de fournir aux utilisateurs non-informaticiens un système facile à prendre en main.\\
+ci dessous, un premier aperçu d'un interface réalisable : \\
+\includegraphics[width=0.9\textwidth]{AppliWebMonitor.png} 
 
 \section{Configuration cible}
 \subsection{Matériel et logiciels}
@@ -63,7 +66,7 @@ Le matériel sur lequel sera déployée cette application est très variable : d
 La stabilité de l'application est un point clé du projet : les données doivent être récupérées régulièrement afin de satisfaire la contrainte générale de fiabilité du système de monitoring. L'application devra donc être compatible avec les principaux navigateurs disponibles aussi bien sur postes fixes que sur PDAs et de nombreux tests auront pour but d'étudier sa stabilité à long terme.
 
 \subsection{Interfaces}
-L'application sera sera principalement en communication avec les bases de données du site central stockant les plannings et informations concernant les sites.
+L'application sera sera principalement en communication avec les bases de données du site central stockant les plannings et informations concernant les sites. Les opérations des mise à jour, et de maintenance à distance la mettront cependant en communication directe avec les systèmes embarqués des sites.
 
 \section{Guide de réponse au cahier des charges}
 \subsection{Grille d'évaluation}
