@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.16)  13 FEB 2011 22:33
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.16)  15 FEB 2011 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -869,34 +869,38 @@ Overfull \hbox (10.07184pt too wide) in paragraph at lines 10--11
 pon-dant ^^Ra l'^^Setude de fai-sa-bi-lit^^Se, aux Sp^^Secification
  []
 
-
-Overfull \hbox (1.70192pt too wide) in paragraph at lines 23--25
+File: insa-couleur.jpg Graphic file (type jpg)
+<use insa-couleur.jpg> [3]
+Overfull \hbox (1.70192pt too wide) in paragraph at lines 24--26
 []\OT1/cmr/m/n/10.95 La mise en place du pro-jet d'am^^Selioration du syst^^Rem
 e d'in-for-ma-tion de CO-PE-VUE n^^Secessitera
  []
 
-File: insa-couleur.jpg Graphic file (type jpg)
-<use insa-couleur.jpg> [3]
-Overfull \hbox (15.00174pt too wide) in paragraph at lines 31--32
+
+Overfull \hbox (15.00174pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/n/10.95 des sites sans connexion in-ter-net : il ne sera pas pos-sib
 le de consul-ter des donn^^Sees vues pr^^Sec^^Sedemment
  []
 
 File: insa-couleur.jpg Graphic file (type jpg)
-<use insa-couleur.jpg> [4]) AED: lastpage setting LastPage
+<use insa-couleur.jpg> [4]
+<AppliWebMonitor.png, id=162, 562.1pt x 340.27126pt>
+File: AppliWebMonitor.png Graphic file (type png)
+ <use AppliWebMonitor.png>
 File: insa-couleur.jpg Graphic file (type jpg)
 
-<use insa-couleur.jpg> [5]
+<use insa-couleur.jpg> [5 <./AppliWebMonitor.png (PNG copy)>])
+AED: lastpage setting LastPage
 File: insa-couleur.jpg Graphic file (type jpg)
  <use insa-couleur.jpg> [6] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 8655 strings out of 493848
- 120014 string characters out of 1152823
- 212535 words of memory out of 3000000
- 11733 multiletter control sequences out of 15000+50000
+ 8661 strings out of 493848
+ 120132 string characters out of 1152823
+ 213535 words of memory out of 3000000
+ 11737 multiletter control sequences out of 15000+50000
  14915 words of font info for 40 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 43i,15n,43p,780b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,15n,43p,823b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/d
 vips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
@@ -904,9 +908,9 @@ vips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx1
 mf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/f
 onts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ti
 mes/utmr8a.pfb>
-Output written on main.pdf (6 pages, 296198 bytes).
+Output written on main.pdf (6 pages, 329307 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
+ 201 PDF objects out of 1000 (max. 8388607)
  34 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 
