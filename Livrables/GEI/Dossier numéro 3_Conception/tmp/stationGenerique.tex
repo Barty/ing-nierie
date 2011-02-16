@@ -1,0 +1,12 @@
+\section{Station générique}
+    Il s'agit des sites hébergeant le système embarqué ainsi que les balises de location des sites concernées. On pourrait faire une décomposition en sous système pour mieux décrire une station générique. Les sous-systèmes seraient :
+
+       \subsection{Acquisition de données}
+       Ce sous-système permet de récolter les données analogiques transmissent par les capteurs grâce aux cartes d'acquisition se trouvant au sein des systèmes embarquées. Ces derniers contiennent également des CAN permettant de transformer ces données, en données numériques exploitables par le sous système "Contrôle".
+
+       \subsection{Contrôle}
+       Ce sous-système permet d'exploiter les données des capteurs à l'aide des micro-contrôleurs des systèmes embarqués et d'effectuer les traitements nécessaires. Il s'agit du cœur des systèmes embarqués. Ainsi après réception de données indiquant par exemple, un niveau bas de la batterie, ou un un niveau critique pour une cuve, des alertes correspondants aux problèmes détectés seront envoyés au système central à travers des protocoles de communication.
+       Ce sous-système gère également les communications entre le système et les sources d'énergie, les balises GPS. Il se charge également de sauvegarder temporairement les données des capteurs et de les effacer si nécessaire. C'est également lui qui déclenchera les actions nécéssaires à la réception d'une commande (lors de maintenance à distance).
+
+       \subsection{Communication}
+       Ce sous-système permet aux systèmes embarqués de communiquer avec l'extérieur grâce à des protocoles de communication classiques (XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx) et ainsi de transmettre les données des capteurs au système central mais aussi de recevoir les commandes lors des opérations de maintenance à distance. Une couche réseau (TCP/IP) du RTOS utilisé permet d'implémenter assez facilement ces communications avec l'extérieur.

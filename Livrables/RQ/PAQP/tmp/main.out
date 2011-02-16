@@ -1,0 +1,69 @@
+\BOOKMARK [1][-]{section.1}{Pr\351liminaires}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Cadre du Plan d\220Assurance Qualit\351 Projet \(ou PAQ niveau Syst\350me}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Logiciels concern\351s par le Plan d\220Assurance Qualit\351 Projet \(PAQP\)}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Responsabilit\351s associ\351es au Plan d\220Assurance Qualit\351 Projet}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Proc\351dures d\220\351volution du PAQP}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Proc\351dure \340 suivre en cas de non-application du PAQP}{section.1}% 6
+\BOOKMARK [1][-]{section.2}{Documents de R\351f\351rence et applicables}{}% 7
+\BOOKMARK [2][-]{subsection.2.1}{Documents de r\351f\351rence}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.2}{Documents Applicables}{section.2}% 9
+\BOOKMARK [1][-]{section.3}{Terminologies et abr\351viations}{}% 10
+\BOOKMARK [1][-]{section.4}{Organisation humaine du comit\351 de pilotage du projet}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{R\364le des diff\351rents intervenants \( Intervenants pour la ma\356trise d\220ouvrage, intervenants pour la ma\356trise d\220\234uvre\)}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Relations entre les intervenants}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.3}{Planning des r\351unions et r\350gles}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{Qualit\351 au niveau du Processus}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{Pr\351sentation de la d\351marche de d\351veloppement au niveau Projet \(ou Syst\350me\)}{section.5}% 16
+\BOOKMARK [3][-]{subsubsection.5.1.1}{G\351n\351ralit\351s }{subsection.5.1}% 17
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Phase d\220Etude Pr\351alable }{subsection.5.1}% 18
+\BOOKMARK [3][-]{subsubsection.5.1.3}{Phase d\220Etude D\351taill\351e}{subsection.5.1}% 19
+\BOOKMARK [3][-]{subsubsection.5.1.4}{Phase d\220Int\351gration Syst\350me }{subsection.5.1}% 20
+\BOOKMARK [3][-]{subsubsection.5.1.5}{Phase de Validation Syst\350me}{subsection.5.1}% 21
+\BOOKMARK [3][-]{subsubsection.5.1.6}{Phase de mise en \234uvre sur site pilote}{subsection.5.1}% 22
+\BOOKMARK [2][-]{subsection.5.2}{R\350gles de Qualit\351 pour l\220ing\351nierie concurrente}{section.5}% 23
+\BOOKMARK [3][-]{subsubsection.5.2.1}{R\350gles sur la r\351daction d\220un Cahier des Charges d\220un sous-projet}{subsection.5.2}% 24
+\BOOKMARK [3][-]{subsubsection.5.2.2}{R\350gles sur la d\351finition pr\351cise des r\351sultats attendus pour chaque sous-projets}{subsection.5.2}% 25
+\BOOKMARK [3][-]{subsubsection.5.2.3}{R\350gles sur le suivi qualit\351 des sous-projets}{subsection.5.2}% 26
+\BOOKMARK [3][-]{subsubsection.5.2.4}{R\350gles sur la d\351finition de crit\350res d\220acceptation des sous-projets avant int\351gration}{subsection.5.2}% 27
+\BOOKMARK [2][-]{subsection.5.3}{Pr\351sentation des d\351marche de d\351veloppement au niveau sous-projets \(niv. r\351alisation\)}{section.5}% 28
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Liste des processus de d\351veloppement susceptibles d\220\352tre retenus pour le d\351veloppement des sous-projets}{subsection.5.3}% 29
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Description du cycle de d\351veloppement n\2601}{subsection.5.3}% 30
+\BOOKMARK [1][-]{section.6}{Documentation \(R\350gles communes au projet\)}{}% 31
+\BOOKMARK [2][-]{subsection.6.1}{Structuration de la documentation}{section.6}% 32
+\BOOKMARK [2][-]{subsection.6.2}{Liste des documents de gestion de projet}{section.6}% 33
+\BOOKMARK [2][-]{subsection.6.3}{Liste des documents relatifs \340 la qualit\351}{section.6}% 34
+\BOOKMARK [2][-]{subsection.6.4}{Liste des documents techniques et de r\351alisation}{section.6}% 35
+\BOOKMARK [2][-]{subsection.6.5}{Manuels d\220utilisation et de mise en \234uvre}{section.6}% 36
+\BOOKMARK [1][-]{section.7}{Gestion de configuration \(R\350gles communes au projet\)}{}% 37
+\BOOKMARK [2][-]{subsection.7.1}{Conventions d\220Identification}{section.7}% 38
+\BOOKMARK [2][-]{subsection.7.2}{Proc\351dures d\220identification des \351l\351ments de configuration}{section.7}% 39
+\BOOKMARK [3][-]{subsubsection.7.2.1}{Responsabilit\351s}{subsection.7.2}% 40
+\BOOKMARK [3][-]{subsubsection.7.2.2}{Proc\351dures de gestion de la configuration \(Gestion des El\351ments de Configuration Logiciel et des Configurations de R\351f\351rence\)}{subsection.7.2}% 41
+\BOOKMARK [2][-]{subsection.7.3}{Gestion des ressources partag\351es}{section.7}% 42
+\BOOKMARK [1][-]{section.8}{Gestions des modifications \(R\350gles communes au projet\)}{}% 43
+\BOOKMARK [2][-]{subsection.8.1}{Origines des modifications}{section.8}% 44
+\BOOKMARK [2][-]{subsection.8.2}{Proc\351dures et organisation des modifications}{section.8}% 45
+\BOOKMARK [1][-]{section.9}{M\351thodes, Outils et R\350gles \(R\350gles communes au projet\)}{}% 46
+\BOOKMARK [2][-]{subsection.9.1}{M\351thodes}{section.9}% 47
+\BOOKMARK [2][-]{subsection.9.2}{Outils \(Outils logiciels, autres outils\)}{section.9}% 48
+\BOOKMARK [2][-]{subsection.9.3}{R\350gles et normes \(Documentation, programmation\)}{section.9}% 49
+\BOOKMARK [1][-]{section.10}{Contr\364le des Fournisseurs}{}% 50
+\BOOKMARK [2][-]{subsection.10.1}{Exigences vis-\340-vis des sous-traitants}{section.10}% 51
+\BOOKMARK [2][-]{subsection.10.2}{Exigences vis-\340-vis des co-traitants}{section.10}% 52
+\BOOKMARK [2][-]{subsection.10.3}{Logiciels achet\351s, lou\351s ou impos\351s}{section.10}% 53
+\BOOKMARK [1][-]{section.11}{Reproduction, Protection, Livraison \(au niveau projet\)}{}% 54
+\BOOKMARK [2][-]{subsection.11.1}{Pr\351cautions \340 prendre lors de la reproduction}{section.11}% 55
+\BOOKMARK [2][-]{subsection.11.2}{Pr\351cautions prises pour assurer le stockage des logiciels}{section.11}% 56
+\BOOKMARK [3][-]{subsubsection.11.2.1}{Protection des donn\351es contre les incidents}{subsection.11.2}% 57
+\BOOKMARK [3][-]{subsubsection.11.2.2}{Protection des donn\351es contre les agressions ext\351rieures}{subsection.11.2}% 58
+\BOOKMARK [3][-]{subsubsection.11.2.3}{Autres pr\351cautions}{subsection.11.2}% 59
+\BOOKMARK [2][-]{subsection.11.3}{Modalit\351s de livraison}{section.11}% 60
+\BOOKMARK [3][-]{subsubsection.11.3.1}{D\351lais}{subsection.11.3}% 61
+\BOOKMARK [3][-]{subsubsection.11.3.2}{Installation}{subsection.11.3}% 62
+\BOOKMARK [3][-]{subsubsection.11.3.3}{Formation}{subsection.11.3}% 63
+\BOOKMARK [3][-]{subsubsection.11.3.4}{Migration de l\220ancien vers le nouveau syst\350me}{subsection.11.3}% 64
+\BOOKMARK [1][-]{section.12}{Suivi de l\220application du Plan Qualit\351}{}% 65
+\BOOKMARK [2][-]{subsection.12.1}{Principes}{section.12}% 66
+\BOOKMARK [2][-]{subsection.12.2}{Interventions du Responsable Qualit\351 \(Niv. Projet\) sur la d\351marche de D\351veloppement}{section.12}% 67
+\BOOKMARK [2][-]{subsection.12.3}{Modalit\351s de r\351ception des r\351sultats des sous-projets avant int\351gration \( description par sous-projets\)}{section.12}% 68
+\BOOKMARK [1][-]{section.13}{Conclusion}{}% 69

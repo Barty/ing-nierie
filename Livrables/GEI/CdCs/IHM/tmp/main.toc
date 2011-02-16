@@ -1,0 +1,27 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Pr\IeC {\'e}sentation du projet}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Pr\IeC {\'e}sentation du document}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Documents des r\IeC {\'e}f\IeC {\'e}rence}{3}{subsection.1.3}
+\contentsline {section}{\numberline {2}Pr\IeC {\'e}sentation du probl\IeC {\`e}me}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}But, utilisateurs concern\IeC {\'e}s, nature du logiciel}{3}{subsection.2.1}
+\contentsline {section}{\numberline {3}Formulation des besoins, exploitation et ergonomie}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Formulation des besoins}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}exploitation et ergonomie}{4}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Port\IeC {\'e}e, d\IeC {\'e}veloppement, mise en \IeC {\oe }uvre, organisation de la maintenance}{4}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Limites}{4}{subsection.3.4}
+\contentsline {section}{\numberline {4}Exigences fonctionnelles}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}Fonctions de base, performances et aptitudes}{4}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Contraintes d'utilisation, normes de documentation}{4}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Crit\IeC {\`e}res d'appr\IeC {\'e}ciation}{4}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Flexibilit\IeC {\'e}, variation de co\IeC {\^u}ts associ\IeC {\'e}e}{5}{subsection.4.4}
+\contentsline {section}{\numberline {5}Contraintes impos\IeC {\'e}es et faisabilit\IeC {\'e} technologique}{5}{section.5}
+\contentsline {subsection}{\numberline {5.1}S\IeC {\^u}ret\IeC {\'e}, planning, organisation, communication}{5}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Complexit\IeC {\'e}}{5}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Comp\IeC {\'e}tences, moyens et r\IeC {\`e}gles}{5}{subsection.5.3}
+\contentsline {section}{\numberline {6}Configuration cible}{6}{section.6}
+\contentsline {subsection}{\numberline {6.1}Mat\IeC {\'e}riel et logiciels}{6}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Stabilit\IeC {\'e}}{6}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Interfaces}{6}{subsection.6.3}
+\contentsline {section}{\numberline {7}Guide de r\IeC {\'e}ponse au cahier des charges}{6}{section.7}
+\contentsline {subsection}{\numberline {7.1}Grille d'\IeC {\'e}valuation}{6}{subsection.7.1}
