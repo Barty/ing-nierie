@@ -1,0 +1,129 @@
+\section{Types de données utilisés}
+	\begin{description}
+	\item [Capteur : ] Variable contenant toutes les informations d'un capteur.\\
+	Format de données :		
+	\begin{tabular}{|c|}
+	\hline
+	id\\
+	\hline
+	Valeur\\
+	\hline
+	Type\\
+	\hline
+	Etat\\
+	\hline
+	Site\\
+	\hline
+	\end{tabular}
+
+	\item [Site : ] Variable contenant toutes les informations d'un site.\\
+	Ce type peut définir un site générique ou un site isolé. Les listes de capteurs ou Site représentent respectivement les capteurs d'un site isolé ou les sites contrôlés par un site générique. Site Parent ne sera pas renseigné pour un site générique.\\
+	Format de données :		
+	\begin{tabular}{|c|}
+	\hline
+	id\\
+	\hline
+	list $<Capteurs>$\\
+	\hline
+	list $<Site>$\\
+	\hline
+	SiteParent\\
+	\hline
+	coordonnees\\
+	\hline
+	\end{tabular}
+
+	\item [Planning : ] Variable contenant toutes les informations d'un planning.\\
+	Format de données :		
+	\begin{tabular}{|c|}
+	\hline
+	id\\
+	\hline
+	list $<Site>$\\
+	\hline
+	Etat\\
+	\hline
+	\end{tabular}
+
+	\item [AlerteSite : ] Type servant à transmettre les différentes alertes émises par les sites\\
+	Format de données :		
+	\begin{tabular}{|c|}
+	\hline
+	id\\
+	\hline
+	typeAlerte\\
+	\hline
+	Etat\\
+	\hline
+	\end{tabular}
+
+			
+	\end{description} 
+
+
+
+\section{Echanges entre les systèmes}
+
+
+\begin{description}
+\item[Échanges entre un site isolé et un site générique :]~\\*
+	\begin{itemize}
+		\item Les capteurs envoient leurs valeurs à la station. Les données sont sous forme numérique.
+	\end{itemize}
+
+	Format de données :		
+	\begin{tabular}{|c|}
+	\hline
+	id\\
+	\hline
+	idSite\\
+	\hline
+	list $<Capteur>$\\
+	\hline
+	\end{tabular}
+~\\*
+
+\item[Échanges entre un site générique et les satellites des communication :]~\\*
+	\begin{itemize}
+		\item Envoi des relevés des capteurs au site central, afin de simplifier la communication, les données envoyées peuvent être mises en forme avant l'envoi par le 	site générique.
+	\end{itemize}
+
+	Format de données : 
+	\begin{tabular}{|c|}
+	\hline
+	idSite\\
+	\hline
+	list $<Capteur>$\\
+	\hline
+	\end{tabular}
+~\\*
+\item[Échanges entre un site générique et le Réseau téléphonique :]~\\*
+	\begin{itemize}
+		\item Les données envoyées sont les mêmes que celles passant pas le satellite de communication.
+	\end{itemize}
+~\\*
+\item[Échanges entre les balise GPS et le satellite (GPS) :] ~\\*
+	\begin{itemize}
+		\item En cas de site mobile, la balise GPS envoie périodiquement ses coordonnées GPS au Satellite. 
+		\item En cas de site fixe, aucune balise n'est nécessaire : un opérateur prendra les coordonnées GPS à l'aide d'un appareil mobile lors de 			l'installation du site.
+	\end{itemize}
+~\\*
+\item[Échanges entre le site central et la société de maintenance :]~\\*
+	\begin{itemize}
+		\item Les données sont sous forme de rapports représentant les feuilles de routes proposées par le site central.
+	\end{itemize}
+~\\*
+\item[Stockage de données sur le site central :]~\\*
+	\begin{itemize}
+		\item Un serveur de bases de données permet de conserver les différents rapports, relevés... 
+		\item Un serveur de secours permet de récupérer ces données en cas de panne du premier.
+	\end{itemize}
+~\\*
+\item [Échanges internes de la société de maintenance :]~\\*
+	\begin{itemize}
+		\item Récupération en temps réel de la position des camions par le PDA du camionneur
+		\item Les feuilles de routes envoyées par le site central affectées aux différents camions
+	\end{itemize}
+
+\end{description}
+

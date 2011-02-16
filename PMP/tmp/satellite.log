@@ -1,0 +1,29 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.27)  29 JAN 2011 12:14
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**satellite.tex
+(./satellite.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+./satellite.tex:1: Undefined control sequence.
+l.1 \section
+            {Introduction}
+? 
+./satellite.tex:1: Emergency stop.
+l.1 \section
+            {Introduction}
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 5 strings out of 495061
+ 141 string characters out of 1182621
+ 45108 words of memory out of 3000000
+ 3282 multiletter control sequences out of 15000+50000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 5i,0n,1p,38b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+./satellite.tex:1:  ==> Fatal error occurred, no output PDF file produced!

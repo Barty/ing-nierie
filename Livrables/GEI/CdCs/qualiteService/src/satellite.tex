@@ -1,0 +1,163 @@
+\newpage
+\section{Introduction}
+
+        Dans le cadre de la rénovation du système d'information visant à réduire l'impact écologique, il peut être envisageable et très avantageux de mettre en place un système d'optimisation des trajets de ravitaillement et de maintenance.
+
+    \subsection{Présentation du projet}
+    
+        Ce projet d'optimisation s'inscrit dans un projet plus vaste d'amélioration des flux d'information et de rénovation du système d'information.
+        Cette solution se placera à la bordure du système avec la communication vers la société en charge du ravitaillement et de la maintenance.
+        
+    \subsection{Présentation du document}
+        
+        Ce document est un cahier des charges détaillant à la fois les questions relatives au problème posé, et les différentes solutions de manière la plus précise possible.
+        
+    \subsection{Document applicables / Documents de référence}
+    
+    \subsection{Terminologie et abréviations}
+    
+\section{Présentation du problème}
+        
+        Un des but recherché dans l'amélioration du système d'information est la réduction de l'impact écologique engendré. Et c'est dans ce but précis qu'à été conçus et réfléchie cette solution.
+        
+    \subsection{But}
+    
+        La rénovation du système d'information permettras d'automatiser au maximum la récolte d'information concernant des sites isolés.
+        Le but de cette solution d'aide à la décision est de réduire l'impact écologique en agissant sur la gestion des trajet de ravitaillement et de maintenance. En agençant au mieux les étapes des trajets il sera possible de réduire la distance parcouru.
+        
+    \subsection{Formulation des besoins, exploitation et ergonomie, expérience}
+    
+        \subsubsection{Formulation des besoins}
+            
+            Le besoin exprimé est directement lié aux besoin conduisant à renouveler l'installation. Il s'agit de réduire l'impact écologique des activités lié au ravitaillement et à la maintenance. Le but recherché par l'entreprise globale est d'optimiser l'efficacité des trajets, tandis que le but recherché ici est l'optimisation de la longueur des trajets.
+            
+        \subsubsection{Exploitation}
+        
+            Nous avons identifier au préalable deux solutions distinctes apportant chacune des avantages et des problèmes différents :
+            \begin{itemize}
+                \item La solution la plus simple en terme d'installation, serait de calculer les itinéraire avant de les communiquer à la société chargé du ravitaillement et de la maintenance. Cela ne nécessite aucune installation sur leur système d'information, et la seule contrainte est qu'il faudra demander des précision concernant les véhicules utilisé (capacité de stockage, capacité de déplacement).
+                En revanche, cette solution n'est pas très souples. Ses limites seront décrites plus loin.
+
+                \item Une seconde solution plus intégré et plus souple est envisageable. Au lieu de calculer l'itinéraire avant de le communiquer, la solution consisterais à installer dans le système d'information de la société le système de calcul de l'itinéraire.
+                Ainsi on ne communique plus l'itinéraire, mais les informations concernant les lieux et les dates de ravitaillement.
+                Cette solution permet à la société chargé du ravitaillement et de la maintenance d'avoir une meilleure prise en main de l'itinéraire, tout an gardant l'avantage principal d'avoir un itinéraire optimisé.
+                Cette solution à néanmoins le désavantage de nécessiter un coût de mise en place plus important.
+            \end{itemize}
+        
+        \subsubsection{Expérience \& Ergonomie}
+        
+            Durant la phase d'exploitation, cette solution doit être le plus transparente possible.
+            Les trajets générés doivent être visible et modifiable très facilement.
+            La souplesse de modification et de communication des trajets est très importante.
+            
+            On peut en effet imaginer qu'un trajet vers un site isolé peut durer plusieurs jours dans certains cas, si durant le trajet un itinéraire alternatif plus optimisé venait à être calculé, il sera très avantageux de pouvoir avertir le conducteur des modifications de l'itinéraire.
+            
+            Durant la phase de configuration, en revanche, la solution sera hautement configurable.
+        
+    \subsection{Portés, développement, mise en œuvre, organisation de la maintenance}
+        
+            Cette solution sera borné entre la réception des informations concernant les sites isolés et la communication avec la société chargé du ravitaillement et la maintenance.
+            Cette solution ne comprend donc pas la mise en place de la base de données, ou la maintenance de celle-ci. Il est entendu que l'accès à cette base de données est un pré-requis.
+            Cependant, elle est directement intégré dans le flux d'information et prend par à sa transformation.
+            Elle s'inscrira à la place du système de communication existant entre le site centrale de COPEVU et la société chargé du ravitaillement et de la maintenance en venant automatiser ce processus.
+    
+    \subsection{Limites}
+    
+        Les limites de ce système se situe dans la communication de l'itinéraire optimisé à la société chargé du ravitaillement et de la maintenance. Bien qu'on puisse garantir que l'itinéraire calculé soit plus efficace qu'un itinéraire immédiat, on ne peut pas assurer que l'itinéraire seras effectivement suivi.
+
+        \begin{itemize}
+            \item Si l'itinéraire est calculé avant la communication, le problème qui se pose est l'impossibilité pour l'entreprise de le modifier.
+            Pour illustrer ce problème, prenons l'exemple d'une impraticabilité routière altérant l'itinéraire calculé. Il est alors possible q'un recalcule d'itinéraire soit plus efficace et conduise à un itinéraire alternatif plus optimisé que l'itinéraire alternatif proposé par les services routier.
+            Une autre illustration peut s'envisager si la société chargé du ravitaillement et de la maintenance s'occupe en parallèle de sites différents.
+
+            \item En revanche, une réponse à ce problème pourrait être de déplacer le calcul d'itinéraire au sein de l'entreprise chargé du ravitaillement et de la maintenance.
+            Cependant, cette seconde solution apporte de nombreuse limitation quant à la mise en place de cette solution.
+            Il faudra en effet agir directement sur leur système d'information, ce qui peut être délicat.
+        \end{itemize}
+        
+\section{Exigences fonctionnelles}
+
+    \subsection{Fonction de base, performances et aptitudes}
+
+        En omettant les deux mise en œuvre possible de la solution, les fonctions de base sont :
+        \begin{itemize}
+            \item La collecte d'informations concernant les sites isolés.
+            \item La collecte d'informations concernant les véhicules.
+            \item Le calcul d'un itinéraire à partir des informations collectés.
+        \end{itemize}
+        
+        En terme de performance, la méthode ne doit pas demander de grande capacité de calcul.
+        Une simple station de travail doit pouvoir suffire.
+
+    \subsection{Contraintes d'utilisation}
+    
+        L'itinéraire calculé doit être accessible facilement, doit pouvoir être transmis facilement et être recalculé par l'entreprise chargé du ravitaillement et de la maintenance en trés peu de temps (de l'ordre de 5 à 10 minutes).
+        L'itinéraire calculé doit être envoyé automatiquement à la société chargé de la maintenance et du ravitaillement afin d'automatiser complétement ce processus d'information. Cependant, une personne sera chargé de vérfier l'exactitude est la cohérence des informations transmises.
+    
+    \subsection{Critère d'appréciation de la réalisation effective de la fonction}
+    
+        Le premier critère d'appréciation immédiatement envisagé est la différence de distance entre les itinéraire avant et après optimisation.
+        Un second critère d'appréciation plus efficace serait la différence de consommation réelle de carburant qui est plus liée à l'impact écologique.
+    
+    \subsection{Flexibilité dans la façon de mettre en œuvre la fonction concernée et variation de coûts associée en fonction de cette flexibilité}
+
+        La fonction ciblé par le logiciel est à la fois trés spécifique, et très générique.
+        La fléxibilité lié à la saisie et à la nature des informations doit être trés flexible, en revanche, la flexibilité de la fonction de calcul et de génération de l'itinéraire ne sera pas flexible.
+
+\section{Contraintes imposées, faisabilité technologique et éventuellement moyens}
+
+    \subsection{Sûreté, planning, organisation, communication}
+    
+        La solution pourras être réalisé par deux tâches parallèles.
+        L'une consisteras à spécifier et concevoir l'algorithme de calcul d'itinéraires.
+        L'autre consisteras à mettre en place les outils de communication entre la base de données, la société chargé du ravitaillement et de la maintenance, COPEVU et le coeur de la solution.
+        
+        L'équipe chargé de la première tâche auras peu de communication avec les clients, seulement quelques questions concernant certaines contraintes métiers et quelques améliorations et fonctionnalité supplémentaire susceptible d'intéresser le client.
+        En revanche elle sera plus en relation avec la seconde équipe pour établir précisément les données à échanger et les formats de ces données.
+        
+        L'équipe chargé de la seconde tâche auras beaucoup de relation avec les clients pour discuter de la meilleurs façon dont les données seront entrées, reçus, transmises etc ...
+    
+    \subsection{Complexité}
+    
+        La partie la plus complexe semble être la conception de l'algorithme de calcul d'itinéraires.
+        Cependant, cette complexité peut rapidement diminuer si une solution équivalente existe.
+        
+        La seconde tâche ne sera pas complexe techniquement, mais peut prendre plus de temps suivant le déroulement des discussions avec le client.
+    
+    \subsection{Compétences, moyens et règles}
+    
+        %TODO
+    
+    \subsection{Normes de documentation}
+
+        La documentation compléte sera livré sous format numérique au moment de l'installation du système. 
+        Cependant, les clients ayant pris part à son élaboration, cette documentation sera plus destiné à de nouveaux utilisateurs, ou à des équipes chargés de maintenir et de faire évoluer le logiciel.
+        Une documentation concise et sous la forme d'informations usuelles sera présente tout long des saisies utilisateurs, afin d'aider celui-ci.
+
+\section{Configuration cible}
+
+    \subsection{Matériel et logiciels}
+
+        La solution logicielle sera accessible depuis une interface web, les utilisateurs devront donc avoir à disposition un navigateur web.
+        Elle devras avoir accès aux base de données contenant les informations sur les sites isolés, et les véhicules utilisés par la société chargé du ravitaillement et de la maintenance.
+    
+    \subsection{Stabilité de la configuration}
+    
+        La configuration de la solution est constante. Pour chaque site correspond des criticité différente en temps et en volume d'approvisionnement ou de vidange, la solution devras donc constamment gérer ces marges.
+        En revanche, une autre partie de la configuration, concernant les contraintes physiques ne changeront pas ou peu. Par exemple, Les véhicules ne pourront pas dépasser les vitesses autorisés, ou devront se limiter aux itinéraires tracé.
+        
+        Pour résumé, si on considère les informations ci-dessus comme des données d'entrées, la solution n'as besoin que d'une configuration initiale.
+
+\section{Guide de réponse au cahier des charges}
+
+    \subsection{Grille d'évaluation}
+        
+        \begin{tabular}{l l l}
+            \hline
+            Fonction & Priorité & Compléxité \\
+            \hline
+            Spécification et conception de l'algorithme & haute & haute \\
+            Mise en place des outils de communication & haute & faible \\
+            \hline
+            
+        \end{tabular}

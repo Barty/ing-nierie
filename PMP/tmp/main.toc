@@ -1,0 +1,55 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Rappel du probl\IeC {\`e}me}{3}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Contexte}{3}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}Objectifs}{3}{subsubsection.1.1.2}
+\contentsline {subsection}{\numberline {1.2}Documents applicables et documents de r\IeC {\'e}f\IeC {\'e}rence}{3}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Documents applicables}{3}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Documents de r\IeC {\'e}f\IeC {\'e}rence}{3}{subsubsection.1.2.2}
+\contentsline {subsection}{\numberline {1.3}Terminologie et abbr\IeC {\'e}viation}{4}{subsection.1.3}
+\contentsline {section}{\numberline {2}Pr\IeC {\'e}sentation du document}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Liste des r\IeC {\'e}f\IeC {\'e}rences contracutuelles}{4}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Contrat client}{4}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Contrat sous-traitance}{4}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Contrat fournisseurs}{4}{subsubsection.2.1.3}
+\contentsline {subsection}{\numberline {2.2}Enjeux \IeC {\'e}conomiques}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Partage des responsabilit\IeC {\'e}s entre le MOE et le MOA}{5}{subsection.2.3}
+\contentsline {section}{\numberline {3}Organisation du projet et structure d\IeC {\'e}cisionnelle}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Organisation Fonctionnelle du Projet}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Structure hi\IeC {\'e}rarchique des produits livrables}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Structure Hi\IeC {\'e}rarchique des activit\IeC {\'e}s}{5}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Organigramme des T\IeC {\^a}ches du Projet}{5}{subsection.3.4}
+\contentsline {section}{\numberline {4}D\IeC {\'e}marche de d\IeC {\'e}veloppement du syst\IeC {\`e}me}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}Cycle de vie du syst\IeC {\`e}me}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}D\IeC {\'e}composition logicielle, mat\IeC {\'e}rielle, temporelle et choix des sous-projets}{5}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}D\IeC {\'e}composition en sous-ensembles}{5}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Choix des sous-projets}{6}{subsubsection.4.2.2}
+\contentsline {paragraph}{Documentation\\}{6}{section*.2}
+\contentsline {paragraph}{Formation\\}{6}{section*.3}
+\contentsline {paragraph}{Garantie et maintenance\\}{6}{section*.4}
+\contentsline {paragraph}{Mat\IeC {\'e}riel du syst\IeC {\`e}me embarqu\IeC {\'e}\\}{6}{section*.5}
+\contentsline {paragraph}{Logiciel du syst\IeC {\`e}me embarqu\IeC {\'e}\\}{6}{section*.6}
+\contentsline {paragraph}{Aide \IeC {\`a} la d\IeC {\'e}cision\\}{6}{section*.7}
+\contentsline {paragraph}{Interface centrale\\}{6}{section*.8}
+\contentsline {paragraph}{T\IeC {\'e}l\IeC {\'e}communication\\}{7}{section*.9}
+\contentsline {paragraph}{Stockage et gestion de l\IeC {\textquoteright }\IeC {\'e}lectricit\IeC {\'e}\\}{7}{section*.10}
+\contentsline {paragraph}{Acquisition des donn\IeC {\'e}es sur la station\\}{7}{section*.11}
+\contentsline {subsection}{\numberline {4.3}D\IeC {\'e}composition fonctionnelle}{7}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Planning pr\IeC {\'e}visionnel g\IeC {\'e}n\IeC {\'e}ral}{7}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Evaluation de la charge}{7}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Planning pr\IeC {\'e}visionnel}{7}{subsubsection.4.4.2}
+\contentsline {section}{\numberline {5}Supports m\IeC {\'e}thodologiques et moyens \IeC {\`a} mettre en oeuvre}{7}{section.5}
+\contentsline {subsection}{\numberline {5.1}Moyens mat\IeC {\'e}riels}{7}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Moyens logiciels}{8}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Moyens humains}{8}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Evaluation la charge}{8}{subsubsection.5.3.1}
+\contentsline {section}{\numberline {6}Les contraintes}{8}{section.6}
+\contentsline {subsection}{\numberline {6.1}Contraintes temporelles}{8}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Exigences fonctionnelles et non-fonctionnelles}{8}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Management des sous-traitants}{8}{subsection.6.3}
+\contentsline {section}{\numberline {7}Gestion de configuration au niveau syst\IeC {\`e}me}{8}{section.7}
+\contentsline {section}{\numberline {8}Facteurs de risque}{8}{section.8}
+\contentsline {subsection}{\numberline {8.1}Risques li\IeC {\'e}s au non-respect des \IeC {\'e}ch\IeC {\'e}ances}{8}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Risques li\IeC {\'e}s \IeC {\`a} une mauvaise coordination des modules}{9}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Risques financiers}{9}{subsection.8.3}
+\contentsline {section}{\numberline {9}Organisation et documents de suivi}{9}{section.9}

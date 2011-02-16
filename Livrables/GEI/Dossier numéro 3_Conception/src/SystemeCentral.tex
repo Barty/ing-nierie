@@ -1,0 +1,28 @@
+\documentclass{article}
+
+\begin{document}
+
+
+\subsection{SYSTEME CENTRAL}
+		Son rôle est de collecter les informations des différents sites et de permettre l'exploitation de ces dernières.
+		Des contraintes apparaissent clairement : 
+		\begin{description}
+				\item[Fiabilité/Sureté de fonctionnement :] afin d'exploiter correctement les données et d'envoyer en temps réel des commandes aux sites distants si nécessaire.
+				\item[Traçabilité :] sur 2ans au moins des informations provenant des sites afin de gérer correctement les reprises sur erreur, apporter les corrections nécessaires en cas de fausses manipulations humaines ou de dysfonctionnement temporaire du système.
+				\item[Efficacité :] proposer un ensemble de services permettant le pilotage et le monitoring a distance des systèmes distants.
+		\end{description}
+
+		Une des alternatives pour le système central serait d'utiliser le système \textbf{Data Management System} de AXYS Technologies INC qui intègre avec les systèmes Watchman500 Node et des capteurs, permet le pilotage a distance des Watchman500 Node, la collecte des données, ainsi que leur exploitation.
+		Cependant, ce qui apparait en premier lieu, serait de mettre en place une solution spécifique qui convienne le mieux a nos besoins, mais il ne faut pas négliger le fait que cette alternative est très couteuse.
+		Concernant la collecte des données, on peu observer qu'elles semblent être de petites tailles donc on pourrait s'orienter vers un SGBD tel que MySQL. Ou plutôt dans une optique d'évolution et de généricité, on pourrait essayer de prévoir des montées en charge des données et faire le choix de systèmes tels que Oracl, SQL Server.
+		Pour la collecte des données une autre solution serait de la confier a des hébergeurs professionnels, des solutions très intéressantes existent sur le marche, par exemple la solution \textbf{Windows Select Server} de Orange Business Service. Cette solution a de gros avantages supplémentaires :
+		\begin{itemize}
+				\item Pas de maintenance des serveurs, un service de maintenance professionnel sous 4h pour moins de 140euros HT/mois.
+				\item Donc pas besoin d'équipe de maintenance technique.
+		\end{itemize}
+
+Liens utilles : 
+- pour Data Management System : http://www.axystechnologies.com/BusinessUnit/CoreTechnology/DataManagementSystem/tabid/104/Default.aspx
+- pour Windows Select Server : http://hebergementweb.orange-business.com/hebergement-dedie/dedie-windows/windows-select-serveur.html
+
+\end{document}

@@ -1,0 +1,148 @@
+\section{API}
+
+\subsection{Communication entre les sociétés de maintenance (ou les PDAs des camioneurs) et le système central}
+\begin{itemize}
+	\item List$<Planning>$ consulterPlannings()
+	\begin{description} 
+		\item[Rôle :] Permet à la société de maintenance de récupérer les nouvelles données présentes sur le serveur.
+		\item[Contrat :] AUCUN
+		\item[En entrée :] AUCUN
+		\item[En sortie :] La liste des nouveaux plannings disponibles sur le site central.
+	\end{description}
+	~\\
+	\item mettreAJourPlanning(Planning p)
+	\begin{description} 
+		\item[Rôle :] Permet à la société de maintenance de mettre à jour le planning (opérations sur site terminée, opérations inutiles...)
+		\item[Contrat :] AUCUN
+		\item[En entrée :] le planning concerné 
+		\item[En sortie :] Aucune sortie
+	\end{description}
+	~\\
+	\item SignalerDysfonctionnement (IdSite, typeDysfonctionnement)
+	\begin{description} 
+		\item[Rôle :] Permet à la société de maintenance de signaler un dysfonctionnement constaté sur le site indiqué
+		\item[Contrat :] AUCUN
+		\item[En entrée :] l'identifiant du site et le type de Dysfonctionnement observé
+		\item[En sortie :] Aucune sortie
+	\end{description}
+	~\\
+	\item Date ConsulterTraitementDysfonctionnement(idSite, typeDysfonctionnement)
+	\begin{description} 
+		\item[Rôle :] Permet à la société de maintenance de vérifier si un dysfonctionnement signalé est déjà en cours de traitement
+		\item[Contrat :] AUCUN
+		\item[En entrée :] l'identifiant du site et le dysfonctionnement à vérifier
+		\item[En sortie :] La date prévisionnelle de réparation, ou une valeur telle que 00/00/0000 si pas de traitement en cours
+	\end{description}
+	~\\
+	\item AdresseGPS coordonneesGPS(Site s)
+	\begin{description} 
+		\item[Rôle :] Permet de récupérer les coordonnées GPS d'un site passé en paramètre
+		\item[Contrat :] Le site doit exister
+		\item[En entrée :] un site générique
+		\item[En sortie :] les coordonnées GPS de ce site
+	\end{description}
+	~\\
+\end{itemize}
+
+\subsection{Communication entre les sites génériques et le système central}
+\begin{itemize}
+	\item StringList ConsulterLog(idSite)
+	\begin{description} 
+		\item[Rôle :] Permet de consulter toutes les opérations enregistrées dans le fichier log du système embarqué
+		\item[Contrat :] AUCUN 
+		\item[En entrée :] l'identifiant du site dont on souhaite connaitre le log
+		\item[En sortie :] Le log sous forme de liste de chaines de caractères
+	\end{description}
+	~\\
+	\item MAJLogicielle(syteme)
+	\begin{description} 
+		\item[Rôle :] Permet de mettre à jour l'OS du système embarqué.
+		\item[Contrat :] AUCUN 
+		\item[En entrée :] Le nouveau système (le fichier directement envoyé)
+		\item[En sortie :] Aucune sortie
+	\end{description}
+	~\\
+	\item MaintenanceDistante(typeCommande, detail)
+	\begin{description} 
+		\item[Rôle :] Permet d'efffectuer des opérations de maintenance à distance sur le système embarqué
+		\item[Contrat :] AUCUN 
+		\item[En entrée :]
+		 ~\\*
+		\begin{itemize}
+			\item la commande à effectuer (réinitialiser un capteur, effacdr le log...)
+			\item les paramètres particuliers de la commande effectuée (le capteur à réinitialiser...)
+		\end{itemize}
+		\item[En sortie :] Aucune sortie
+	\end{description}
+	~\\
+	\item ModifierFrequence(idSite, nouvelleFreq)
+	\begin{description} 
+		\item[Rôle :] Permet de définir la fréquence à laquelle le système embarqué enverra les nouvelles données des capteurs
+		\item[Contrat :] AUCUN 
+		\item[En entrée :] l'identifiant du site pour lequel on définit cette fréquence, la nouvelle fréquence à appliquer
+		\item[En sortie :] Aucune sortie
+	\end{description}
+	~\\
+	\item List$<RapportSite>$ recupererDonneesSite(Site) 
+	\begin{description} 
+		\item[Rôle :] Permet de rafraichir l'état des capteurs des sites passés en paramètre et de récupérer les données actuelles instantanément.
+		\item[Contrat :] AUCUN 
+		\item[En entrée :] Le site générique à contrôler
+		\item[En sortie :] La liste des données capteurs envoyée par le site
+	\end{description}
+	~\\
+	\item réinitialiserSystemeEmbarque(List$<Site>$) 
+	\begin{description} 
+		\item[Rôle :] Permet de réinitialiser les systèmes embarqués
+		\item[Contrat :] AUCUN
+		\item[En entrée :] La liste des sites génériques pour lesquels l'opération de réinitialisation est demandée
+		\item[En sortie :] La listes des sites pour lesquels l'opération n'a pu être validée 
+	\end{description}
+	~\\
+	\item SignalerAlerte (IdSite, typeAlerte, details)
+	\begin{description} 
+		\item[Rôle :] Permet à un site générique de signaler un dépassement de seuil
+		\item[Contrat :] AUCUN
+		\item[En entrée :]
+		~\\*
+		\begin{itemize}
+			\item la référence du site ayant envoyé l'alerte
+			\item l'alerte envoyée (cuve vide, capteur défectueux...)
+			\item un troisième paramètre spécifiant des détails relatifs au type d'alerte (quel capteur est défectueux...)
+		\end{itemize}
+		\item[En sortie :] Aucune sortie
+	\end{description}
+	~\\
+
+\end{itemize}
+
+
+%Ci-dessous la liste des méthodes utiles selon moi aux APIs de comunication
+%j'ai mis des attributs pour t'aider mais voilà change si tu veux, c'est toi l'expert des données..
+%Mais n'hésite pas à m'en parler car j'ai des raisons d'avoir fait ces choix.
+
+%Listes des méthodes à rajouter
+%Communication entre les sites génériques et le système central
+%    - ConsulterLog(idSite)
+%    - RecupererDonneesSite (IdSite)
+%    - SignalerAlerte (IdSite, typeAlerte, details)
+%    - MAJLogicielle(syteme)
+%             systeme : RTOS ou Systeme embarqué
+%    - MaintenanceDistante(typeCommande)
+%    - ModifierFrequence(idSite, nouvelleFreq)
+%
+%Communication entre le site central et les PDAs des camionneurs
+%    - MAJPlanning (IdSite)
+%    - ConsulterPlanning(IdSite)
+%    - SignalerDysfonctionnement (IdSite, typeDysfonctionnement)
+%    - ConsulterTraitementDysfonctionnement(idSite, typeDysfonctionnement)
+%            Quand le problème est résolu par notre système, on notifie par mail les responsables
+%            de la société pour qu'ils puissent demander à leurs employés de faire autre chose 
+%           si notre solution ne leur convient pas
+%
+%Communication entre les sociétés de maintenance/ravitaillement et le système central
+%    - MAJPlanning (IdSite)
+%    - ConsulterPlanning(IdSite)
+%    - SignalerDysfonctionnement (IdSite, typeDysfonctionnement)
+%    - ConsulterTraitementDysfonctionnement(idSite, typeDysfonctionnement)
+

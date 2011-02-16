@@ -1,0 +1,150 @@
+\section{Système de communication}
+
+Selon le cahier des charges, on peut identifier deux types de communication en fonction de leurs besoin en porté.
+Les communication longue distance entre la base centrale et les régions isolées devront relié des sites distant de plusieurs centaines, voir milliers de killomètres.
+Tandis que les communication au sein des région isolées, entres les capteurs et les relais pourront avoir des portées plus courtes.
+
+
+
+    \subsection{Communication courte distance}
+
+    \domaine{Zigbee}
+            { Le Zigbee est une technologie inspiré du bluetooth, mais possédant un grand nombre d'avantage.
+            Les communications sont moins couteuses en énérgies, et simplifie le code utilisé.
+            Elles ont néamoins une porté plus grande.}
+            {Porté de 100m +
+            }
+            {2V à 3.6V, ~20 mA.
+            }
+            {<2$ pour 1000 unités
+            }
+            {Il existe des emetteur recepteur pour des distance plus longues : 800m.
+            }
+            {La technologie Zigbee est un élément indispensable dans les communication locales.
+            }
+
+        \domaine{Wifi}
+            { Le wifi est une technologie éprouvé qui est largement utilisé actuellement.
+            Cependant, la consommation en energie et la complexité du code requis pour une communication. }
+            {Porté de 100 m.
+            }
+            {
+            }
+            {
+            }
+            {
+            }
+            {
+            }
+
+        \domaine{Bluetooth}
+        
+            { Le bluetooth, à l'instar du wifi est actuellement largement utilisé.
+            Mais il n'est pas à la hauteur du zigbee, que ce soir en terme de consommation d'énergie, de simplicité d'utilisation ou porté. }
+            {Porté de 10 m.
+            }
+            {
+            }
+            {
+            }
+            {
+            }
+            {
+            }
+            
+        \domaine{Filaire}
+            { Le cahier des charges ne precisant pas la distance entre les capteurs et le relais, on peut également imaginer tirer un câble entre les capteurs et le relais. }
+            {Porté de quelques mètres seulement (< 3 m).
+            }
+            {
+            }
+            {
+            }
+            {
+            }
+            {
+            }    
+            
+
+    \subsection{Communication longue distance}
+
+            \paragraph{L - Communications avec les mobiles.}~\\
+                La bande L est la partie du spectre électromagnétique définie par les fréquences de 1,4 à 1,5 gigahertz environ. Elle est attribuée au service de Radioastronomie à des fins de recherches spatiales et scientifiques (projet SETI, etc.). Elle est utilisée en France pour la Radio Numérique Terrestre en DMB (Digital Multimédia Broadcasting).
+
+            \paragraph{S - Communications avec les mobiles.}~\\
+                La bande S est une bande de fréquences définie sur la partie du spectre électromagnétique allant de 2 à 4 GHz.
+                La bande S est surtout utilisée par les radars météorologiques et quelques satellites de communication, spécialement ceux que la NASA emploie pour communiquer avec leurs navettes spatiales et la Station internationale.
+
+            \paragraph{C - Communications civiles nationales et internationales, télévision.}~\\
+                La bande C est la partie du spectre électromagnétique définie par les fréquences :
+                    De 3,4 à 4,2 GHz en réception et de 5,725 et 7,075 GHz en émission attribué au service de Radiodiffusion par Satellite (Broadcasting) particulièrement utilisée sur les zones tropicales et faiblement sur les autres zones.
+                    De 4 à 8 GHz pour des usages comme les radars météorologiques.
+                La puissance d'émission, qui lui est généralement associée, est relativement faible, en comparaison avec la bande Ku par exemple. Elle nécessite donc des paraboles de grande taille pour sa réception (de 2,5 à 3 mètres de diamètre). Cependant la bande C est moins sensible à la pluie que la bande Ku.
+
+            \paragraph{X - Communications militaires.}~\\
+            7  - 8 GHz  
+
+            \paragraph{Ku - Communications civiles nationales et internationales, télévision.}~\\
+                La Bande Ku (Kurtz-under) est la partie du spectre électromagnétique définie par la bande de fréquence micro-ondes de 10,7 gigahertz (GHz) à 12,75 GHz. La bande Ku est la plus employée de toutes les bandes de fréquences.
+                Elle est attribuée au service de radiodiffusion par satellite (services de télévision, de radio et données informatiques). Cette bande est la plus répandue en Europe, du fait de la petite taille des paraboles nécessaires à sa réception.
+                De nombreux démodulateurs, ainsi que les têtes universelles, intégrent cette bande de fréquence.
+                            
+            \paragraph{Ka - nouveaux systèmes d’accès aux réseaux large bande.}~\\
+                La bande Ka (Kurtz-above) est une gamme de fréquences utilisée principalement pour l’internet par satellite. Pour les télécommunications spatiales commerciales, elle s’étend en émission de 27,5 à 31 GHz et en réception, de 18,3 à 18,8 GHz et de 19,7 à 20,2 GHz. Les paraboles nécessaires pour recevoir les signaux sont encore plus petites que pour la bande Ku (certaines antennes Ka mesurent 20cm de diamètre). Cependant, les signaux de cette bande sont beaucoup plus sensibles à l’atténuation atmosphérique et principalement, à la pluie. Cette atténuation la rend inutilisable pour la diffusion télévisuelle et pour d’autres services dits « critiques ».
+
+            \paragraph{EHF - Communications militaires.}~\\
+            21 - 45 GHz 
+            
+            \paragraph{Conclusion}
+                On peut retenir trois bandes de fréquences qui pourraient être utilisé : la bande C et les bande Ku/Ka.
+                La bande C necessite de grandes parabolles de reception, mais est peu attenué par les conditions atmosphériques.
+                En revanche les bandes Ku/Ka sont plus sensible aux condition atmoshpériques, mais peuvent être reçus avec des parabolles de petites tailles.
+
+        \subsection{Réseaux cellulaires}
+
+            \domaine{GPRS}
+                {Le réseau GPRS couvre la quasi-totalité des terres (la suéde à la meilleur couverture réseau d'Europe)
+                Le gprs est une téchnologie suffisament éprouvé pour pouvoir trouver l'antenne qui correspondras à nos besoin.}
+                {Température de fonctionnement : -25°C, +65°C.
+                }
+                {12V, 0.5A.
+                }
+                {?
+                }
+                {Les modem GPRS demandent des informations de connexion sous forme de carte SIM.
+                }
+                {
+                }
+
+
+            \domaine{UMTS}
+                {Le reseaux UMTS est plus performant et plus rapide que le réseaux GPRS, mais il est plus couteux.
+                Etant donné que le volume d'informations à transférer risque d'être relativement réduit, il est moins adapté que le réseaux GPRS.}
+                {
+                }
+                {
+                }
+                {
+                }
+                {
+                }
+                {
+                }
+                    
+            \domaine{Filaire}
+                {Il est précisé dans le cahier des charges que les zones à surveiller sont inaccessible.
+                 Il parait donc impensable de tirer des câbles du centrales jusqu'à chacun de ces points.
+
+                 En revanche, il peut être envisageable de tirer des câble depuis le point d'accès internet le plus proche pour bénéficier du réseaux filaire.
+                 Dans la pratique, il faudra étudier chacun des points séparement pour choisir la solution la plus adapté en fonction de la distance le séparant du point d'accès le plus proche.}
+                {
+                }
+                {
+                }
+                {
+                }
+                {
+                }
+                {
+                }
+            

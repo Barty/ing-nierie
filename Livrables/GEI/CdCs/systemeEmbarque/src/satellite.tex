@@ -1,0 +1,209 @@
+\newpage
+\section{Introduction}
+
+        Dans le cadre de la rénovation du système d'information visant à réduire l'impact écologique, il peut être envisageable et très avantageux de mettre en place un système d'optimisation des trajets de ravitaillement et de maintenance.
+
+    \subsection{Présentation du projet}
+    
+        Ce projet d'optimisation s'inscrit dans un projet plus vaste d'amélioration des flux d'information et de rénovation du système d'information.
+        Cette solution se placera à la bordure du système avec la communication vers la société en charge du ravitaillement et de la maintenance.
+        
+    \subsection{Présentation du document}
+        
+	Ce document est le cahier des charges correspondant au  sous-projet de définir le système embarqué dans le système global. 
+	Ce cahier des charges sert comme base pour la sélection et le développement du système embarqué dans lequel se trouvent les contraintes à respecter, les besoins à satisfaire ainsi que les exigences fonctionnelles
+        
+    \subsection{Document applicables / Documents de référence}
+
+		\textbf{Documents applicables:}
+			\begin{itemize}
+			    \item Document de ``Gestion de documentation''
+				 \item Document ``Best practices''
+			\end{itemize}
+
+		\textbf{Documents de référence:}
+			\begin{itemize}
+			    \item Document de ``Spécification techniques des besoins''
+				 \item Document de ``Elaboration des solutions''
+			\end{itemize}	
+    
+\section{Présentation du problème}
+	\subsection{But}
+
+	Le but principal du système embarque est de récolter les informations des capteurs (données sur le site, la localisation..), puis de les transmettre en temps réel au système central. Du fait de l'éloignement et de l'isolement de ces sites, le logiciel mis en place sur ces stations devra être autonome et capable gérer les mesures relevées par les dispositifs aux alentours qui lui envoient leurs données.
+
+	\subsection{Formulation de besoins, exploitation et ergonomie, expérience}
+
+		\subsubsection{Formulation de besoins}
+		\begin{itemize}
+		   \item Récupérer les données
+	 		\item Traitement les données pour pourvoir les transmettre au site central
+	 		\item Sauvegarder les données temporairement au journal de bords
+			\item Communication à l’extérieur
+		\end{itemize}
+			
+		Car les systèmes embarqués se situent dans les zones isolées et faciles à accéder, il faut qu’ils puissent fonctionner d’une manière autonome, par conséquences il n’aura aucun IHM disponible. Par contres, les opérateurs sont capables de lui se connecter avec les PDAs via le système PDA pour lui donner les ordres ou pour surveiller les tâches. 
+
+		\subsubsection{Exploitation}
+		A partir des éléments de mise en exploitation fournis par l’équipe développement, une équipe d’exploitation est crée pour se charger de tester la mise en exploitation du système : l’initialisation, l’exécution et l’arrêt du système dans son environnement d’exploitation. Les éventuelles non-conformités rencontrées sont transmises à l’équipe développement.
+		
+		Le coordinateur assistance aux utilisateurs de chaque équipe développement est chargée d’examiner les problèmes non. Il les résout ou les transmet aux autres membres de l’équipe produit  ou même aux experts externes.
+		
+		Pour chaque problème, le responsable s’assure que la base des appels et problèmes est mise à jour avec la solution et l’état du problème.
+		
+		S’il s’agit d’une demande d’évolution, l’utilisateur est invité à formuler par écrit sa demande et l’envoyer directement au chef du projet.
+
+		\subsubsection{Ergonomie, expérience} 
+		Etant donné que le système embarqué doit fonctionner d’une manière autonome, une interface utilisateur n’est ainsi pas nécessaire. Les seuls utilisateur ayan le droit d’accéder à ces systèmes sont les administrateurs expérimenté avec un niveau informatique très fort, par conséquences, au vue d’ergonomie, il n’est que peu concerné.  
+
+	\subsection{Portée, développement, mise en œuvre, organisation de la maintenance}
+	\subsubsection{Développement, mise en œuvre} La phase de développement  concerne les activités de spécification, conception, codage, tests et installation de l’application et de ses éléments d’accompagnement. 
+	Elle se termine lorsque le système est installé et opérationnel sur le site isolé.
+
+	Notre système est assez complexe à développer, il faut alors que les étapes do soient suivies de de manière incrémentale, en décomposant le système en plusieurs ensembles successifs et complémentaires. 
+
+	En plus, il nécessite à la fois des connaissances des matériels et logicielles
+
+	\begin{itemize}
+	    \item \textbf{Matériels} Le système devrait avoir besoin des composants de base (cartes réseaux, résistances, mémoires, batteries…), des microcontrôleurs, des microprocesseurs. Il est alors très important la gestion de documentation sur ces matériels pour pouvoir modéliser leurs fonctionnalités. Il faut aussi faire attention à l’interopérabilité, les solutions devraient être standardisées.
+		\item \textbf{Logiciel} Un système d’exploitation multitâche en temps réel (RTOS) est indispensable avec quelques solutions possibles : LynxOS, TinyOS...Le logiciel développé doit être compatible avec cet environnement. 
+
+		Afin de faciliter  la phase de développement, certains outils peuvent être utiles tels que un IDE et un simulateur dédié au système embarqué.
+	
+		Le langage de codage doit être aussi soigneusement choie  pour optimiser la performance. Les langages à base niveau comme C ou Assembleur  sont en général favorables.
+	\end{itemize}
+
+	Pour ce système embarqué, la fiabilité et la maintenabilité sont tellement importantes qu’il faut faire grande attention à la phase de sélection de technologie utilisée. Pour la méthode de conception, on pourrait utiliser SART pour modéliser.
+	 
+	Le logiciel développé doit être développé et testé avec le plus d’attention possible avant d’être embarqué dans le système. 
+	
+		Dans le premier temps, il faut développer un module qui permettra de gérer d’échanger les données avec les capteurs connectées. Ensuite il faut rendre possible le traitement de ces données, les formater pour pourvoir les transmettre vers le site central.
+	
+	Il faut également développer la partie de communication pour pouvoir réceptionner les ordres, les commandes de configuration, les mises à jour de paramètres en provenance du site central. Inversement, ce module servira aussi à l’envoie les données venant des capteurs connectés, les messages d’erreurs… vers le site central.
+	
+	Nous avons aussi besoin d’une gestion de base de données pour temporairement sauvegarder les informations dans le cas d’incendie comme la perturbation de réseaux communication. Une bonne gestion d’erreurs est visiblement indispensable. 
+\subsubsection{Maintenance}
+La phase de maintenance comprend plusieurs types: corrective, préventive, adaptive, évolutive.  
+
+Au vue de problèmes posés par les conditions de travail de ces zones isolées, le système doit être capable de détecter tous les dysfonctionnements afin de signaler la société concernée, de réparer certaines erreurs lorsqu’elles lui arrivent et aussi toutes sauvegarder pour transmettre au site central. 
+
+Le journal de bord de dysfonctionnement est indispensable car il va être analysé pour la phase d’aide à la décision.
+             
+\subsection{Limites}
+Au vue de problème engrendrés par l'isolation, la communication à l'extérieur est ainsi critique, par contre il n'est  pas géré entièrement par notre équipe mais mis en place par des entreprises externes. 
+
+De fait, dans le cas échéant du système de réseaux, cela posera sans doute des gros problèmes techniques. Il faut alors s'adapter aux limites par une solution spécifique telle que celle indiquée dans la spécification des besoins techniques    
+        
+\section{Exigences fonctionnelles}
+
+    \subsection{Fonction de base, performances et aptitudes}
+
+        Les principales fonctionnalités du système embarqué sont classées en trois grandes catégories :
+        \begin{itemize}
+            \item Acquisition des données: Le système doit surtout être capable de collecter les données analogiques en provenance des capteurs de différents types. Il existe deux types de données à récolter: 
+
+				Collectées automatique : Elles sont les mesures effectuées automatiquement et périodiquement grâce à une fréquence définie dans la phase configuration.
+
+				Collectées manuellement: Elles sont les mesures déclenchées à ordres du site central
+
+				Le système embarqué est doté d’un CAN permettant de transformer ces données en numériques exploitables par le sous-système ``contrôle''
+				
+				\item Traitement: Il s’agit du cœur du système embarqué et permet \begin{itemize}
+				\item Exploitation et Traitement des données. A l’aide des microcontrôleurs, le système embarqué est capable d’exploiter et d’effectuer les opérations nécessaires. Les étapes sont 
+					\begin{itemize}
+					    \item Les données d’abord contrôlées pour vérifier la fiabilité
+						 \item Ensuite la vérification de dépassement d seuil (niveau de contenu, niveau d’énergie, erreurs) est déclenchée 
+						 \item Dans le cas de problème, un message d’alarme est envoyé via le protocole Communication vers le site central
+						 \item Les informations sont enregistrées dans le journal de bord
+					\end{itemize}
+
+            \item Gestion des commandes: A la réception des commandes à distance, il déclenchera les opérations nécessaires correspondantes (par exemple: changement dans la configuration)
+				\item Gestion d’énergie: Il permet aussi de gérer la communication avec les ressources énergétiques
+				\item Gestion de base de données : Par souci de traçabilité, les données collectées doivent être sauvegardées temporairement. Cette journalisation permettra d’éviter la perte de données dans le cas de perturbation du réseau
+				\item Communication : Il prend en charge la communication à l’extérieur à l’aide du protocole TCP/IP. Il permettra d’envoyer les données au site central ainsi que de recevoir les ordres dans le cas de maintenance à distant. Par souci de sécurité, cette communication doit être forcément sécurisée (par exemple afin de minimiser les risques et de contrôler les droits d’accès)
+        \end{itemize}
+		\end{itemize}
+
+    \subsection{Contraintes d'utilisation}
+    
+		Pour la raison d'autonomie, il faut calculer le nombre maximal de jour la réserve de consommation qui sera stockée dans la batterie. Selon les cas, des valeurs indicatives sont proposées. Un minimum et maximum devrait être défini.  
+
+		L'algorithmes utilisées doivent être efficaces pour pouvoir garantir la puissance de calcul, toujours pour la raison énertiques.
+				
+		Par souci de sécurité, le contrôle d’accès doit être pris en compte. Par défault, il sera d'un niveau moyen: Seules les personnes ayant le droit peuvent envoyer les commandes correspondantes (administrateur avec les configurations, par exemple) et les données en provenance de capteurs ne seront pas cryptées.
+    
+		En cas d'incendie, il doit se redémarrer et reprendre son fonctionnement. Le système d'alimentation est aussi suffisemment solide pour résister aux conditions du milieu.
+
+    \subsection{Critère d'appréciation de la réalisation effective de la fonction} 
+	Le premier critère d'appréciation envisagé est la fiabilité et temps d'éxécution : Il est critique de donnertoujours des résultats juste, pertinents et ce dans les délais attendus par les utilisateurs. 
+
+	Ensuite, c'est sa capacité de resister contre les conditions du milieu car il doit fonctionner de minière autonome en continu pendant de nombreuses années.
+
+	Le coût est également très importante qu'il faut lui faire grande attention.
+
+	Et éventuellement la sécurité qui n'est pas negligable.
+      
+    \subsection{Flexibilité dans la façon de mettre en œuvre}
+	Les besoins fonctionnelle globales sont assez générique qu'il y ait effectivement beaucoup de solutions possibles pour réaliser ce sous-projet, chacune porte ses propre avantages et ses propres inconvénients. Elle sera ainsi plutôt flexible le développement. 
+
+Par contre, il faut faire attetion qu'il	existe certaines modules/couches dans le système dont la fonction ciblé est très spécifique, la choix est alors n'est pas aussi flexible. 
+
+Ceci étant dit, on doit toujours bien analyser pour pouvoir avoir une liste de solutions mieux adaptées aux besoins.
+
+\section{Contraintes imposées, faisabilité technologique et éventuellement moyens}
+
+    \subsection{Sûreté, planning, organisation, communication}
+	A cause de sa taille importante, le sous-projet doit être découpé en  plusieurs ensembles successifs et complémentaires, et sera développé de manière incrémentale.
+
+	Cette démarche permet de développer des ensembles plus légers en même temps. Il faut alors organiser différentes équipes, chacune chargé d'une partie de spécification, conception, codage, tester...Il est sans doute nécessaire d'avoir une groupe composé d'utilisateurs pour donner les critiques, les avis sur les maquettes, dossiers...
+
+    \subsection{Complexité} 
+	En général, le niveau de ce sous-projet est élévé, il consite à réaliser plusieurs modules, composants, couchesavec différentes techniques dont quelques ne sont même pas encore maîtrisée.
+	 
+	La nature da la localisation augmente	en plus la difficulté dans la réalisation. Il faut alors très bien se réparer, très bien modéliser, très bien gérer les documentations pour avoir le résultat souhaité. 
+	
+	Ailleurs, apart de savoir faire acquis, c'est toujours une possibilité de reutiliser certains modules déjà éffectués 
+	par l'équipe ou alternativement, les composants gratuits ``open-source''
+
+    \subsection{Compétences, moyens et règles}    
+	Pour pouvoir gérer le projet et réduire la complexité, tout membre de l’équipe doit toujours respecter les règles indiquées dans les documents comme Best Practices, Charte du projet global ainsi que de ce sous-projet. D’autre côté, la démarche et le calendrier de développement doit également respecté pour que chaque étape soit soigneusement testé et vérifié par exemple.        
+
+	Il pourrait y avoir des outils de planification et de suivi de projet destinés à aider les chefs de projet dans leur activité de gestion de projet.
+
+    \subsection{Normes de documentation}
+Les documents sont classés selon les trois processus mis en œuvre dans 
+le développement d'un système d'information, à savoir les processus de ``gestion de projet'', ``technique'' et ``qualité''.
+
+Chaque document est positionné dans la phase ou l'étape au cours de laquelle il est créé. La flèche qui prolonge certains documents indique jusqu'à quand il reste applicable.
+\section{Configuration cible}
+
+    \subsection{Matériel et logiciels}
+
+	Le système embarqué devrait offrir tous les fonctionnalités attendues par les utilisateurs. 
+	
+		Il n’est doté d’aucune interface utilisateur et n’est qu’accessible par les utilisateurs via l’interface de communication avec le site central et le système ou le système PDA.
+		
+		 Même dans le cas échéant, il doit rester en marche pour des raisons de sécurité et les sauvegardes ne peuvent pas être perdus. 
+    
+    \subsection{Stabilité de la configuration}
+	    
+	Au début de phase d’exploitation, il aura certainement besoin d’effectuer les changements et modifications en fonctions des résultats obtenus. Par contre, à partir d’un certain point, la configuration doit être stable, voir constante. (Sauf bien sur dans le cas d’évolutivité ou après une défaillance du système). 
+	
+	Il faut noter aussi la configuration varie d’une station à l’autre en fonction de sa nature. 
+
+\section{Guide de réponse au cahier des charges}
+
+    \subsection{Grille d'évaluation}
+        
+        \begin{tabular}{l l l}
+            \hline
+            Fonction & Priorité & Compléxité \\
+            \hline
+            Fiabilité et temps d'éxécution & haute & haute \\  \hline
+				Consommation faible & haute & moyenne \\  \hline
+				Coût & moyenne & moyenne \\  \hline
+				Sécurité & haute & faible \\  \hline
+				Durabilité et Capacité de resistance & haute & haute\\
+            \hline
+            
+        \end{tabular}
