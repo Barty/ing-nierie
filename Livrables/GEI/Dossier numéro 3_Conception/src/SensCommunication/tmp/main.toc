@@ -1,0 +1,8 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Communications et sens de communication}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Flux d'information automatis\IeC {\'e}}{2}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Communications externes au site centrale}{2}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}Communication initi\IeC {\'e} par le site centrale}{2}{subsubsection.1.1.2}
+\contentsline {subsection}{\numberline {1.2}Communication et interface utilisateur}{2}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Communication avec le r\IeC {\'e}seaux de capteurs}{2}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Communication avec la soci\IeC {\'e}t\IeC {\'e} de ravitaillement et de maintenance}{2}{subsubsection.1.2.2}

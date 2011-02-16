@@ -1,0 +1,44 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}
+\BOOKMARK [2][-]{subsection.1.1}{Rappel du probl\350me}{section.1}
+\BOOKMARK [3][-]{subsubsection.1.1.1}{Contexte}{subsection.1.1}
+\BOOKMARK [3][-]{subsubsection.1.1.2}{Objectifs}{subsection.1.1}
+\BOOKMARK [2][-]{subsection.1.2}{Documents applicables et documents de r\351f\351rence}{section.1}
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Documents applicables}{subsection.1.2}
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Documents de r\351f\351rence}{subsection.1.2}
+\BOOKMARK [2][-]{subsection.1.3}{Terminologie et abbr\351viation}{section.1}
+\BOOKMARK [1][-]{section.2}{Pr\351sentation du document}{}
+\BOOKMARK [2][-]{subsection.2.1}{Liste des r\351f\351rences contracutuelles}{section.2}
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Contrat client}{subsection.2.1}
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Contrat sous-traitance}{subsection.2.1}
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Contrat fournisseurs}{subsection.2.1}
+\BOOKMARK [2][-]{subsection.2.2}{Enjeux \351conomiques}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{Partage des responsabilit\351s entre le MOE et le MOA}{section.2}
+\BOOKMARK [1][-]{section.3}{Organisation du projet et structure d\351cisionnelle}{}
+\BOOKMARK [2][-]{subsection.3.1}{Organisation Fonctionnelle du Projet}{section.3}
+\BOOKMARK [2][-]{subsection.3.2}{Structure hi\351rarchique des produits livrables}{section.3}
+\BOOKMARK [2][-]{subsection.3.3}{Structure Hi\351rarchique des activit\351s}{section.3}
+\BOOKMARK [2][-]{subsection.3.4}{Organigramme des T\342ches du Projet}{section.3}
+\BOOKMARK [1][-]{section.4}{D\351marche de d\351veloppement du syst\350me}{}
+\BOOKMARK [2][-]{subsection.4.1}{Cycle de vie du syst\350me}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{D\351composition logicielle, mat\351rielle, temporelle et choix des sous-projets}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.2.1}{D\351composition en sous-ensembles}{subsection.4.2}
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Choix des sous-projets}{subsection.4.2}
+\BOOKMARK [2][-]{subsection.4.3}{D\351composition fonctionnelle}{section.4}
+\BOOKMARK [2][-]{subsection.4.4}{Planning pr\351visionnel g\351n\351ral}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Evaluation de la charge}{subsection.4.4}
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Planning pr\351visionnel}{subsection.4.4}
+\BOOKMARK [1][-]{section.5}{Supports m\351thodologiques et moyens \340 mettre en oeuvre}{}
+\BOOKMARK [2][-]{subsection.5.1}{Moyens mat\351riels}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{Moyens logiciels}{section.5}
+\BOOKMARK [2][-]{subsection.5.3}{Moyens humains}{section.5}
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Evaluation la charge}{subsection.5.3}
+\BOOKMARK [1][-]{section.6}{Les contraintes}{}
+\BOOKMARK [2][-]{subsection.6.1}{Contraintes temporelles}{section.6}
+\BOOKMARK [2][-]{subsection.6.2}{Exigences fonctionnelles et non-fonctionnelles}{section.6}
+\BOOKMARK [2][-]{subsection.6.3}{Management des sous-traitants}{section.6}
+\BOOKMARK [1][-]{section.7}{Gestion de configuration au niveau syst\350me}{}
+\BOOKMARK [1][-]{section.8}{Facteurs de risque}{}
+\BOOKMARK [2][-]{subsection.8.1}{Risques li\351s au non-respect des \351ch\351ances}{section.8}
+\BOOKMARK [2][-]{subsection.8.2}{Risques li\351s \340 une mauvaise coordination des modules}{section.8}
+\BOOKMARK [2][-]{subsection.8.3}{Risques financiers}{section.8}
+\BOOKMARK [1][-]{section.9}{Organisation et documents de suivi}{}
