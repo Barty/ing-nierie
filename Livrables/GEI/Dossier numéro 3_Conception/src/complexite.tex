@@ -1,33 +1,35 @@
-Complexité système
+\section{Complexité système}
 
 
 Durant les phases de spécification, de conception, nos ingénieurs ont effectué leurs choix en essayant de rendre le système simple, réutilisable, générique et ainsi d’en réduire la complexité.
 
-Le système a été découpé en sous-systèmes indépendants ayant des composants ayant une forte imbrication afin de permettre de pouvoir les développer parallèlement, pour effectuer ces traitements chaque sous système est indépendant. Cela permettre de faciliter également les phases de tests et d’intégration de l’ensemble du système.
+\par Le système a été découpé en sous-systèmes indépendants ayant des composants ayant une forte imbrication afin de permettre de pouvoir les développer parallèlement, pour effectuer ces traitements chaque sous système est indépendant. Cela permettre de faciliter également les phases de tests et d’intégration de l’ensemble du système.
 
-Nous ne parlerons pas spécifiquement de langages mais des technologies de programmation existant et permettant de mettre en place des applications web ayant une ergonomie sans pareil, ces applications sont appelés RIA : « Rich Internet Application ». Leur ergonomie est conséquente, aujourd’hui on ne parle même plus d’interface utilisateur mais d’ « expérience utilisateur ».
+\par Nous ne parlerons pas spécifiquement de langages mais des technologies de programmation existant et permettant de mettre en place des applications web ayant une ergonomie sans pareil, ces applications sont appelés RIA : « Rich Internet Application ». Leur ergonomie est conséquente, aujourd’hui on ne parle même plus d’interface utilisateur mais d’ « expérience utilisateur ».
 	
-Des documents utilisateurs ainsi qu’une aide en ligne seront réalisés mais la nécessitée d’une formation n’apparaît pas clairement. Comme dit précédemment, ces applications sont très intuitives et reprennent tous les grands classiques ergonomiques que nous retrouvons lors de l’utilisation d’applications de bureau, entre autres le glisser lâcher.
+\par Des documents utilisateurs ainsi qu’une aide en ligne seront réalisés mais la nécessitée d’une formation n’apparaît pas clairement. Comme dit précédemment, ces applications sont très intuitives et reprennent tous les grands classiques ergonomiques que nous retrouvons lors de l’utilisation d’applications de bureau, entre autres le glisser lâcher.
 
-Les matériels utilisés dans le système global sont connus sur le marché et ont fait leur preuve, ils sont fiables et de qualité.
+\par Les matériels utilisés dans le système global sont connus sur le marché et ont fait leur preuve, ils sont fiables et de qualité.
 
-Concernant le RTOS choisi : LynxOS. Nous pouvons signaler qu’il est open source et que diverses améliorations sont apportées régulièrement. Le code nécessaire pour sa mise en place est très petit.
+\par Concernant le RTOS choisi : LynxOS. Nous pouvons signaler qu’il est open source et que diverses améliorations sont apportées régulièrement. Le code nécessaire pour sa mise en place est très petit.
 
-Coûts
+\section{Coûts}
 
 La réduction des coûts logistiques étaient un des axes d’amélioration, dans la même optique nous avons fait des choix pour réduire les coûts à tous les niveaux : 
-Matériels
-Déploiement
-Exploitation
-Maintenance
+\begin{itemize}
+\item Matériels
+\item Déploiement
+\item Exploitation
+\item Maintenance
+\end{itemize}
 
-Les matériels choisis sont de qualité, ils sont fiables, robustes et satisfont au mieux nos préoccupations d’autonomie énergétique. En termes de budget, le prix des matériels choisis restent très raisonnables par rapport à ceux du marché.
+\par Les matériels choisis sont de qualité, ils sont fiables, robustes et satisfont au mieux nos préoccupations d’autonomie énergétique. En termes de budget, le prix des matériels choisis restent très raisonnables par rapport à ceux du marché.
 
-	Pour réduire les coûts de déploiement, l’architecture applicative sera mise en place sur une application web. En effet par rapport à un déploiement d’applications de bureau, cela est très simple. Il nous suffira juste d’attribuer les autorisations d’accès aux modules selon le profil utilisateur.
+\par Pour réduire les coûts de déploiement, l’architecture applicative sera mise en place sur une application web. En effet par rapport à un déploiement d’applications de bureau, cela est très simple. Il nous suffira juste d’attribuer les autorisations d’accès aux modules selon le profil utilisateur.
 
-La maintenance de notre système a été optimisée. Le système lui-même a été conçu pour être le plus maintenable possible. Des maintenances à distance du système (paramétrage, réinitialisation, mise à jour du RTOS..) des sites génériques pourront être faites pour réduire les coûts logistiques et les coûts d’intervention des sociétés de maintenance. Au niveau de la maintenance applicative, étant donné que l’architecture applicative est déployée sur une application web, il suffira de maintenir le principal serveur d’application.
+\par La maintenance de notre système a été optimisée. Le système lui-même a été conçu pour être le plus maintenable possible. Des maintenances à distance du système (paramétrage, réinitialisation, mise à jour du RTOS..) des sites génériques pourront être faites pour réduire les coûts logistiques et les coûts d’intervention des sociétés de maintenance. Au niveau de la maintenance applicative, étant donné que l’architecture applicative est déployée sur une application web, il suffira de maintenir le principal serveur d’application.
 
-	D’autres outils du système permettront de réduire les coûts, par exemple l’outil d’aide à la décision. Son but étant d’optimiser le planning et ainsi de réduire les interventions sur site. Aussi cet outil d’aide à la décision proposera aux camionneurs des trajets pour optimiser leurs interventions. On essayera d’évaluer sur la qualité du service offert afin de l’optimiser continuellement.
+\par D’autres outils du système permettront de réduire les coûts, par exemple l’outil d’aide à la décision. Son but étant d’optimiser le planning et ainsi de réduire les interventions sur site. Aussi cet outil d’aide à la décision proposera aux camionneurs des trajets pour optimiser leurs interventions. On essayera d’évaluer sur la qualité du service offert afin de l’optimiser continuellement.
 
 
 
