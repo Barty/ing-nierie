@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.27)  16 FEB 2011 04:37
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.27)  16 FEB 2011 14:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -861,19 +861,29 @@ LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 32.
 [2
 
  <./insa-couleur.jpg>] (./localisation.tex
-! Undefined control sequence.
-l.4         \domaine
-                    {GPS}
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...art des usages que l'on pourras en faire.}
+                                                  
 ? X
  
 Here is how much of TeX's memory you used:
- 8588 strings out of 495061
- 119078 string characters out of 1182621
+ 8595 strings out of 495061
+ 119284 string characters out of 1182621
  203007 words of memory out of 3000000
- 11604 multiletter control sequences out of 15000+50000
- 14614 words of font info for 39 fonts, out of 3000000 for 9000
+ 11609 multiletter control sequences out of 15000+50000
+ 14955 words of font info for 40 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 43i,15n,43p,264b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,15n,45p,264b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive
 /fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type
 1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/am
