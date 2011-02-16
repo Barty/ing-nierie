@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.27)  15 FEB 2011 22:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.27)  16 FEB 2011 03:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -847,12 +847,12 @@ Overfull \hbox (12.79999pt too wide) in paragraph at lines 22--22
 
 
 (./satellite.tex
-Overfull \hbox (0.58003pt too wide) in paragraph at lines 24--24
-[]\OT1/cmr/bx/n/14.4 DOCUMENTS AP-PLI-CA-BLES ET DOC-U-MENTS DE REF-
+Overfull \hbox (0.2776pt too wide) in paragraph at lines 4--23
+\OT1/cmr/m/n/10.95 breuses r^^Segions de l'UE, se situ-ant dans les pays Nordiq
+ues, ou cer-taines r^^Segions m^^Sedit^^Serran^^Seennes
  []
 
-<./logigramme.pdf, id=51, 845.1575pt x 1573.88pt>
-<insa-couleur.jpg, id=53, 425.4294pt x 227.6505pt>
+<insa-couleur.jpg, id=231, 425.4294pt x 227.6505pt>
 File: insa-couleur.jpg Graphic file (type jpg)
  <use insa-couleur.jpg>
 
@@ -864,64 +864,40 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
 [2
 
  <./insa-couleur.jpg>]
-File: ./logigramme.pdf Graphic file (type pdf)
- <use ./logigramme.pdf>
 File: insa-couleur.jpg Graphic file (type jpg)
  <use insa-couleur.jpg> [3]
-Overfull \vbox (31.75883pt too high) has occurred while \output is active []
-
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg>
+[4]
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg> [5]
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg> [6]
 File: insa-couleur.jpg Graphic file (type jpg)
 
-<use insa-couleur.jpg> [4 <./logigramme.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-
- []
-
-) AED: lastpage setting LastPage
+<use insa-couleur.jpg> [7]
 File: insa-couleur.jpg Graphic file (type jpg)
- <use insa-couleur.jpg> [5] (./main.aux) ) 
+ <use insa-couleur.jpg> [8])
+AED: lastpage setting LastPage
+File: insa-couleur.jpg Graphic file (type jpg)
+ <use insa-couleur.jpg> [9] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 8621 strings out of 495061
- 119464 string characters out of 1182621
- 211007 words of memory out of 3000000
- 11623 multiletter control sequences out of 15000+50000
+ 8713 strings out of 495061
+ 120717 string characters out of 1182621
+ 222007 words of memory out of 3000000
+ 11659 multiletter control sequences out of 15000+50000
  14614 words of font info for 39 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 43i,16n,43p,281b,425s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,15n,43p,445b,434s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/d
 vips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
 /share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf
 -texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/urw/times/utmr8a.pfb>
-Output written on main.pdf (5 pages, 289737 bytes).
+Output written on main.pdf (9 pages, 316394 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 328 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 358 words of extra memory for PDF output out of 10000 (max. 10000000)
 

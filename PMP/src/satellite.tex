@@ -1,0 +1,295 @@
+\section{Introduction}
+\subsection{Rappel du problème}
+\subsubsection{Contexte}
+Le COPEVUE (Comité pour la Protection de l'EnVironnement de l'UE), présidé par le commissaire Norvégien souhaite étudier \textbf {un système
+de monitoring de sites isolés} .
+De nombreuses régions de l'UE, se situant dans les pays Nordiques, ou certaines régions méditérranéennes (à haut risque en terme d'incendies) sont peu peuplées et peu aisément accessibles. Néanmoins
+de nombreux lieux de travail existent dans ces régions tels que ceux nécessaires à l'abattage de bois, l'installation de réseaux (éléctrique ou de télécommunication),
+de stations de pompage ou encore des lieux dédiés à certaines études sur la faune et la flore. Ces lieux sont bien souvent isolés et disséminés loin des villes et des grans centres et doivent donc être autonomes en termes 
+d'énergie, de déchets etc...
+Un des points importants est de répondre à ces besoins en terme d'autonomie.
+Pour illustrer le problème, nous allons prendre le cas particulier de stations-réservoirs utilisées pour stocker des déchets, de l'essence, de l'eau ou éventuellement d'autres substances. Ces réservoirs doivent donc être
+surveillés pour bien entendu être ravitaillés, nettoyés (ou vidés le cas échéant) avant que le niveau n'atteigne un seuil critique. Actuellement la surveillance de ces lieux est assurée par le propriétaire du lieu de travail qui, en fonction du niveau qu'il constate, avertit la société chargée de s'occuper du réservoir pour qu'elle vienne le remplir / vider
+Les sociétés chargées de la maintenance des réservoirs doivent donc équiper et envoyer un camion pour s'occuper des réservoirs lorsque le propriétaire en fait la demande. Mais lorsque ces sociétés s'occupent de plusieurs dizaines de sites différents, cette méthode est loin d'etre optimale en terme de cout de tranport et de main d'oeuvre car il est assez rare que le camion revienne plein / vide
+Par ailleurs, pour des raisons de cout, on a pu constater des manquements vis-à-vis des exigences de surveillance... qui peuvent se traduire par des risques de désastres stratégiques dans des forets méditéranéennes ayant
+de fort risque d'incendie.
+La surveillance du niveau de ces réservoirs doit donc être assurée d'une autre manière afin de permettre aux sociétés chargées de leur maintenance de planifier les trajets des camions
+afin de faire des économies logistiques tout en garantissant certaines autres exigences.
+A ce titre, un appel d'offres est ouvert au 1er janvier 2011, avec échéance en semaine \textbf{S7 TODO date réelle}.Cet appel d'offres porte sur une étude
+de faisabilité du point de vue technologique, la proposition d'un Cahier des Charges (spécification technique des besoins) et d'une proposition 
+de conception du futur système.
+La première implantation complète de ce système générique sera déployaée pour la surveillance de réservoirs (essence) et containers (déchets) ...etc
+dans la partie nord de la Norvège pour le \textbf{30 mars 2012.}
+
+\subsubsection{Objectifs}
+Pour répondre aux besoins crées par ces lieux isolés et reculés, il s'agit d'étudier et de concevoir un système complet autonome et générique de mesure et de monitoring à distance de stations ainsi 
+que le pilotage, la configuration et la maintenance à distance de ces stations. Le résultat doit constituer ne solution évolutive, autonome et fiable.
+
+\subsection{Documents applicables et documents de référence}
+\subsubsection{Documents applicables}
+TODO 
+\subsubsection{Documents de référence}
+\begin{enumerate}
+\item Appel d'offre COPEVUE
+\item Differents dossiers produits durant les deux premières phases.
+\item Manuel du chef de projet
+\item Quelques outils et documentation pour le chef de projet pour la deuxième partie
+\item PAQP rédigé par le responsable qualité
+\end{enumerate}
+
+\subsection{Terminologie et abbréviation}
+\begin{itemize}
+\item [CdP: ]Chef De Projet
+\item [RQ: ]Responsable Qualité
+\item [PMP: ]Plan de Management de Projet
+\item [MOA: ]La maitrise d’ouvrage 
+\item [MOE: ]La maitrise d’œuvre
+\item [Sce: ]Service
+\item [GEI: ]Groupe d'Etude Informatique
+\item [SE: ]Système embarqué
+\end{itemize}
+\section{Présentation du document}
+
+Ce document constitue le plan de management du projet "Monitoring à distance de sites isolés".
+Ce projet est réalisé par l'équipe H4212 à la demande du client COPÉVUE, représenté par MM. Régis Aubry et Marian Scuturici.
+Le document qui suit est une version "draft" qui évoluera par la suite.
+Ce document formalise les méthodes et outils utilisés pour organiser, suivre et gérer le projet durant toute son application.
+
+\subsection{Liste des références contracutuelles}
+Trois types de contrats ont été identifiés, il s'agit du contrat avec le client COPEVUE et les divers contrats de sous-traitance et des fournisseurs.
+\subsubsection{Contrat client}
+Il s'agit du contrat signé avec le comité de pilotage COPEVUE. Ce document doit contenir l'ensemble des contraintes liées au projet. 
+\begin{itemize}
+\item Il devra en particulier statuer sur les modalités de suivi de l'avancement du projet par COPEVUE (à travers un site internet par exemple)
+\item Il devra préciser les clauses budgétaires et financieres du projet (possibilité de modification des ressources par exemple...)
+\item Il devra préciser les contraintes temporelles liées au projet (en définissant une marge
+\item Il devra préciser les modalités de dédomagement liés à un dysfonctionnement (problème de qualité, non respect des échéances par exemple...)
+Cette liste n'est pas exhaustive car il s'agit là d'un draft, elle devra néanmoins recouvrir l'ensemble des domaines contractuels dans une version finale de ce PMP.
+\end{itemize}
+\subsubsection{Contrat sous-traitance}
+La sous-traitance est une partie non négligeable dans certaines parties du projet, c'est pourquoi, il est nécessaire de mettre en place un accord
+contractuel avec les differentes sociétés de sous-traitance. Ce contrat sera, sauf cas exceptionnel, identique pour toutes ces sociétés.
+Il traitera, comme celui du client, de tous les domaines précisant les attentes des deux parties et prévoyant des mesures en cas de dysfonctionnement.
+\subsubsection{Contrat fournisseurs}
+Un contrat avec les fournisseurs devra être mis en place.
+\subsection{Enjeux économiques}
+En vertu de son caractère écologique, ce projet représente un enjeu économique considérable. Les besoins du clients tendent à s'amplifier. D'autres
+clients peuvent s'adresser à nous pour des projets similaires. Cette extension pourrait se faire à l'échelle européenne voire internationale.
+l'image de l'entreprise pourrait donc en tirer des profits non négligeable.
+De plus, la réalisation d'un tel projet est très interessante à long terme dans la mesure où notre équipe pourrait proposer "un service après vente".
+Aussi, les opérations de maintenance en pariculier logicielles pourraient être effectuées par notre équipe.
+Dans le cas contraire, l'échec de ce projet représenterait d'énormes pertes . D'abord, comme cité plus haut, l'image de l'entreprise en serait affectée,
+en plus de la perte de temps durant l'étude préalable donc une perte d'argent.
+
+\subsection{Partage des responsabilités entre le MOE et le MOA}
+
+La maitrise d’ouvrage (MOA) est responsable du projet de manière globale, il a des macro responsabilités sur le projet.
+Elle s'occupe de coordonner l'ensemble des sous-projets, d'assurer le suivi et surtout la cohérence de ces differents lots.\\
+La maitrise d’œuvre (MOE) intervient quant à elle au niveau d’un sous-projet . Elle veille à la bonne réalisation de ce sous-projet en termes d'exigences
+fonctionnelles, temporelles et de qualité souhaitée par la MOA.
+
+\section{Organisation du projet et structure décisionnelle}
+\subsection{Organisation Fonctionnelle du Projet}
+TODO : 
+A inclure
+
+\subsection{Structure hiérarchique des produits livrables}
+TODO
+A inclure
+
+\subsection{Structure Hiérarchique des activités}
+TODO
+A inclure
+
+\subsection{Organigramme des Tâches du Projet} 
+En utilisant machin machin il suffit d'adapter truc bidule, zero défault ceci est un draft!
+Il faut dire qu'on utilise le WSB
+TODO
+\section{Démarche de développement du système}
+\subsection{Cycle de vie du système}
+
+
+Au vu des exigences fonctionnelles et non fonctionnelles du projet. L'approche la plus appropriée au développement du système est celle du
+cycle en V. Ce cycle illustre bien les contraintes de tests et de qualité que nous aurons à respecter afin de garantir une qualité optimale.
+TODO Inserer un schéma du cycle en V
+
+
+\subsection{Décomposition logicielle, matérielle, temporelle et choix des sous-projets}
+\subsubsection{Décomposition en sous-ensembles}
+
+Une première décomposition du sysètème consiste à découper le système en sous-systèmes.
+Ensuite les sous-systèmes sont à leur tour divisés en sous projets. A noter que l'on peut retrouver plusieurs sous projets au sein de plusieurs sous-systèmes.
+
+Le premier sous-ensemble concerne la partie site central. Dans cet
+ensemble, nous avons pu identifier trois autres sous-projets qui sont la partie matérielle, la partie
+logicielle ainsi que les algorithmes de qualité de service (aide à la décision et optimisation des trajets).
+
+Il y a également un sous-ensemble qui comprend l’installation sur les stations génériques et le déploiement de notre solution. Elle
+est composée de trois parties qui sont l'acquisition des données des differents capteurs, le
+traitement direct et enfin, l’alimentation électrique de toute l'installation.
+
+Enfin, certains sous-ensembles sont des livrables de documentation, de formation
+ainsi que de maintenance. Ces derniers seront réalisés tout au long du projet parralèlement aux phases de spécification et de conception.
+
+\subsubsection{Choix des sous-projets}
+
+Tous ces livrables donneront lieu à des projets distincts réalisés par diverses équipes
+de conception et de développement. Les projets de développement princiapelement seront confiés à des entreprise de sous traitance, à qui
+nous communiquerons un cahier des charges détaillé.
+
+Il s'agit là d'un draft, la liste est loin d'être exhaustive. Néanmoins, elle recouvre de façon significative le système.
+
+\paragraph{Documentation\\}
+Il est plus que nécessaire de réaliser une documentation concise et de qualité. Celle-ci permet un suivi régulier de la cohérence du projet et ainsi
+respecter l’exigence de maintenabilité et faciliter l'évolutivité de celle-ci.
+\paragraph{Formation\\}
+L'étude de l'existant nous a montré que les sites étaient dépourvu de tout système informatique. Aussi la mise en place d'une solution fortement
+informatisée nécessite des formations pour le personnel. 
+
+
+\paragraph{Garantie et maintenance\\}
+Un point critique clairement explicité par COPEVUE reste la maintenabilité du système. Aussi un système de maintenance et de garantie
+devra être mis en place.
+
+\paragraph{Matériel du système embarqué\\}
+Les stations génériques, au vu de leurs localisations très difficile d'accès devront etre équipé de materiel fiable, efficace et robuste.
+L'autonomie en terme d'energie du système implique un système très peu couteux en energie.
+
+\paragraph{Logiciel du système embarqué\\}
+Ce logiciel doit être capable d'effectuer des opération de traitement de données en temps réel. il devra également proposer un archivage local
+ainsi qu'un archivage à distance. Des besoins de communications avec le site central sont alors très importants. a travers quoi, les opération de maintenance
+sont effectuées.
+
+\paragraph{Aide à la décision\\}
+Pour avoir une qualité de service et un retour sur la qualité de service, un système d'aide à la décision sera mis en place.
+Il s'agira d'optimiser les transports et de réduire les déplacements afin d'amplifier les gains écologiques liés aux déplacements.
+
+
+\paragraph{Interface centrale\\}
+L’interface offerte par le site central sera décomposée en deux parties.
+Il y aura dans un premier temps l’interface applicative (API) destinée à la communication entre les
+stations génériques et le site central.
+D’un autre coté nous aurons les interfaces IHM web destinées aux différents acteurs.
+Le choix d'une plateforme web garantie la portabilité de la solution, ainsi un simple navigateur suffira à l'utilisation de l'application. C'est 
+aussi valable pour une utilisation via un smartphone ou un pda.
+
+\paragraph{Télécommunication\\}
+Ce sous-projet possède un fort caractère d'étude et d'expertise. En effet il consistera dans un premier temps à faire une étude de marché
+pour déterminer le(s) fournisseur(s) correspondant au mieux aux besoins de communications à distance. en termes de couverture mobile, formule d'abonnement...etc
+
+
+\paragraph{Stockage et gestion de l’électricité\\}
+Pour ce sous-projet, nous allons regrouper le stockage et surveillance de ce
+processus d’alimentation électrique de la station générique.
+
+\paragraph{Acquisition des données sur la station\\}
+Une station générique est représentée par un ensemble de capteurs, tous branché à une seule station embarquée. les protocoles de communication
+sont suffisement générique pour une perpetuelle evolution du système. L'évolutivité "dimensionnelle" sera égélement prise en compte lors du choix
+des cartes d'acquisition pouvant accuilir jusqu'à 100 capteurs.
+
+
+\subsection{Décomposition fonctionnelle}
+Un découpage fonctionnel donnerait les sous-projets suivants :
+\begin{itemize}
+\item Récupération et traitement des données sur la station générique
+\item Maintenance logicielle du système
+\item Gestion de l'aide à la décision
+\item Surveillance et traitement des données sur le site central
+\end{itemize}
+
+\subsection{Planning prévisionnel général}
+\subsubsection{Evaluation de la charge}
+TODO : Vroi Leandro
+\subsubsection{Planning prévisionnel}
+
+TODO : Faire un planning prévisionnel
+
+\section{Supports méthodologiques et moyens à mettre en oeuvre}
+\subsection{Moyens matériels}
+TODO : Reformuler
+Financièrement, on devrait prévoir un budget spécifique au moyens matériels.
+Les membres de l'équipe auront à leur disposition leurs postes de travail habituels fournis par l'entreprise :
+\begin{itemize}
+\item Un ordinateur portable par personne ou une station d'accueil fixe
+\item Une plateforme de travail collaboratif.
+\item Un environnement de test et d'intégration
+\item Logistique de l'entreprise (fournitures et materiels informatique divers, imprimantes, scanners...etc)
+\end{itemize}
+ 
+\subsection{Moyens logiciels}
+\begin{itemize}
+\item IDE de développement habituels, il s'agit principalement de développement web
+\item Outils de conceptions habituels
+\item Outils de bureautique habituels
+\item Système de gestion de base de données
+\item ... (ceci est un draft)
+\end{itemize}
+
+\subsection{Moyens humains}
+\begin{enumerate}
+\item Collaborateurs internes\\
+Il s'agit du CDP, RQ et les differents GEI et autres reponsable (cf OFP plus haut)
+
+\item Collaborateurs externes\\
+Il s'agit principalement de moyens humains mis à dispositions chez nos sous-traitants. Leur qualité et leur expertise sera un atout très
+important pour ce projet.
+\end{enumerate}
+ 
+\subsubsection{Evaluation la charge}
+La charge de travail sera évaluée par le chef de projet avec l'assistance de l'architecte technique et des experts.
+Pour chaque tâche, le chef de projet se référera aux procédures standards de l'entreprise pour évaluer les charges pour les tâches de tests, revue, correction et validation.
+Une méthode appropriée à l'évaluation de la charge dans ce cas particulier est la méthode MCP de gedin. Et ce en conséquence du caractère "draft" de ce PMP.
+Il suffira alors de calculer les coefficient de complexité logique X et le coefficient de difficulté pratique.
+
+TODO : calculer la charge de travail avec la méthode MCP
+
+
+\section{Les contraintes}
+\subsection{Contraintes temporelles}
+Le projet doit être implanté dans le Nord de la Norvège au plus tard le 30 mars 2012.
+
+\subsection{Exigences fonctionnelles et non-fonctionnelles}
+Le client à travers son cahier des charges tient à insister sur bon nombre d'exigences fonctionnelles et non fonctionnelles. Il a notamment mis
+l'accent sur la Qualité, la fiabilité,
+la robustesse, la traçabilité, l'évolutivité, l'ergonomie . Pour plus de détails se réferer au dossier d'initialisation et / ou dossier de spécifications techniques des besoins.
+
+\subsection{Management des sous-traitants}
+Le choix des sous-traitants semble être crucial dans ce genre de projet. Ceux-ci sont spécialisés dans les
+télécommunications, les systèmes embarqués, les périphériques d’acquisition (capteurs,
+caméras, GPS, ...). La collaboration avec les différents sous-traitants doit être exemplaire si bien que nous devrons coordonner leur travail de sorte à aboutir un produit de qualité, répondant à toutes les exigences facilement et rapidement intégrable.
+
+\section{Gestion de configuration au niveau système}
+En vertu du PAQP établi par le responsable qualité, un système performant de gestion de configuration sera mis en
+place pour garantir la qualité, la fiabilité et la maintenabilité de notre système.
+
+\section{Facteurs de risque}
+
+\subsection{Risques liés au non-respect des échéances}
+Comme le stipule le contrat signé par les deux parties, un dépassement des dates butoires entraines l'application de mesures pouvant
+causer des pertes considérable à notre société.
+
+\subsection{Risques liés à une mauvaise coordination des modules}
+En cas de mauvaise spécification des interfaces entre les modules (interfaces
+matérielles, logicielles et de communication), l’assemblage de ces différents éléments risque d'engendrer des problèmes d'integration.
+Ceci peut à son tour engendrer des pertes conséquentes.
+
+\subsection{Risques financiers}
+Ce risque peut être causé par :
+\begin{itemize}
+\item Dépassement des délais de développpement
+\item Mauvaise estimation des prix d'achat de materiels
+\item auvaise estimation des prix de la sous-traitance
+\item Augmentation des coûts de l’énergie
+\item ... Ceci est un draft
+\end{itemize}
+
+\section{Organisation et documents de suivi}
+
+Le suivi de l’avancée du projet sera effectué par l’intermédiaire du logiciel Redmine. Les différents collaborateurs auront un compte
+avec lequel il pourront s'authentifier et effectuer les tâches de suivi.
+
+Les réunions seront à fréquence mensuelle dans un premier temps, puis hebdomadaire le cas échéant. Des revues poncutelles peuvent être provoquées
+s'il y a lieu.
+
+
+
